@@ -7,3 +7,19 @@
 
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Custom
+.global-header-wrapper {
+	background-color: $global-background-color;
+	.global-header {
+		height: $global-header-height;
+		color: $global-color;
+	}
+}
+.global-footer-wrapper {
+	background-color: $global-background-color;
+	.global-footer {
+		height: $global-footer-height;
+		color: $global-color;
+	}
+}
