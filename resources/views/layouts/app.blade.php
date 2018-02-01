@@ -10,19 +10,29 @@
         <link rel="stylesheet" type="text/css" href="/css/app.css">
     </head>
     <body>
+        <div class='container-fluid above-header-wrapper'></div>
+
         <div class='container-fluid global-header-wrapper'>
             <div class='container global-header'>
+
                 @include('layouts.header')
+
             </div>
         </div>
+
         <div class='container-fluid'>
             <div class='container'>
+
                 @yield('content')
+
             </div>
         </div>
+
         <div class='container-fluid global-footer-wrapper'>
             <div class='container global-footer'>
+
                 @include('layouts.footer')
+
             </div>
         </div>
     </body>

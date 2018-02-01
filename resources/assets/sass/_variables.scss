@@ -38,7 +38,11 @@ $input-color-placeholder: lighten($text-color, 30%);
 $panel-default-heading-bg: #fff;
 
 // Custom
-$global-background-color: #171a21;
-$global-color: #c6d4df;
-$global-header-height: 50px;
-$global-footer-height: 50px;
+$global-bg-color: #171a21;
+$global-bg-color-blue: #0d7ebf;
+
+$global-color-primary: #c6d4df;
+$global-color-secondary: #b8b6b4;
+
+$global-header-height: 100px;
+$global-footer-height: 100px;

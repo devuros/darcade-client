@@ -8,18 +8,90 @@
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
+// Font-awesome
+@import "vendor/components/font-awesome/scss/font-awesome.scss";
+
+// General
+.clear {
+	clear: both;
+}
+
 // Custom
+.above-header-wrapper {
+	background-color: $global-bg-color-blue;
+	height: 5px;
+}
 .global-header-wrapper {
-	background-color: $global-background-color;
+	background-color: $global-bg-color;
 	.global-header {
 		height: $global-header-height;
-		color: $global-color;
+		color: $global-color-primary;
+		.header-logo {
+			float: left;
+			height: 100%;
+			line-height: 95px;
+			a {
+				color: $global-color-primary;
+			}
+			i {
+				vertical-align: middle;
+			}
+		}
+		.header-title {
+			float: left;
+			height: 100%;
+			line-height: 100px;
+			margin-right: 50px;
+			a {
+				color: $global-color-primary;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 1.7em;
+				padding-left: 10px;
+			}
+		}
+		.header-menu {
+			float: left;
+			height: 100%;
+			width: 500px;
+			ul {
+				padding-top: 30px;
+				li {
+					float: left;
+					a {
+						color: $global-color-secondary;
+						text-transform: uppercase;
+						font-weight: bold;
+					}
+					a:hover {
+						color: #fff;
+						background-color: $global-bg-color;
+					}
+				}
+			}
+		}
+		.header-actions {
+			float: right;
+			height: 100%;
+			ul {
+				li {
+					float: left;
+					a {
+						color: $global-color-secondary;
+					}
+					a:hover {
+						color: #fff;
+						background-color: $global-bg-color;
+					}
+				}
+			}
+		}
 	}
 }
 .global-footer-wrapper {
-	background-color: $global-background-color;
+	background-color: $global-bg-color;
 	.global-footer {
 		height: $global-footer-height;
-		color: $global-color;
+		color: $global-color-primary;
 	}
 }
