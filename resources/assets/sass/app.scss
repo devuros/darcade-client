@@ -23,13 +23,19 @@
 }
 .global-header-wrapper {
 	background-color: $global-bg-color;
+
 	.global-header {
+		width: 940px;
+		position: relative;
+		right: -90px;
 		height: $global-header-height;
 		color: $global-color-primary;
+
 		.header-logo {
 			float: left;
 			height: 100%;
 			line-height: 95px;
+
 			a {
 				color: $global-color-primary;
 			}
@@ -41,19 +47,22 @@
 			float: left;
 			height: 100%;
 			line-height: 100px;
-			margin-right: 50px;
+			margin-right: 55px;
+
 			a {
 				color: $global-color-primary;
 				text-decoration: none;
 				text-transform: uppercase;
-				font-size: 1.7em;
+				font-size: 1.5em;
+				font-weight: bold;
 				padding-left: 10px;
 			}
 		}
 		.header-menu {
 			float: left;
 			height: 100%;
-			width: 500px;
+			width: 400px;
+
 			ul {
 				padding-top: 30px;
 				li {
@@ -62,6 +71,7 @@
 						color: $global-color-secondary;
 						text-transform: uppercase;
 						font-weight: bold;
+						padding: 10px 7px;
 					}
 					a:hover {
 						color: #fff;
@@ -73,9 +83,11 @@
 		.header-actions {
 			float: right;
 			height: 100%;
+
 			ul {
 				li {
 					float: left;
+
 					a {
 						color: $global-color-secondary;
 					}
@@ -88,21 +100,34 @@
 		}
 	}
 }
+.global-content-wrapper {
+
+	.global-content {
+
+	}
+}
 .global-footer-wrapper {
 	background-color: $global-bg-color;
 	padding-bottom: 30px;
+
 	.global-footer {
+		width: 940px;
+		position: relative;
+		right: -90px;
 		height: $global-footer-height;
 		margin-top: 40px;
 		color: $global-color-primary;
+
 		.footer-content {
 			width: 100%;
 			height: 50px;
 			float: left;
+
 			.footer-logo {
 				height: 100%;
 				float: left;
 				margin-right: 15px;
+
 				a {
 					color: $global-color-primary;
 				}
@@ -114,6 +139,7 @@
 				height: 100%;
 				float: left;
 				margin-top: 5px;
+
 				p {
 					margin: 0;
 					color: $global-color-secondary;
@@ -123,6 +149,7 @@
 				height: 100%;
 				float: right;
 				line-height: 55px;
+
 				a {
 					color: $global-color-primary;
 					text-decoration: none;
@@ -136,9 +163,11 @@
 			width: 100%;
 			height: 42px;
 			float: left;
+
 			ul {
 				li {
 					float: left;
+
 					a {
 						color: $global-color-primary;
 						text-transform: capitalize;

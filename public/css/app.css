@@ -11417,6 +11417,9 @@ button.close {
 }
 
 .global-header-wrapper .global-header {
+  width: 940px;
+  position: relative;
+  right: -90px;
   height: 100px;
   color: #c6d4df;
 }
@@ -11439,21 +11442,22 @@ button.close {
   float: left;
   height: 100%;
   line-height: 100px;
-  margin-right: 50px;
+  margin-right: 55px;
 }
 
 .global-header-wrapper .global-header .header-title a {
   color: #c6d4df;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.7em;
+  font-size: 1.5em;
+  font-weight: bold;
   padding-left: 10px;
 }
 
 .global-header-wrapper .global-header .header-menu {
   float: left;
   height: 100%;
-  width: 500px;
+  width: 400px;
 }
 
 .global-header-wrapper .global-header .header-menu ul {
@@ -11468,6 +11472,7 @@ button.close {
   color: #b8b6b4;
   text-transform: uppercase;
   font-weight: bold;
+  padding: 10px 7px;
 }
 
 .global-header-wrapper .global-header .header-menu ul li a:hover {
@@ -11499,6 +11504,9 @@ button.close {
 }
 
 .global-footer-wrapper .global-footer {
+  width: 940px;
+  position: relative;
+  right: -90px;
   height: 92px;
   margin-top: 40px;
   color: #c6d4df;

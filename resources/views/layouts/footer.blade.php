@@ -9,10 +9,9 @@
 	<div class='footer-text'>
 
 		<p>
-			&copy; 2018 Uros Jovanovic. All rights reserved.
-			All trademarks are property of their respective owners in Vadeem and other countries.
+			&copy; 2018 Uros Jovanovic. All rights reserved. All trademarks are property of their respective owners in
 			<br/>
-			VAT included in all prices where applicable.
+			Vadeem and other countries. VAT included in all prices where applicable.
 		</p>
 
 	</div>
