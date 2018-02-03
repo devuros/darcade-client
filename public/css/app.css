@@ -11599,11 +11599,76 @@ button.close {
 .home-page-content-wrapper .home-page-gutter {
   width: 230px;
   float: left;
+  padding-bottom: 50px;
+}
+
+.home-page-content-wrapper .home-page-gutter .gutter-icon {
+  width: 210px;
+  margin-right: 20px;
+  text-align: center;
+  color: #c6d4df;
+  border-bottom: 1px solid #377096;
+}
+
+.home-page-content-wrapper .home-page-gutter .gutter-icon i {
+  vertical-align: middle;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.home-page-content-wrapper .home-page-gutter .gutter-wrapper {
   padding-right: 40px;
 }
 
-.home-page-content-wrapper .home-page-core {
+.home-page-content-wrapper .home-page-gutter .gutter-wrapper .gutter-header {
+  color: #c6d4df;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 7px 0;
+}
+
+.home-page-content-wrapper .home-page-gutter .gutter-wrapper .gutter-genres {
+  margin-top: 15px;
+}
+
+.home-page-content-wrapper .home-page-gutter .gutter-wrapper .gutter-item {
+  color: #40b1f2;
+  display: block;
+  font-size: 12px;
+  margin: 7px 0;
+  text-transform: capitalize;
+}
+
+.home-page-content-wrapper .home-page-gutter .gutter-wrapper .gutter-item:hover {
+  text-decoration: none;
+}
+
+.home-page-content-wrapper .home-page-gutter .gutter-wrapper .gutter-item:hover .item-text {
+  color: #fff;
+}
+
+.home-page-content-wrapper .home-page-gutter .gutter-wrapper .gutter-item > div {
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  background-color: rgba(13, 126, 191, 0.4);
+  border-radius: 2px;
+  line-height: 19px;
+  text-align: center;
+  margin-right: 7px;
+}
+
+.home-page-content-wrapper .home-page-gutter .gutter-wrapper .gutter-item > div i {
+  vertical-align: middle;
+}
+
+.home-page-content-wrapper .home-page-gutter .gutter-wrapper .gutter-item > b {
+  font-weight: normal;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper {
   width: 940px;
+  padding-top: 35px;
   float: right;
 }
 
