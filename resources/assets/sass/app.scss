@@ -1,186 +1,201 @@
-
-// Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
-// Variables
 @import "variables";
 
-// Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
-// Font-awesome
 @import "vendor/components/font-awesome/scss/font-awesome.scss";
 
-// General
+//
+// Definition
+//
+
+.global-above-header-wrapper {
+	background-color: $above-header-bg-color;
+	height: $above-header-height;
+}
+.global-header-wrapper {
+	background-color: $header-bg-color;
+}
+.global-content-wrapper {
+	background-color: $content-bg-color;
+}
+.global-footer-wrapper {
+	background-color: $footer-bg-color;
+}
+
 .clear {
 	clear: both;
 }
 
+//
 // Custom
-.above-header-wrapper {
-	background-color: $global-bg-color-blue;
-	height: 5px;
+//
+
+.global-header {
+	width: $container-width;
+	height: $header-height;
+	right: $container-displacement;
+	position: relative;
+	color: $text-color-primary;
+
+	.header-logo {
+		height: 100%;
+		float: left;
+		line-height: 95px;
+
+		a {
+			color: $text-color-primary;
+		}
+		i {
+			vertical-align: middle;
+		}
+	}
+	.header-title {
+		height: 100%;
+		float: left;
+		line-height: 100px;
+		margin-right: 55px;
+
+		a {
+			color: $text-color-primary;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 1.5em;
+			font-weight: bold;
+			padding-left: 10px;
+		}
+	}
+	.header-menu {
+		width: 400px;
+		height: 100%;
+		float: left;
+
+		ul {
+			padding-top: 30px;
+
+			li {
+				float: left;
+
+				a {
+					color: $text-color-secondary;
+					text-transform: uppercase;
+					font-weight: bold;
+					padding: 10px 7px;
+				}
+				a:hover {
+					color: $text-color-hover;
+					background-color: $header-bg-color;
+				}
+			}
+		}
+	}
+	.header-actions {
+		float: right;
+		height: 100%;
+
+		ul {
+			li {
+				float: left;
+
+				a {
+					color: $text-color-secondary;
+				}
+				a:hover {
+					color: $text-color-hover;
+					background-color: $header-bg-color;
+				}
+			}
+		}
+	}
 }
-.global-header-wrapper {
-	background-color: $global-bg-color;
 
-	.global-header {
+
+.global-content {
+
+	.home-page-gutter {
+		width: 100px;
+		float: left;
+	}
+	.home-page-content {
 		width: 940px;
-		position: relative;
-		right: -90px;
-		height: $global-header-height;
-		color: $global-color-primary;
+		float: right;
+		padding: 0 15px;
+	}
+}
 
-		.header-logo {
-			float: left;
+
+.global-footer {
+	width: $container-width;
+	height: $footer-height;
+	right: $container-displacement;
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	color: $text-color-primary;
+
+	.footer-content {
+		width: 100%;
+		height: 50px;
+		float: left;
+
+		.footer-logo {
 			height: 100%;
-			line-height: 95px;
+			float: left;
+			margin-right: 15px;
 
 			a {
-				color: $global-color-primary;
+				color: $text-color-primary;
 			}
 			i {
-				vertical-align: middle;
+				font-size: 50px;
 			}
 		}
-		.header-title {
-			float: left;
+		.footer-text {
 			height: 100%;
-			line-height: 100px;
-			margin-right: 55px;
+			float: left;
+			margin-top: 5px;
+
+			p {
+				margin: 0;
+				color: $text-color-secondary;
+			}
+		}
+		.footer-title {
+			height: 100%;
+			float: right;
+			line-height: 55px;
 
 			a {
-				color: $global-color-primary;
+				color: $text-color-primary;
 				text-decoration: none;
 				text-transform: uppercase;
-				font-size: 1.5em;
-				font-weight: bold;
-				padding-left: 10px;
-			}
-		}
-		.header-menu {
-			float: left;
-			height: 100%;
-			width: 400px;
-
-			ul {
-				padding-top: 30px;
-				li {
-					float: left;
-					a {
-						color: $global-color-secondary;
-						text-transform: uppercase;
-						font-weight: bold;
-						padding: 10px 7px;
-					}
-					a:hover {
-						color: #fff;
-						background-color: $global-bg-color;
-					}
-				}
-			}
-		}
-		.header-actions {
-			float: right;
-			height: 100%;
-
-			ul {
-				li {
-					float: left;
-
-					a {
-						color: $global-color-secondary;
-					}
-					a:hover {
-						color: #fff;
-						background-color: $global-bg-color;
-					}
-				}
+				font-size: 1.7em;
+				padding-right: 15px;
 			}
 		}
 	}
-}
-.global-content-wrapper {
+	.footer-menu {
+		width: 100%;
+		height: 42px;
+		float: left;
 
-	.global-content {
-
-	}
-}
-.global-footer-wrapper {
-	background-color: $global-bg-color;
-	padding-bottom: 30px;
-
-	.global-footer {
-		width: 940px;
-		position: relative;
-		right: -90px;
-		height: $global-footer-height;
-		margin-top: 40px;
-		color: $global-color-primary;
-
-		.footer-content {
-			width: 100%;
-			height: 50px;
-			float: left;
-
-			.footer-logo {
-				height: 100%;
+		ul {
+			li {
 				float: left;
-				margin-right: 15px;
 
 				a {
-					color: $global-color-primary;
+					color: $text-color-primary;
+					text-transform: capitalize;
 				}
-				i {
-					font-size: 50px;
-				}
-			}
-			.footer-text {
-				height: 100%;
-				float: left;
-				margin-top: 5px;
-
-				p {
-					margin: 0;
-					color: $global-color-secondary;
+				a:hover {
+					color: $text-color-hover;
+					background-color: $footer-bg-color;
 				}
 			}
-			.footer-title {
-				height: 100%;
-				float: right;
-				line-height: 55px;
-
-				a {
-					color: $global-color-primary;
-					text-decoration: none;
-					text-transform: uppercase;
-					font-size: 1.7em;
-					padding-right: 15px;
-				}
-			}
-		}
-		.footer-menu {
-			width: 100%;
-			height: 42px;
-			float: left;
-
-			ul {
-				li {
-					float: left;
-
-					a {
-						color: $global-color-primary;
-						text-transform: capitalize;
-					}
-					a:hover {
-						color: #fff;
-						background-color: $global-bg-color;
-					}
-				}
-				li:first-child {
-					a:first-child {
-						padding-left: 0;
-					}
+			li:first-child {
+				a:first-child {
+					padding-left: 0;
 				}
 			}
 		}

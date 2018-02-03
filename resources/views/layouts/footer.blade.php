@@ -1,7 +1,7 @@
 <div class='footer-content'>
 	<div class='footer-logo'>
 
-		<a href="{{ route('index') }}">
+		<a href="{{ route('home') }}">
 			<i class='fa fa-fighter-jet'></i>
 		</a>
 
@@ -17,7 +17,7 @@
 	</div>
 	<div class='footer-title'>
 
-		<a href="{{ route('index') }}">darcade</a>
+		<a href="{{ route('home') }}">darcade</a>
 
 	</div>
 </div>
@@ -26,12 +26,12 @@
 	<ul class="nav">
 		<li class="nav-item">
 
-			<a href="{{ route('index') }}">store</a>
+			<a href="{{ route('home') }}">store</a>
 
 		</li>
 		<li class="nav-item">
 
-			<a href="{{ route('index') }}">community</a>
+			<a href="{{ route('home') }}">community</a>
 
 		</li>
 		<li class="nav-item">

@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="/css/app.css">
     </head>
     <body>
-        <div class='container-fluid above-header-wrapper'></div>
+        <div class='container-fluid global-above-header-wrapper'></div>
         <div class='container-fluid global-header-wrapper'>
             <div class='container global-header'>
 
