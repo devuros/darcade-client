@@ -19,11 +19,9 @@
             </div>
         </div>
         <div class='container-fluid global-content-wrapper'>
-            <div class='container global-content'>
 
                 @yield('content')
 
-            </div>
         </div>
         <div class='container-fluid global-footer-wrapper'>
             <div class='container global-footer'>

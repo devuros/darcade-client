@@ -24,13 +24,10 @@
 	background-color: $footer-bg-color;
 }
 
-.clear {
-	clear: both;
+.container {
+	padding-left: 0;
+	padding-right: 0;
 }
-
-//
-// Custom
-//
 
 .global-header {
 	width: $container-width;
@@ -67,7 +64,7 @@
 		}
 	}
 	.header-menu {
-		width: 400px;
+		width: auto;
 		height: 100%;
 		float: left;
 
@@ -91,8 +88,8 @@
 		}
 	}
 	.header-actions {
-		float: right;
 		height: 100%;
+		float: right;
 
 		ul {
 			li {
@@ -109,34 +106,21 @@
 		}
 	}
 }
-
-
 .global-content {
+	width: $global-content-width;
 
-	.home-page-gutter {
-		width: 100px;
-		float: left;
-	}
-	.home-page-content {
-		width: 940px;
-		float: right;
-		padding: 0 15px;
-	}
 }
-
-
 .global-footer {
 	width: $container-width;
 	height: $footer-height;
 	right: $container-displacement;
 	position: relative;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin: 40px auto;
 	color: $text-color-primary;
 
 	.footer-content {
 		width: 100%;
-		height: 50px;
+		height: $footer-content-height;
 		float: left;
 
 		.footer-logo {
@@ -177,7 +161,7 @@
 	}
 	.footer-menu {
 		width: 100%;
-		height: 42px;
+		height: $footer-menu-height;
 		float: left;
 
 		ul {
@@ -199,5 +183,26 @@
 				}
 			}
 		}
+	}
+}
+
+//
+// Custom
+//
+
+.home-page-content-wrapper {
+	width: $home-page-content-wrapper-width;
+	height: auto;
+	left: -25px;
+	position: relative;
+
+	.home-page-gutter {
+		width: $home-page-gutter-width;
+		float: left;
+		padding-right: 40px;
+	}
+	.home-page-core {
+		width: $home-page-core-width;
+		float: right;
 	}
 }

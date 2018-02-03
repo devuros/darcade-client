@@ -11420,8 +11420,9 @@ button.close {
   background-color: #171a21;
 }
 
-.clear {
-  clear: both;
+.container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .global-header {
@@ -11463,7 +11464,7 @@ button.close {
 }
 
 .global-header .header-menu {
-  width: 400px;
+  width: auto;
   height: 100%;
   float: left;
 }
@@ -11489,8 +11490,8 @@ button.close {
 }
 
 .global-header .header-actions {
-  float: right;
   height: 100%;
+  float: right;
 }
 
 .global-header .header-actions ul li {
@@ -11506,15 +11507,8 @@ button.close {
   background-color: #171a21;
 }
 
-.global-content .home-page-gutter {
-  width: 100px;
-  float: left;
-}
-
-.global-content .home-page-content {
+.global-content {
   width: 940px;
-  float: right;
-  padding: 0 15px;
 }
 
 .global-footer {
@@ -11522,8 +11516,7 @@ button.close {
   height: 92px;
   right: -90px;
   position: relative;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px auto;
   color: #c6d4df;
 }
 
@@ -11594,5 +11587,23 @@ button.close {
 
 .global-footer .footer-menu ul li:first-child a:first-child {
   padding-left: 0;
+}
+
+.home-page-content-wrapper {
+  width: 1170px;
+  height: auto;
+  left: -25px;
+  position: relative;
+}
+
+.home-page-content-wrapper .home-page-gutter {
+  width: 230px;
+  float: left;
+  padding-right: 40px;
+}
+
+.home-page-content-wrapper .home-page-core {
+  width: 940px;
+  float: right;
 }
 

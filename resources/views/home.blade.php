@@ -4,15 +4,17 @@
 
 @section('content')
 
-	<div class='home-page-gutter'>
+	<div class='container home-page-content-wrapper'>
+		<div class='home-page-gutter'>
 
-		gutter
+			<strong>gutter</strong>
 
-	</div>
-	<div class='home-page-content'>
+		</div>
+		<div class='home-page-core'>
 
-		<p>Content</p>
+			<p>Content</p>
 
+		</div>
 	</div>
 
 @endsection
