@@ -1,15 +1,12 @@
 <?php
 
-Route::get('/', function () { return view('home'); })->name('home');
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('community', 'HomeController@community')->name('community');
+Route::get('about', 'HomeController@about')->name('about');
+Route::get('support', 'HomeController@support')->name('support');
+Route::get('author', 'HomeController@author')->name('author');
 
+Route::get('login', 'AuthController@login')->name('login');
+Route::get('register', 'AuthController@register')->name('register');
 
-Route::get('about', function () { return view('home'); })->name('about');
-
-Route::get('support', function () { return view('home'); })->name('support');
-
-Route::get('author', function () { return view('home'); })->name('author');
-
-
-Route::get('login', function () { return view('home'); })->name('login');
-
-Route::get('register', function () { return view('home'); })->name('register');
+Route::get('genres', 'GenreController@showGenreGames')->name('genres');

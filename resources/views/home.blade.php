@@ -38,30 +38,15 @@
 				<div class='gutter-header gutter-genres'>browse by genre</div>
 				<div class='gutter-items'>
 
-					<a class="gutter-item" href="#">
-						<b class="item-text">action</b>
+					@foreach($genres as $genre)
+
+					<a class="gutter-item" href="{{ route('genres').'/'.$genre->id }}">
+						<b class="item-text">
+							{{ $genre->genre }}
+						</b>
 					</a>
-					<a class="gutter-item" href="#">
-						<b class="item-text">adventure</b>
-					</a>
-					<a class="gutter-item" href="#">
-						<b class="item-text">indie</b>
-					</a>
-					<a class="gutter-item" href="#">
-						<b class="item-text">simulation</b>
-					</a>
-					<a class="gutter-item" href="#">
-						<b class="item-text">massively multiplayer</b>
-					</a>
-					<a class="gutter-item" href="#">
-						<b class="item-text">strategy</b>
-					</a>
-					<a class="gutter-item" href="#">
-						<b class="item-text">RPG</b>
-					</a>
-					<a class="gutter-item" href="#">
-						<b class="item-text">sports</b>
-					</a>
+
+					@endforeach
 
 				</div>
 			</div>
