@@ -16,11 +16,9 @@ class HomeController extends ClientController
 	public function index()
 	{
 
-		$client = new Client;
+		$genres_response = $this->getApiRequest('genres');
 
-		$genres_response = $client->request('GET', $this->getApiUrl().'genres');
-
-		$genres = json_decode((string)$genres_response->getBody());
+		$genres = $this->decodeApiResponse($genres_response);
 
 		return view('home', compact('genres'));
 

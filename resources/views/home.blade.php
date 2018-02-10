@@ -15,19 +15,19 @@
 				<div class='gutter-header'>browse categories</div>
 				<div class='gutter-items'>
 
-					<a class="gutter-item" href="#">
+					<a class="gutter-item" href="{{ route('search.top') }}">
 						<div>
 							<i class='fa fa-line-chart'></i>
 						</div>
 						<b class="item-text">top sellers</b>
 					</a>
-					<a class="gutter-item" href="#">
+					<a class="gutter-item" href="{{ route('search.new') }}">
 						<div>
 							<i class='fa fa-plus'></i>
 						</div>
 						<b class="item-text">new releases</b>
 					</a>
-					<a class="gutter-item" href="#">
+					<a class="gutter-item" href="{{ route('search.specials') }}">
 						<div>
 							<i class='fa fa-percent'></i>
 						</div>

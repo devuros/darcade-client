@@ -8,22 +8,96 @@ use GuzzleHttp\Client;
 class ClientController extends Controller
 {
 
-    // protected $client;
+    const METHOD_GET = 'GET';
+    const METHOD_POST = 'POST';
+    const METHOD_PUT = 'PUT';
+    const METHOD_DELETE = 'DELETE';
 
-    // public function __construct(Client $client)
-    // {
+    const API_URL_LOCALHOST = 'http://localhost:8000/api/';
+    const API_URL_LIVE = 'http://www.example.com/api/';
 
-    // 	$this->client = $client;
+    protected $requestMethod;
 
-    // }
-
-    protected $apiUrl = 'http://localhost:8000/api/';
-
-    public function getApiUrl()
+    /**
+     * Getter for request method
+     */
+    public function getRequestMethod()
     {
 
-    	return $this->apiUrl;
+    	return $this->requestMethod;
 
     }
+
+    /**
+     * Setter for request method
+     */
+    public function setRequestMethod($requestMethod)
+    {
+
+    	$this->requestMethod = $requestMethod;
+    	return $this;
+
+    }
+
+    /**
+     * General method for all requests made to the api
+     */
+    public function apiRequest($uri, $options)
+    {
+
+    	$client = new Client;
+    	return $client->request($this->getRequestMethod(), self::API_URL_LOCALHOST.$uri, $options);
+
+    }
+
+    /**
+     * Method for making a get request
+     */
+	public function getApiRequest($uri, array $options = [])
+	{
+
+		return $this->setRequestMethod(self::METHOD_GET)->apiRequest($uri, $options);
+
+	}
+
+	/**
+     * Method for making a post request
+     */
+	public function postApiRequest($uri, array $options = [])
+	{
+
+		return $this->setRequestMethod(self::METHOD_POST)->apiRequest($uri, $options);
+
+	}
+
+	/**
+     * Method for making a put request
+     */
+	public function putApiRequest($uri, array $options = [])
+	{
+
+		return $this->setRequestMethod(self::METHOD_PUT)->apiRequest($uri, $options);
+
+	}
+
+	/**
+     * Method for making a delete request
+     */
+	public function deleteApiRequest($uri, array $options = [])
+	{
+
+		return $this->setRequestMethod(self::METHOD_DELETE)->apiRequest($uri, $options);
+
+	}
+
+	/**
+	 * Decode the json response from the api
+	 */
+	public function decodeApiResponse($apiResponse)
+	{
+
+		return json_decode((string)$apiResponse->getBody());
+
+	}
 
 }

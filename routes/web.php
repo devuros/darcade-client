@@ -10,3 +10,7 @@ Route::get('login', 'AuthController@login')->name('login');
 Route::get('register', 'AuthController@register')->name('register');
 
 Route::get('genres', 'GenreController@showGenreGames')->name('genres');
+
+Route::get('search/top-sellers', 'SearchController@topSellers')->name('search.top');
+Route::get('search/new-releases', 'SearchController@newReleases')->name('search.new');
+Route::get('search/specials', 'SearchController@specials')->name('search.specials');
