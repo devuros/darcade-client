@@ -11589,6 +11589,40 @@ button.close {
   padding-left: 0;
 }
 
+.clear {
+  clear: both;
+}
+
+.error-full-height {
+  height: 80vh;
+}
+
+.error-flex-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.error-position-ref {
+  position: relative;
+}
+
+.error-content {
+  text-align: center;
+}
+
+.error-title {
+  font-size: 36px;
+  padding: 20px;
+  color: #c6d4df;
+}
+
 .home-page-content-wrapper {
   width: 1170px;
   height: auto;
@@ -11670,5 +11704,61 @@ button.close {
   width: 940px;
   padding-top: 35px;
   float: right;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section {
+  width: 940px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-title {
+  width: 940px;
+  height: auto;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-title h2 {
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content {
+  width: 940px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel {
+  width: 620px;
+  height: 355px;
+  position: relative;
+  float: left;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel .carousel-inner {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel .carousel-inner .carousel-item {
+  position: relative;
+  display: none;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel .carousel-inner .carousel-item img {
+  width: 620px;
+  height: 355px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel .carousel-inner .active {
+  display: block;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredAside {
+  width: 320px;
+  height: 355px;
+  position: relative;
+  float: right;
+  background: -webkit-gradient(linear, left bottom, right top, from(#171a21), to(#2a2f3c));
+  background: linear-gradient(to top right, #171a21 0%, #2a2f3c 100%);
 }
 

@@ -53,9 +53,37 @@
 		</div>
 		<div class='home-page-core-wrapper'>
 
-			<p>Content</p>
+			<div class='home-page-section'>
+				<div class='home-page-section-title'>
+					<h2>featured &amp; recommended</h2>
+				</div>
+				<div id='featuredSection' class='home-page-section-content'>
+
+					<div id='featuredCarousel' class='carousel slide' data-ride='carousel'>
+						<div class='carousel-inner'>
+							<div class='carousel-item active'>
+								<img class='d-block w-100' src="{{ asset('images/first.svg') }}">
+							</div>
+							<div class='carousel-item'>
+								<img class='d-block w-100' src="{{ asset('images/second.svg') }}">
+							</div>
+							<div class='carousel-item'>
+								<img class='d-block w-100' src="{{ asset('images/third.svg') }}">
+							</div>
+						</div>
+					</div>
+					<div id='featuredAside'>
+
+					</div>
+					<div class="clear"></div>
+
+				</div>
+			</div>
 
 		</div>
 	</div>
+
+	<script type="text/javascript" src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 
 @endsection

@@ -1,4 +1,3 @@
-
 // Body
 $body-bg: #f5f8fa;
 
@@ -9,7 +8,7 @@ $font-size-base: 14px;
 $line-height-base: 1.6;
 $text-color: #636b6f;
 
-// Custom
+// Definition
 $above-header-bg-color: #40b1f2;
 $header-bg-color: #171a21;
 $content-bg-color: #173d58;
@@ -24,12 +23,18 @@ $container-displacement: -90px;
 
 $global-content-width: 940px;
 
-$home-page-content-wrapper-width: 1170px;
-$home-page-gutter-width: 230px;
-$home-page-core-wrapper-width: 940px;
-
 $above-header-height: 4px;
 $header-height: 100px;
 $footer-height: 92px;
 $footer-content-height: 50px;
 $footer-menu-height: 42px;
+
+// Home page
+$home-page-content-wrapper-width: 1170px;
+$home-page-gutter-width: 230px;
+$home-page-core-wrapper-width: 940px;
+$home-page-section-width: 940px;
+$home-page-section-title-width: $home-page-section-width;
+$home-page-section-content-width: $home-page-section-width;
+
+$home-page-section-title-height: auto;

@@ -185,6 +185,34 @@
 		}
 	}
 }
+.clear {
+	clear: both;
+}
+
+//
+// Error
+//
+
+.error-full-height {
+	height: 80vh;
+}
+.error-flex-center {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.error-position-ref {
+	position: relative;
+}
+.error-content {
+	text-align: center;
+}
+.error-title {
+	font-size: 36px;
+	padding: 20px;
+	color: $text-color-primary;
+}
+
 
 //
 // Custom
@@ -264,5 +292,57 @@
 		width: $home-page-core-wrapper-width;
 		padding-top: 35px;
 		float: right;
+
+		.home-page-section {
+			width: $home-page-section-width;
+
+			.home-page-section-title {
+				width: $home-page-section-title-width;
+				height: $home-page-section-title-height;
+				color: $text-color-hover;
+				text-transform: uppercase;
+				margin-bottom: 10px;
+
+				h2 {
+					margin: 0;
+					font-size: 1.3em;
+				}
+			}
+			.home-page-section-content {
+				width: $home-page-section-content-width;
+
+				#featuredCarousel {
+					width: 620px;
+					height: 355px;
+					position: relative;
+					float: left;
+
+					.carousel-inner {
+						position: relative;
+						overflow: hidden;
+
+						.carousel-item {
+							position: relative;
+							display: none;
+
+							img {
+								width: 620px;
+								height: 355px;
+							}
+						}
+						.active {
+							display: block;
+						}
+					}
+				}
+				#featuredAside {
+					width: 320px;
+					height: 355px;
+					position: relative;
+					float: right;
+					background: linear-gradient(to top right, #171a21 0%, #2a2f3c 100%);
+				}
+			}
+		}
 	}
 }
