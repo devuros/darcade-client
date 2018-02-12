@@ -291,6 +291,7 @@
 	.home-page-core-wrapper {
 		width: $home-page-core-wrapper-width;
 		padding-top: 35px;
+		margin-bottom: 80px;
 		float: right;
 
 		.home-page-section {
@@ -314,6 +315,7 @@
 				#featuredCarousel {
 					width: 940px;
 					height: 415px;
+					margin-bottom: 10px;
 					position: relative;
 					float: left;
 
@@ -395,6 +397,74 @@
 					}
 				}
 			}
+			#specialOffers {
+				width: 940px;
+
+				.special-offers-row {
+					width: 940px;
+					height: auto;
+					margin-bottom: 10px;
+
+					div.special-offer-item:first-child {
+						margin-right: 5px;
+					}
+					div.special-offer-item:nth-child(2) {
+						margin-right: 5px;
+					}
+					.special-offer-item {
+						width: 310px;
+						height: 190px;
+						float: left;
+						background: linear-gradient(to top right, #1d6589 0%, #40b1f2 100%);
+
+						.special-offer-item-image {
+							width: 310px;
+							height: 145px;
+
+							img {
+								width: 310px;
+								height: 145px;
+							}
+						}
+						.special-offer-item-price {
+							width: 310px;
+							height: 45px;
+							padding: 5px;
+
+							.special-offer-item-price-wrapper {
+								display: inline-block;
+								float: right;
+
+								.special-offer-price-discount {
+									background-color: $discount-bg-color;
+									color: $discount-text-color-green;
+									float: left;
+									height: 35px;
+									padding: 0 10px;
+									font-size: 20px;
+								}
+								.special-offer-price-both {
+									height: 35px;
+									float: right;
+									background-color: $price-bg-color;
+									font-size: 12px;
+									padding: 0 7px;
+
+									.special-offer-price-base {
+										height: 17px;
+										color: $text-color-secondary;
+									}
+									.special-offer-price-sale {
+										height: 18px;
+										color: $text-color-hover;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
 		}
 	}
 }
