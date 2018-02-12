@@ -57,28 +57,88 @@
 				<div class='home-page-section-title'>
 					<h2>featured &amp; recommended</h2>
 				</div>
+
 				<div id='featuredSection' class='home-page-section-content'>
 
 					<div id='featuredCarousel' class='carousel slide' data-ride='carousel'>
+
+						<ol class="carousel-indicators">
+							<li data-target='#featuredCarousel' data-slide-to="0" class="active"></li>
+							<li data-target='#featuredCarousel' data-slide-to="1"></li>
+							<li data-target='#featuredCarousel' data-slide-to="2"></li>
+						</ol>
 						<div class='carousel-inner'>
+
 							<div class='carousel-item active'>
-								<img class='d-block w-100' src="{{ asset('images/first.svg') }}">
+								<a href='#1'>
+									<img class='d-block w-100' src="{{ asset('images/first.svg') }}">
+									<div class='featured-info'>
+										<div class="info-title">
+											<h2>Divinity: Original Sin 2</h2>
+										</div>
+										<div class="info-price">
+											<div class='price-actual'>27,99&euro;</div>
+										</div>
+									</div>
+								</a>
 							</div>
+
 							<div class='carousel-item'>
-								<img class='d-block w-100' src="{{ asset('images/second.svg') }}">
+								<a href='#2'>
+									<img class='d-block w-100' src="{{ asset('images/second.svg') }}">
+									<div class='featured-info'>
+										<div class="info-title">
+											<h2>Human: Fall Flat</h2>
+										</div>
+										<div class="info-price">
+											<div class='price-discount'>-60%</div>
+											<div class='price-base'>
+												<del>19,99&euro;</del>
+											</div>
+											<div class='price-actual'>7,99&euro;</div>
+										</div>
+									</div>
+								</a>
 							</div>
+
 							<div class='carousel-item'>
-								<img class='d-block w-100' src="{{ asset('images/third.svg') }}">
+								<a href='#3'>
+									<img class='d-block w-100' src="{{ asset('images/third.svg') }}">
+									<div class='featured-info'>
+										<div class="info-title">
+											<h2>Grand Theft Auto V</h2>
+										</div>
+										<div class="info-price">
+											<div class='price-discount'>-40%</div>
+											<div class='price-base'>
+												<del>59,99&euro;</del>
+											</div>
+											<div class='price-actual'>35,99&euro;</div>
+										</div>
+									</div>
+								</a>
 							</div>
+
 						</div>
-					</div>
-					<div id='featuredAside'>
+
+						<a class='carousel-control carousel-control-prev' href='#featuredCarousel' role='button' data-slide='prev'>
+							<span class="carousel-control-prev-icon" aria-hidden="true">
+								<i class="fa fa-chevron-left"></i>
+							</span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class='carousel-control carousel-control-next' href='#featuredCarousel' role='button' data-slide='next'>
+							<span class="carousel-control-next-icon" aria-hidden="true">
+								<i class="fa fa-chevron-right"></i>
+							</span>
+							<span class="sr-only">Next</span>
+						</a>
 
 					</div>
 					<div class="clear"></div>
-
 				</div>
 			</div>
+
 
 		</div>
 	</div>

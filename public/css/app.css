@@ -11728,15 +11728,18 @@ button.close {
 }
 
 .home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel {
-  width: 620px;
-  height: 355px;
+  width: 940px;
+  height: 415px;
   position: relative;
   float: left;
 }
 
 .home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel .carousel-inner {
+  width: 940px;
+  height: 355px;
   position: relative;
   overflow: hidden;
+  display: inline-block;
 }
 
 .home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel .carousel-inner .carousel-item {
@@ -11749,16 +11752,73 @@ button.close {
   height: 355px;
 }
 
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel .carousel-inner .carousel-item .featured-info {
+  width: 320px;
+  height: 355px;
+  float: right;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 45px;
+  background: -webkit-gradient(linear, left bottom, right top, from(#171a21), to(#2a2f3c));
+  background: linear-gradient(to top right, #171a21 0%, #2a2f3c 100%);
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel .carousel-inner .carousel-item .featured-info .info-title {
+  margin-top: 130px;
+  height: auto;
+  color: #fff;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel .carousel-inner .carousel-item .featured-info .info-price {
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel .carousel-inner .carousel-item .featured-info .info-price .price-discount {
+  background-color: #4c6b22;
+  display: inline-block;
+  color: #a4d007;
+  padding: 1px 5px;
+  float: left;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel .carousel-inner .carousel-item .featured-info .info-price .price-base {
+  background-color: #000;
+  display: inline-block;
+  color: #b8b6b4;
+  padding: 1px 5px;
+  float: left;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel .carousel-inner .carousel-item .featured-info .info-price .price-actual {
+  background-color: #000;
+  display: inline-block;
+  padding: 1px 5px;
+  float: left;
+}
+
 .home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel .carousel-inner .active {
   display: block;
 }
 
-.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredAside {
-  width: 320px;
-  height: 355px;
-  position: relative;
-  float: right;
-  background: -webkit-gradient(linear, left bottom, right top, from(#171a21), to(#2a2f3c));
-  background: linear-gradient(to top right, #171a21 0%, #2a2f3c 100%);
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel .carousel-control {
+  width: 45px;
+  height: 110px;
+  top: 122px;
+  line-height: 110px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel .carousel-control-prev {
+  left: -45px;
+  background: -webkit-gradient(linear, right top, left top, from(#173d58), to(#171a21));
+  background: linear-gradient(to left, #173d58 0%, #171a21 100%);
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content #featuredCarousel .carousel-control-next {
+  left: auto;
+  right: -45px;
+  background: -webkit-gradient(linear, left top, right top, from(#173d58), to(#171a21));
+  background: linear-gradient(to right, #173d58 0%, #171a21 100%);
 }
 

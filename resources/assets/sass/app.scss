@@ -312,14 +312,17 @@
 				width: $home-page-section-content-width;
 
 				#featuredCarousel {
-					width: 620px;
-					height: 355px;
+					width: 940px;
+					height: 415px;
 					position: relative;
 					float: left;
 
 					.carousel-inner {
+						width: 940px;
+						height: 355px;
 						position: relative;
 						overflow: hidden;
+						display: inline-block;
 
 						.carousel-item {
 							position: relative;
@@ -329,18 +332,67 @@
 								width: 620px;
 								height: 355px;
 							}
+							.featured-info {
+								width: 320px;
+								height: 355px;
+								float: right;
+								position: relative;
+								padding-left: 15px;
+								padding-right: 45px;
+								background: linear-gradient(to top right, #171a21 0%, #2a2f3c 100%);
+
+								.info-title {
+									margin-top: 130px;
+									height: auto;
+									color: #fff;
+								}
+								.info-price {
+									position: absolute;
+									bottom: 10px;
+									color: #fff;
+
+									.price-discount {
+										background-color: $discount-bg-color;
+										display: inline-block;
+										color: $discount-text-color-green;
+										padding: 1px 5px;
+										float: left;
+									}
+									.price-base {
+										background-color: #000;
+										display: inline-block;
+										color: $text-color-secondary;
+										padding: 1px 5px;
+										float: left;
+									}
+									.price-actual {
+										background-color: #000;
+										display: inline-block;
+										padding: 1px 5px;
+										float: left;
+									}
+								}
+							}
 						}
 						.active {
 							display: block;
 						}
 					}
-				}
-				#featuredAside {
-					width: 320px;
-					height: 355px;
-					position: relative;
-					float: right;
-					background: linear-gradient(to top right, #171a21 0%, #2a2f3c 100%);
+					.carousel-control {
+						width: 45px;
+						height: 110px;
+						top: 122px;
+						line-height: 110px;
+					}
+					.carousel-control-prev {
+						left: -45px;
+						background: linear-gradient(to left, #173d58 0%, #171a21 100%);
+					}
+					.carousel-control-next {
+						left: auto;
+						right: -45px;
+						background: linear-gradient(to right, #173d58 0%, #171a21 100%);
+					}
 				}
 			}
 		}
