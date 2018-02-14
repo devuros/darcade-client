@@ -11826,6 +11826,7 @@ button.close {
 
 .home-page-content-wrapper .home-page-core-wrapper .home-page-section #specialOffers {
   width: 940px;
+  margin-bottom: 60px;
 }
 
 .home-page-content-wrapper .home-page-core-wrapper .home-page-section #specialOffers .special-offers-row {
@@ -11895,6 +11896,40 @@ button.close {
 
 .home-page-content-wrapper .home-page-core-wrapper .home-page-section #specialOffers .special-offers-row .special-offer-item .special-offer-item-price .special-offer-item-price-wrapper .special-offer-price-both .special-offer-price-sale {
   height: 18px;
+  color: #fff;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #browseDarcade {
+  width: 940px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #browseDarcade div.browse-div:first-child {
+  margin-right: 5px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #browseDarcade div.browse-div:nth-child(2) {
+  margin-right: 5px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #browseDarcade .browse-div {
+  width: 310px;
+  height: 80px;
+  float: left;
+  background: -webkit-gradient(linear, left bottom, right top, from(#1d6589), to(#40b1f2));
+  background: linear-gradient(to top right, #1d6589 0%, #40b1f2 100%);
+  line-height: 80px;
+  text-align: center;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #browseDarcade .browse-div a {
+  color: #b8b6b4;
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #browseDarcade .browse-div a:hover {
   color: #fff;
 }
 

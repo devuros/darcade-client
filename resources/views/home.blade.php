@@ -264,6 +264,26 @@
 				</div>
 			</div>
 
+			{{-- Browse darcade --}}
+			<div class='home-page-section'>
+				<div class='home-page-section-title'>
+					<h2>browse darcade</h2>
+				</div>
+				<div id='browseDarcade' class='home-page-section-content'>
+
+					<div class="browse-div">
+						<a href="{{ route('search.new') }}">new releases</a>
+					</div>
+					<div class="browse-div">
+						<a href="{{ route('search.specials') }}">specials</a>
+					</div>
+					<div class="browse-div">
+						<a href="{{ route('search.top') }}">top sellers</a>
+					</div>
+
+				</div>
+			</div>
+
 		</div>
 	</div>
 
