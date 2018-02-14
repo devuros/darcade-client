@@ -11901,6 +11901,7 @@ button.close {
 
 .home-page-content-wrapper .home-page-core-wrapper .home-page-section #browseDarcade {
   width: 940px;
+  margin-bottom: 80px;
 }
 
 .home-page-content-wrapper .home-page-core-wrapper .home-page-section #browseDarcade div.browse-div:first-child {
@@ -11919,10 +11920,12 @@ button.close {
   background: linear-gradient(to top right, #1d6589 0%, #40b1f2 100%);
   line-height: 80px;
   text-align: center;
+  border-radius: 5px;
 }
 
 .home-page-content-wrapper .home-page-core-wrapper .home-page-section #browseDarcade .browse-div a {
-  color: #b8b6b4;
+  width: 310px;
+  color: #c6d4df;
   display: inline-block;
   text-transform: capitalize;
   font-size: 18px;
@@ -11930,6 +11933,75 @@ button.close {
 }
 
 .home-page-content-wrapper .home-page-core-wrapper .home-page-section #browseDarcade .browse-div a:hover {
+  color: #fff;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 {
+  width: 940px;
+  margin-bottom: 60px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 div.special-offer-item:first-child {
+  margin-right: 5px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 div.special-offer-item:nth-child(2) {
+  margin-right: 5px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 .special-offer-item {
+  width: 310px;
+  height: 190px;
+  float: left;
+  background: -webkit-gradient(linear, left bottom, right top, from(#1d6589), to(#40b1f2));
+  background: linear-gradient(to top right, #1d6589 0%, #40b1f2 100%);
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 .special-offer-item .special-offer-item-image {
+  width: 310px;
+  height: 145px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 .special-offer-item .special-offer-item-image img {
+  width: 310px;
+  height: 145px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 .special-offer-item .special-offer-item-price {
+  width: 310px;
+  height: 45px;
+  padding: 5px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 .special-offer-item .special-offer-item-price .special-offer-item-price-wrapper {
+  display: inline-block;
+  float: right;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 .special-offer-item .special-offer-item-price .special-offer-item-price-wrapper .special-offer-price-discount {
+  background-color: #4c6b22;
+  color: #a4d007;
+  float: left;
+  height: 35px;
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 .special-offer-item .special-offer-item-price .special-offer-item-price-wrapper .special-offer-price-both {
+  height: 35px;
+  float: right;
+  background-color: #173041;
+  font-size: 12px;
+  padding: 0 7px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 .special-offer-item .special-offer-item-price .special-offer-item-price-wrapper .special-offer-price-both .special-offer-price-base {
+  height: 17px;
+  color: #b8b6b4;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 .special-offer-item .special-offer-item-price .special-offer-item-price-wrapper .special-offer-price-both .special-offer-price-sale {
+  height: 18px;
   color: #fff;
 }
 

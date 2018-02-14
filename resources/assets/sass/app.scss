@@ -467,6 +467,7 @@
 			}
 			#browseDarcade {
 				width: 940px;
+				margin-bottom: 80px;
 
 				div.browse-div:first-child {
 					margin-right: 5px;
@@ -481,9 +482,11 @@
 					background: linear-gradient(to top right, #1d6589 0%, #40b1f2 100%);
 					line-height: 80px;
 					text-align: center;
+					border-radius: 5px;
 
 					a {
-						color: $text-color-secondary;
+						width: 310px;
+						color: $text-color-primary;
 						display: inline-block;
 						text-transform: capitalize;
 						font-size: 18px;
@@ -494,8 +497,68 @@
 					}
 				}
 			}
+			#under25 {
+				width: 940px;
+				margin-bottom: 60px;
 
+				div.special-offer-item:first-child {
+					margin-right: 5px;
+				}
+				div.special-offer-item:nth-child(2) {
+					margin-right: 5px;
+				}
+				.special-offer-item {
+					width: 310px;
+					height: 190px;
+					float: left;
+					background: linear-gradient(to top right, #1d6589 0%, #40b1f2 100%);
 
+					.special-offer-item-image {
+						width: 310px;
+						height: 145px;
+
+						img {
+							width: 310px;
+							height: 145px;
+						}
+					}
+					.special-offer-item-price {
+						width: 310px;
+						height: 45px;
+						padding: 5px;
+
+						.special-offer-item-price-wrapper {
+							display: inline-block;
+							float: right;
+
+							.special-offer-price-discount {
+								background-color: $discount-bg-color;
+								color: $discount-text-color-green;
+								float: left;
+								height: 35px;
+								padding: 0 10px;
+								font-size: 20px;
+							}
+							.special-offer-price-both {
+								height: 35px;
+								float: right;
+								background-color: $price-bg-color;
+								font-size: 12px;
+								padding: 0 7px;
+
+								.special-offer-price-base {
+									height: 17px;
+									color: $text-color-secondary;
+								}
+								.special-offer-price-sale {
+									height: 18px;
+									color: $text-color-hover;
+								}
+							}
+						}
+					}
+				}
+			}
 
 		}
 	}

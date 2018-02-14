@@ -280,6 +280,73 @@
 					<div class="browse-div">
 						<a href="{{ route('search.top') }}">top sellers</a>
 					</div>
+					<div class="clear"></div>
+
+				</div>
+			</div>
+
+			{{-- Under 25 --}}
+			<div class='home-page-section'>
+				<div class='home-page-section-title'>
+					<h2>under 10&euro;</h2>
+				</div>
+				<div id='under25' class='home-page-section-content'>
+
+					<div class='special-offer-item'>
+						<a href='#1'>
+							<div class='special-offer-item-image'>
+								<img src="{{ asset('images/first.svg') }}">
+							</div>
+							<div class='special-offer-item-price'>
+								<div class='special-offer-item-price-wrapper'>
+									<div class='special-offer-price-discount'>-75%</div>
+									<div class='special-offer-price-both'>
+										<div class='special-offer-price-base'>
+											<del>39,99&euro;</del>
+										</div>
+										<div class='special-offer-price-sale'>9,99&euro;</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class='special-offer-item'>
+						<a href='#2'>
+							<div class='special-offer-item-image'>
+								<img src="{{ asset('images/second.svg') }}">
+							</div>
+							<div class='special-offer-item-price'>
+								<div class='special-offer-item-price-wrapper'>
+									<div class='special-offer-price-discount'>-33%</div>
+									<div class='special-offer-price-both'>
+										<div class='special-offer-price-base'>
+											<del>19,99&euro;</del>
+										</div>
+										<div class='special-offer-price-sale'>13,39&euro;</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class='special-offer-item'>
+						<a href='#3'>
+							<div class='special-offer-item-image'>
+								<img src="{{ asset('images/third.svg') }}">
+							</div>
+							<div class='special-offer-item-price'>
+								<div class='special-offer-item-price-wrapper'>
+									<div class='special-offer-price-discount'>-75%</div>
+									<div class='special-offer-price-both'>
+										<div class='special-offer-price-base'>
+											<del>19,99&euro;</del>
+										</div>
+										<div class='special-offer-price-sale'>4,99&euro;</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="clear"></div>
 
 				</div>
 			</div>
