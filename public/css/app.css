@@ -11416,6 +11416,10 @@ button.close {
   background-color: #173d58;
 }
 
+#loginSection {
+  background-color: #000;
+}
+
 .global-footer-wrapper {
   background-color: #171a21;
 }
@@ -11509,6 +11513,83 @@ button.close {
 
 .global-content {
   width: 940px;
+}
+
+#loginSection .container {
+  right: -25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+#loginSection .container #loginSectionGutter {
+  width: 230px;
+  height: 150px;
+  float: left;
+}
+
+#loginSection .container #loginSectionWrapper {
+  width: 940px;
+  float: left;
+}
+
+#loginSection .container #loginSectionWrapper #loginSectionTop {
+  height: 50px;
+}
+
+#loginSection .container #loginSectionWrapper #loginSectionTop .dash-wrapper {
+  width: 290px;
+  height: 26px;
+  float: left;
+}
+
+#loginSection .container #loginSectionWrapper #loginSectionTop .dash-wrapper hr {
+  margin-top: 13px;
+  margin-bottom: 0;
+  border-top: 1px solid #40b1f2;
+}
+
+#loginSection .container #loginSectionWrapper #loginSectionTop .dash-center {
+  width: 360px;
+  height: 26px;
+  float: left;
+  text-align: center;
+  color: #40b1f2;
+}
+
+#loginSection .container #loginSectionWrapper #loginSectionTop .dash-center h3 {
+  margin: 0;
+}
+
+#loginSection .container #loginSectionWrapper #loginSectionBottom {
+  text-align: center;
+}
+
+#loginSection .container #loginSectionWrapper #loginSectionBottom p {
+  font-weight: bold;
+}
+
+#loginSection .container #loginSectionWrapper #loginSectionBottom p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#loginSection .container #loginSectionWrapper #loginSectionBottom .link-buttton {
+  border-radius: 4px;
+  border: 1px solid #171a21;
+  padding: 5px 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: #c6d4df;
+  background-color: #4c6b22;
+}
+
+#loginSection .container #loginSectionWrapper #loginSectionBottom .link-buttton:hover {
+  color: #fff;
+}
+
+#loginSection .container #loginSectionWrapper #loginSectionBottom p:last-child {
+  margin-top: 11px;
 }
 
 .global-footer {
@@ -11703,7 +11784,6 @@ button.close {
 .home-page-content-wrapper .home-page-core-wrapper {
   width: 940px;
   padding-top: 35px;
-  margin-bottom: 80px;
   float: right;
 }
 
@@ -11722,6 +11802,27 @@ button.close {
 .home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-title h2 {
   margin: 0;
   font-size: 1.3em;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-title h2 .browse-all {
+  float: right;
+  text-transform: none;
+  letter-spacing: normal;
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  border: 1px solid #b8b6b4;
+  border-radius: 2px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-title h2 .browse-all a {
+  padding: 2px 15px;
+  display: inline-block;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .home-page-content-wrapper .home-page-core-wrapper .home-page-section .home-page-section-content {
@@ -11987,21 +12088,94 @@ button.close {
   font-size: 20px;
 }
 
-.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 .special-offer-item .special-offer-item-price .special-offer-item-price-wrapper .special-offer-price-both {
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 .special-offer-item .special-offer-item-price .special-offer-item-price-wrapper .special-offer-price-base {
   height: 35px;
-  float: right;
-  background-color: #173041;
-  font-size: 12px;
-  padding: 0 7px;
-}
-
-.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 .special-offer-item .special-offer-item-price .special-offer-item-price-wrapper .special-offer-price-both .special-offer-price-base {
-  height: 17px;
   color: #b8b6b4;
+  float: left;
+  background-color: #173041;
+  font-size: 16px;
+  padding: 0 5px;
+  line-height: 35px;
 }
 
-.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 .special-offer-item .special-offer-item-price .special-offer-item-price-wrapper .special-offer-price-both .special-offer-price-sale {
-  height: 18px;
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under25 .special-offer-item .special-offer-item-price .special-offer-item-price-wrapper .special-offer-price-sale {
+  height: 35px;
   color: #fff;
+  float: left;
+  background-color: #173041;
+  font-size: 16px;
+  padding: 0 5px;
+  line-height: 35px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under10 {
+  width: 940px;
+  margin-bottom: 60px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under10 div.special-offer-item:first-child {
+  margin-right: 5px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under10 div.special-offer-item:nth-child(2) {
+  margin-right: 5px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under10 .special-offer-item {
+  width: 310px;
+  height: 190px;
+  float: left;
+  background: -webkit-gradient(linear, left bottom, right top, from(#1d6589), to(#40b1f2));
+  background: linear-gradient(to top right, #1d6589 0%, #40b1f2 100%);
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under10 .special-offer-item .special-offer-item-image {
+  width: 310px;
+  height: 145px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under10 .special-offer-item .special-offer-item-image img {
+  width: 310px;
+  height: 145px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under10 .special-offer-item .special-offer-item-price {
+  width: 310px;
+  height: 45px;
+  padding: 5px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under10 .special-offer-item .special-offer-item-price .special-offer-item-price-wrapper {
+  display: inline-block;
+  float: right;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under10 .special-offer-item .special-offer-item-price .special-offer-item-price-wrapper .special-offer-price-discount {
+  background-color: #4c6b22;
+  color: #a4d007;
+  float: left;
+  height: 35px;
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under10 .special-offer-item .special-offer-item-price .special-offer-item-price-wrapper .special-offer-price-base {
+  height: 35px;
+  color: #b8b6b4;
+  float: left;
+  background-color: #173041;
+  font-size: 16px;
+  padding: 0 5px;
+  line-height: 35px;
+}
+
+.home-page-content-wrapper .home-page-core-wrapper .home-page-section #under10 .special-offer-item .special-offer-item-price .special-offer-item-price-wrapper .special-offer-price-sale {
+  height: 35px;
+  color: #fff;
+  float: left;
+  background-color: #173041;
+  font-size: 16px;
+  padding: 0 5px;
+  line-height: 35px;
 }
 

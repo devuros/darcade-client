@@ -264,7 +264,7 @@
 				</div>
 			</div>
 
-			{{-- Browse darcade --}}
+			{{-- Browse darcade section --}}
 			<div class='home-page-section'>
 				<div class='home-page-section-title'>
 					<h2>browse darcade</h2>
@@ -285,10 +285,14 @@
 				</div>
 			</div>
 
-			{{-- Under 25 --}}
+			{{-- Under 25 section --}}
 			<div class='home-page-section'>
 				<div class='home-page-section-title'>
-					<h2>under 10&euro;</h2>
+					<h2>under 25&euro;
+						<span class='browse-all'>
+							<a href="{{ route('search.under.25') }}">browse all</a>
+						</span>
+					</h2>
 				</div>
 				<div id='under25' class='home-page-section-content'>
 
@@ -299,31 +303,11 @@
 							</div>
 							<div class='special-offer-item-price'>
 								<div class='special-offer-item-price-wrapper'>
-									<div class='special-offer-price-discount'>-75%</div>
-									<div class='special-offer-price-both'>
-										<div class='special-offer-price-base'>
-											<del>39,99&euro;</del>
-										</div>
-										<div class='special-offer-price-sale'>9,99&euro;</div>
+									<div class='special-offer-price-discount'>-50%</div>
+									<div class='special-offer-price-base'>
+										<del>39,99&euro;</del>
 									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class='special-offer-item'>
-						<a href='#2'>
-							<div class='special-offer-item-image'>
-								<img src="{{ asset('images/second.svg') }}">
-							</div>
-							<div class='special-offer-item-price'>
-								<div class='special-offer-item-price-wrapper'>
-									<div class='special-offer-price-discount'>-33%</div>
-									<div class='special-offer-price-both'>
-										<div class='special-offer-price-base'>
-											<del>19,99&euro;</del>
-										</div>
-										<div class='special-offer-price-sale'>13,39&euro;</div>
-									</div>
+									<div class='special-offer-price-sale'>19,99&euro;</div>
 								</div>
 							</div>
 						</a>
@@ -335,22 +319,89 @@
 							</div>
 							<div class='special-offer-item-price'>
 								<div class='special-offer-item-price-wrapper'>
-									<div class='special-offer-price-discount'>-75%</div>
-									<div class='special-offer-price-both'>
-										<div class='special-offer-price-base'>
-											<del>19,99&euro;</del>
-										</div>
-										<div class='special-offer-price-sale'>4,99&euro;</div>
-									</div>
+									<div class='special-offer-price-sale'>12,99&euro;</div>
 								</div>
 							</div>
 						</a>
 					</div>
+					<div class='special-offer-item'>
+						<a href='#2'>
+							<div class='special-offer-item-image'>
+								<img src="{{ asset('images/second.svg') }}">
+							</div>
+							<div class='special-offer-item-price'>
+								<div class='special-offer-item-price-wrapper'>
+									<div class='special-offer-price-discount'>-35%</div>
+									<div class='special-offer-price-base'>
+										<del>29,99&euro;</del>
+									</div>
+									<div class='special-offer-price-sale'>19,49&euro;</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
 					<div class="clear"></div>
 
 				</div>
 			</div>
 
+			{{-- Under 10 section --}}
+			<div class='home-page-section'>
+				<div class='home-page-section-title'>
+					<h2>under 10&euro;
+						<span class='browse-all'>
+							<a href="{{ route('search.under.10') }}">browse all</a>
+						</span>
+					</h2>
+				</div>
+				<div id='under10' class='home-page-section-content'>
+
+					<div class='special-offer-item'>
+						<a href='#3'>
+							<div class='special-offer-item-image'>
+								<img src="{{ asset('images/third.svg') }}">
+							</div>
+							<div class='special-offer-item-price'>
+								<div class='special-offer-item-price-wrapper'>
+									<div class='special-offer-price-sale'>8,99&euro;</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class='special-offer-item'>
+						<a href='#2'>
+							<div class='special-offer-item-image'>
+								<img src="{{ asset('images/second.svg') }}">
+							</div>
+							<div class='special-offer-item-price'>
+								<div class='special-offer-item-price-wrapper'>
+									<div class='special-offer-price-discount'>-65%</div>
+									<div class='special-offer-price-base'>
+										<del>16,99&euro;</del>
+									</div>
+									<div class='special-offer-price-sale'>5,99&euro;</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class='special-offer-item'>
+						<a href='#1'>
+							<div class='special-offer-item-image'>
+								<img src="{{ asset('images/first.svg') }}">
+							</div>
+							<div class='special-offer-item-price'>
+								<div class='special-offer-item-price-wrapper'>
+									<div class='special-offer-price-sale'>4,99&euro;</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="clear"></div>
+
+				</div>
+			</div>
 		</div>
 	</div>
 
