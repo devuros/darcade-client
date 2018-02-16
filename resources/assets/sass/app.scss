@@ -852,18 +852,167 @@
 			padding: 16px 16px 26px 16px;
 			background: linear-gradient(to right, #323b47 0%, #556470 100%);
 			border: 1px solid #555;
+			position: relative;
 
 			h3 {
 				color: $text-color-hover;
 				margin: 0;
 				font-weight: bold;
 			}
+			.game-buy-price-wrapper {
+				position: absolute;
+				text-align: right;
+				right: 16px;
+				bottom: -18px;
+				border: 1px solid #000;
+
+				.special-offer-price-discount {
+					background-color: $discount-bg-color;
+					color: $discount-text-color-green;
+					float: left;
+					height: 35px;
+					padding: 0 10px;
+					font-size: 20px;
+				}
+				.special-offer-price-base {
+					height: 35px;
+					line-height: 35px;
+					float: left;
+					color: $text-color-secondary;
+					background-color: #000;
+					padding: 0 10px;
+				}
+				.special-offer-price-sale {
+					height: 35px;
+					line-height: 35px;
+					float: left;
+					color: $text-color-hover;
+					background-color: #000;
+					padding: 0 10px;
+				}
+				.add-to-cart {
+					height: 35px;
+					line-height: 35px;
+					float: left;
+
+					.link-buttton {
+						padding: 0px 10px;
+						display: inline-block;
+						text-decoration: none;
+						color: $text-color-primary;
+						background-color: $discount-bg-color;
+					}
+					.link-buttton:hover {
+						background-color: #6f9b31;
+						color: $text-color-hover;
+					}
+				}
+			}
 		}
 		.game-about-wrapper {
 			width: 600px;
+			margin-top: 50px;
+			margin-bottom: 10px;
+
+			h2 {
+				margin: 0;
+				font-size: 1.3em;
+				padding-bottom: 3px;
+				text-transform: uppercase;
+				border-bottom: 1px solid $above-header-bg-color;
+			}
+			p {
+				color: $text-color-hover;
+				margin: 10px 0;
+			}
 		}
 		.game-reviews-wrapper {
 			width: 600px;
+			margin-top: 50px;
+			margin-bottom: 10px;
+
+			h2 {
+				margin: 0;
+				font-size: 1.3em;
+				padding-bottom: 3px;
+				text-transform: uppercase;
+				border-bottom: 1px solid $above-header-bg-color;
+			}
+			.review-wrapper {
+				width: 600px;
+				background-color: $price-bg-color;
+				margin-top: 10px;
+				margin-bottom: 20px;
+
+				.review-left {
+					width: 200px;
+					float: left;
+					padding: 10px;
+					color: $text-color-primary;
+
+					h4 {
+						margin: 0;
+					}
+					h5 {
+						margin: 0;
+						margin-top: 5px;
+					}
+				}
+				.review-right {
+					width: 400px;
+					float: right;
+
+					.review-right-recommended {
+						height: 40px;
+						margin-top: 8px;
+						margin-bottom: 13px;
+
+						.rec {
+							background-color: #26638c;
+							color: $above-header-bg-color;
+						}
+						.not-rec {
+							background-color: #4e1e25;
+							color: #e06162;
+						}
+						.review-right-icon {
+							width: 40px;
+							height: 40px;
+							float: left;
+							text-align: center;
+							line-height: 40px;
+
+							i {
+								padding-top: 4px;
+								font-size: 32px;
+							}
+						}
+						.review-right-title {
+							width: 360px;
+							height: 40px;
+							padding-left: 10px;
+							float: left;
+							line-height: 40px;
+							font-size: 18px;
+							color: #fff;
+							background-color: $footer-bg-color;
+						}
+					}
+					.review-right-time {
+						margin-bottom: 5px;
+						color: $text-color-secondary;
+					}
+					.review-right-content {
+						padding-right: 10px;
+						margin-top: 5px;
+						margin-bottom: 20px;
+
+						p {
+							color: $text-color-primary;
+						}
+					}
+				}
+			}
 		}
 	}
 }
