@@ -11670,8 +11670,25 @@ button.close {
   padding-left: 0;
 }
 
+.app-global-container {
+  width: 940px;
+  right: 0;
+}
+
 .clear {
   clear: both;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.margin-bottom-5 {
+  margin-bottom: 5px;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
 }
 
 .error-full-height {
@@ -11725,7 +11742,15 @@ button.close {
   border-bottom: 1px solid #377096;
 }
 
-.home-page-content-wrapper .home-page-gutter .gutter-icon i {
+.home-page-content-wrapper .home-page-gutter .gutter-icon a {
+  text-decoration: none;
+  color: #c6d4df;
+  display: inline-block;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.home-page-content-wrapper .home-page-gutter .gutter-icon a i {
   vertical-align: middle;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -12177,5 +12202,134 @@ button.close {
   font-size: 16px;
   padding: 0 5px;
   line-height: 35px;
+}
+
+#gameShow h2 {
+  text-transform: capitalize;
+  color: #fff;
+}
+
+#gameShow .game-info-wrapper {
+  height: 445px;
+}
+
+#gameShow .game-info-wrapper .game-info-left {
+  width: 600px;
+  height: 445px;
+  float: left;
+}
+
+#gameShow .game-info-wrapper .game-info-left .game-left-top {
+  width: 600px;
+  height: 335px;
+}
+
+#gameShow .game-info-wrapper .game-info-left .game-left-top img {
+  width: 600px;
+  height: 335px;
+}
+
+#gameShow .game-info-wrapper .game-info-left .game-left-bottom {
+  width: 600px;
+  height: 110px;
+  padding: 10px 2px;
+}
+
+#gameShow .game-info-wrapper .game-info-left .game-left-bottom img {
+  width: 145px;
+  height: 80px;
+  float: left;
+  margin-right: 5px;
+}
+
+#gameShow .game-info-wrapper .game-info-left .game-left-bottom img:last-child {
+  margin-right: 0;
+}
+
+#gameShow .game-info-wrapper .game-info-right {
+  width: 340px;
+  height: 445px;
+  padding-left: 15px;
+  float: right;
+}
+
+#gameShow .game-info-wrapper .game-info-right .game-right-image {
+  width: 325px;
+  height: 150px;
+  margin-bottom: 7px;
+}
+
+#gameShow .game-info-wrapper .game-info-right .game-right-image img {
+  width: 325px;
+  height: 150px;
+}
+
+#gameShow .game-info-wrapper .game-info-right .game-right-desc {
+  width: 325px;
+  height: 100px;
+  padding-right: 15px;
+  overflow: hidden;
+  margin-bottom: 7px;
+}
+
+#gameShow .game-info-wrapper .game-info-right .game-right-desc p {
+  margin: 0;
+  color: #c6d4df;
+}
+
+#gameShow .game-info-wrapper .game-info-right .game-right-details {
+  width: 325px;
+  padding-right: 15px;
+}
+
+#gameShow .game-info-wrapper .game-info-right .game-right-details span.gray {
+  color: #b8b6b4;
+}
+
+#gameShow .game-info-wrapper .game-info-right .game-right-details span.white {
+  color: #fff;
+  padding-left: 20px;
+}
+
+#gameShow .game-action-wrapper {
+  width: 940px;
+  height: 45px;
+  padding: 5px 15px;
+  margin-bottom: 30px;
+  background-color: #173041;
+}
+
+#gameShow .game-action-wrapper p {
+  line-height: 35px;
+  color: #c6d4df;
+  margin: 0;
+}
+
+#gameShow .game-bottom-section {
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+#gameShow .game-bottom-section .game-buy-wrapper {
+  width: 600px;
+  height: 70px;
+  padding: 16px 16px 26px 16px;
+  background: -webkit-gradient(linear, left top, right top, from(#323b47), to(#556470));
+  background: linear-gradient(to right, #323b47 0%, #556470 100%);
+  border: 1px solid #555;
+}
+
+#gameShow .game-bottom-section .game-buy-wrapper h3 {
+  color: #fff;
+  margin: 0;
+  font-weight: bold;
+}
+
+#gameShow .game-bottom-section .game-about-wrapper {
+  width: 600px;
+}
+
+#gameShow .game-bottom-section .game-reviews-wrapper {
+  width: 600px;
 }
 

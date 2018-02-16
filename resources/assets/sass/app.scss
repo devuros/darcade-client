@@ -9,7 +9,6 @@
 //
 // Definition
 //
-
 .global-above-header-wrapper {
 	background-color: $above-header-bg-color;
 	height: $above-header-height;
@@ -260,8 +259,21 @@
 		}
 	}
 }
+.app-global-container {
+	width: $global-content-width;
+	right: 0;
+}
 .clear {
 	clear: both;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.margin-bottom-5 {
+	margin-bottom: 5px;
+}
+.margin-bottom-10 {
+	margin-bottom: 10px;
 }
 
 //
@@ -311,10 +323,18 @@
 			color: $text-color-primary;
 			border-bottom: 1px solid #377096;
 
-			i {
-				vertical-align: middle;
-				padding-top: 18px;
-				padding-bottom: 18px;
+			a {
+				text-decoration: none;
+				color: $text-color-primary;
+				display: inline-block;
+				padding-left: 80px;
+				padding-right: 80px;
+
+				i {
+					vertical-align: middle;
+					padding-top: 18px;
+					padding-bottom: 18px;
+				}
 			}
 		}
 		.gutter-wrapper {
@@ -722,7 +742,128 @@
 					}
 				}
 			}
+		}
+	}
+}
+#gameShow {
 
+	h2 {
+		text-transform: capitalize;
+		color: #fff;
+	}
+	.game-info-wrapper {
+		height: 445px;
+
+		.game-info-left {
+			width: 600px;
+			height: 445px;
+			float: left;
+
+			.game-left-top {
+				width: 600px;
+				height: 335px;
+
+				img {
+					width: 600px;
+					height: 335px;
+				}
+			}
+			.game-left-bottom {
+				width: 600px;
+				height: 110px;
+				padding: 10px 2px;
+
+				img {
+					width: 145px;
+					height: 80px;
+					float: left;
+					margin-right: 5px;
+				}
+				img:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+		.game-info-right {
+			width: 340px;
+			height: 445px;
+			padding-left: 15px;
+			float: right;
+
+			.game-right-image {
+				width: 325px;
+				height: 150px;
+				margin-bottom: 7px;
+
+				img {
+					width: 325px;
+					height: 150px;
+				}
+			}
+			.game-right-desc {
+				width: 325px;
+				height: 100px;
+				padding-right: 15px;
+				overflow: hidden;
+				margin-bottom: 7px;
+
+				p {
+					margin: 0;
+					color: $text-color-primary;
+				}
+			}
+			.game-right-details {
+				width: 325px;
+				padding-right: 15px;
+
+				span.gray {
+					color: $text-color-secondary;
+				}
+				span.white {
+					color: $text-color-hover;
+					padding-left: 20px;
+				}
+			}
+			.game-right-genre {
+
+			}
+		}
+	}
+	.game-action-wrapper {
+		width: 940px;
+		height: 45px;
+		padding: 5px 15px;
+		margin-bottom: 30px;
+		background-color: $price-bg-color;
+
+		p {
+			line-height: 35px;
+			color: $text-color-primary;
+			margin: 0;
+		}
+	}
+	.game-bottom-section {
+		width: 600px;
+		margin-bottom: 50px;
+
+		.game-buy-wrapper {
+			width: 600px;
+			height: 70px;
+			padding: 16px 16px 26px 16px;
+			background: linear-gradient(to right, #323b47 0%, #556470 100%);
+			border: 1px solid #555;
+
+			h3 {
+				color: $text-color-hover;
+				margin: 0;
+				font-weight: bold;
+			}
+		}
+		.game-about-wrapper {
+			width: 600px;
+		}
+		.game-reviews-wrapper {
+			width: 600px;
 		}
 	}
 }

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.index')
 
 @section('title', 'Welcome to Darcade')
 
@@ -8,7 +8,9 @@
 		<div class='home-page-gutter'>
 			<div class='gutter-icon'>
 
-				<i class='fa fa-crosshairs fa-4x'></i>
+				<a href="{{ route('quantic.time') }}" target="_blank" title="Time is the enemy">
+					<i class='fa fa-crosshairs fa-4x'></i>
+				</a>
 
 			</div>
 			<div class="gutter-wrapper">
@@ -40,11 +42,11 @@
 
 					@foreach($genres as $genre)
 
-					<a class="gutter-item" href="{{ route('genres').'/'.$genre->id }}">
-						<b class="item-text">
-							{{ $genre->genre }}
-						</b>
-					</a>
+						<a class="gutter-item" href="{{ route('genres.showGenreGames', ['id'=> $genre->id]) }}">
+							<b class="item-text">
+								{{ $genre->genre }}
+							</b>
+						</a>
 
 					@endforeach
 
@@ -70,7 +72,7 @@
 						<div class='carousel-inner'>
 
 							<div class='carousel-item active'>
-								<a href='#1'>
+								<a href='games/1'>
 									<img class='d-block w-100' src="{{ asset('images/first.svg') }}">
 									<div class='featured-info'>
 										<div class="info-title">
@@ -84,7 +86,7 @@
 							</div>
 
 							<div class='carousel-item'>
-								<a href='#2'>
+								<a href='games/2'>
 									<img class='d-block w-100' src="{{ asset('images/second.svg') }}">
 									<div class='featured-info'>
 										<div class="info-title">
@@ -102,7 +104,7 @@
 							</div>
 
 							<div class='carousel-item'>
-								<a href='#3'>
+								<a href='games/3'>
 									<img class='d-block w-100' src="{{ asset('images/third.svg') }}">
 									<div class='featured-info'>
 										<div class="info-title">
@@ -148,7 +150,7 @@
 
 					<div class='special-offers-row'>
 						<div class='special-offer-item'>
-							<a href='#1'>
+							<a href='games/1'>
 								<div class='special-offer-item-image'>
 									<img src="{{ asset('images/first.svg') }}">
 								</div>
@@ -166,7 +168,7 @@
 							</a>
 						</div>
 						<div class='special-offer-item'>
-							<a href='#2'>
+							<a href='games/2'>
 								<div class='special-offer-item-image'>
 									<img src="{{ asset('images/second.svg') }}">
 								</div>
@@ -184,7 +186,7 @@
 							</a>
 						</div>
 						<div class='special-offer-item'>
-							<a href='#3'>
+							<a href='games/3'>
 								<div class='special-offer-item-image'>
 									<img src="{{ asset('images/third.svg') }}">
 								</div>
@@ -205,7 +207,7 @@
 					</div>
 					<div class='special-offers-row'>
 						<div class='special-offer-item'>
-							<a href='#3'>
+							<a href='games/3'>
 								<div class='special-offer-item-image'>
 									<img src="{{ asset('images/third.svg') }}">
 								</div>
@@ -223,7 +225,7 @@
 							</a>
 						</div>
 						<div class='special-offer-item'>
-							<a href='#2'>
+							<a href='games/2'>
 								<div class='special-offer-item-image'>
 									<img src="{{ asset('images/second.svg') }}">
 								</div>
@@ -241,7 +243,7 @@
 							</a>
 						</div>
 						<div class='special-offer-item'>
-							<a href='#1'>
+							<a href='games/1'>
 								<div class='special-offer-item-image'>
 									<img src="{{ asset('images/first.svg') }}">
 								</div>
@@ -297,7 +299,7 @@
 				<div id='under25' class='home-page-section-content'>
 
 					<div class='special-offer-item'>
-						<a href='#1'>
+						<a href='games/1'>
 							<div class='special-offer-item-image'>
 								<img src="{{ asset('images/first.svg') }}">
 							</div>
@@ -313,7 +315,7 @@
 						</a>
 					</div>
 					<div class='special-offer-item'>
-						<a href='#3'>
+						<a href='games/3'>
 							<div class='special-offer-item-image'>
 								<img src="{{ asset('images/third.svg') }}">
 							</div>
@@ -325,7 +327,7 @@
 						</a>
 					</div>
 					<div class='special-offer-item'>
-						<a href='#2'>
+						<a href='games/2'>
 							<div class='special-offer-item-image'>
 								<img src="{{ asset('images/second.svg') }}">
 							</div>
@@ -358,7 +360,7 @@
 				<div id='under10' class='home-page-section-content'>
 
 					<div class='special-offer-item'>
-						<a href='#3'>
+						<a href='games/3'>
 							<div class='special-offer-item-image'>
 								<img src="{{ asset('images/third.svg') }}">
 							</div>
@@ -370,7 +372,7 @@
 						</a>
 					</div>
 					<div class='special-offer-item'>
-						<a href='#2'>
+						<a href='games/2'>
 							<div class='special-offer-item-image'>
 								<img src="{{ asset('images/second.svg') }}">
 							</div>
@@ -386,7 +388,7 @@
 						</a>
 					</div>
 					<div class='special-offer-item'>
-						<a href='#1'>
+						<a href='games/1'>
 							<div class='special-offer-item-image'>
 								<img src="{{ asset('images/first.svg') }}">
 							</div>
