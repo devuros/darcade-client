@@ -12677,3 +12677,116 @@ button.close {
   background-color: #171a21;
 }
 
+#showDeveloperGamesSection {
+  width: 940px;
+  min-height: 80vh;
+}
+
+#showDeveloperGamesSection h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper {
+  width: 800px;
+  margin-bottom: 80px;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper .game-wrapper {
+  width: 800px;
+  height: 70px;
+  margin: 7px 0;
+  background-color: #173041;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper .game-wrapper .game-image-wrapper {
+  width: 185px;
+  float: left;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper .game-wrapper .game-image-wrapper img {
+  width: 185px;
+  height: 70px;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper .game-wrapper .game-content-wrapper {
+  width: 615px;
+  height: 70px;
+  float: left;
+  padding-left: 10px;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-first-col {
+  width: 255px;
+  height: 100%;
+  float: left;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-first-col h4 {
+  color: #fff;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-first-col h6 {
+  color: #c6d4df;
+  margin: 0;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-forth-col {
+  width: 200px;
+  height: 100%;
+  line-height: 70px;
+  float: left;
+  text-align: center;
+  color: #b8b6b4;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-second-col {
+  width: 75px;
+  height: 100%;
+  float: left;
+  color: #a4d007;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-second-col div {
+  padding: 0 5px;
+  display: inline-block;
+  margin-top: 23px;
+  margin-left: 18px;
+  background-color: #4c6b22;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-third-col {
+  width: 75px;
+  height: 100%;
+  float: right;
+  padding-right: 10px;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-third-col .special-offer-price-both {
+  height: 35px;
+  float: right;
+  padding: 0 7px;
+  margin-top: 18px;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-third-col .special-offer-price-both .special-offer-price-base {
+  height: 17px;
+  color: #b8b6b4;
+  font-size: 12px;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-third-col .special-offer-price-both .special-offer-price-base del {
+  display: block;
+  text-align: right;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-third-col .special-offer-price-both .special-offer-price-sale {
+  height: 18px;
+  color: #fff;
+  font-size: 14px;
+}
+
+#showDeveloperGamesSection .genre-games-wrapper .game-wrapper:hover {
+  background-color: #171a21;
+}
+

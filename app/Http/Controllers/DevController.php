@@ -38,7 +38,7 @@ class DevController extends ClientController
 
         }
 
-        return view('games.show', compact('game'));
+        return view('developers.showDeveloperGames', compact('games'));
 
 	}
 

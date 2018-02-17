@@ -35,7 +35,9 @@
 					</div>
 					<div class="game-details-row margin-bottom-10">
 						<span class='gray uppercase'>release date:</span>
-						<span class='white'>{{ $game->release_date }}</span>
+						<span class='white'>
+							{{ Carbon\Carbon::parse($game->release_date)->format('d M Y') }}
+						</span>
 					</div>
 					<div class="game-details-row">
 						<span class='gray uppercase'>developer:</span>
