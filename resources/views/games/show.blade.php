@@ -40,16 +40,16 @@
 					<div class="game-details-row">
 						<span class='gray uppercase'>developer:</span>
 						<span class='white'>
-							<a href="{{ route('developers.index', ['id'=> 1]) }}">
-								{{ $game->developer }}
+							<a href="{{ route('developers.index', ['id'=> $game->developer->id]) }}">
+								{{ $game->developer->developer }}
 							</a>
 						</span>
 					</div>
 					<div class="game-details-row margin-bottom-10">
 						<span class='gray uppercase'>publisher:</span>
 						<span class='white'>
-							<a href="{{ route('publishers.index', ['id'=> 1]) }}">
-								{{ $game->publisher }}
+							<a href="{{ route('publishers.index', ['id'=> $game->publisher->id]) }}">
+								{{ $game->publisher->publisher }}
 							</a>
 						</span>
 					</div>
