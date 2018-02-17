@@ -12541,3 +12541,35 @@ button.close {
   padding: 7px 20px;
 }
 
+#authorSection {
+  width: 940px;
+  height: 80vh;
+}
+
+#authorSection h1 {
+  color: #fff;
+}
+
+#authorSection #authorWrapper {
+  width: 940px;
+}
+
+#authorSection #authorWrapper #authorLeft {
+  width: 200px;
+  padding-right: 20px;
+  float: left;
+}
+
+#authorSection #authorWrapper #authorLeft img {
+  width: 180px;
+}
+
+#authorSection #authorWrapper #authorRight {
+  width: 740px;
+  float: right;
+}
+
+#authorSection #authorWrapper #authorRight p {
+  color: #c6d4df;
+}
+

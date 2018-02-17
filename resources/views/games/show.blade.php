@@ -86,7 +86,7 @@
 					@if($game->is_on_sale)
 
 						<div class='special-offer-price-discount'>
-							{{ round(100*($game->base_price-$game->sale_price)/$game->base_price) }}%
+							-{{ round(100*($game->base_price-$game->sale_price)/$game->base_price) }}%
 						</div>
 						<div class='special-offer-price-base'>
 							<del>{{ $game->base_price }}&euro;</del>

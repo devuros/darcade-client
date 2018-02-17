@@ -1056,3 +1056,32 @@
 		}
 	}
 }
+#authorSection {
+	width: 940px;
+	height: 80vh;
+
+	h1 {
+		color: $text-color-hover;
+	}
+	#authorWrapper {
+		width: 940px;
+
+		#authorLeft {
+			width: 200px;
+			padding-right: 20px;
+			float: left;
+
+			img {
+				width: 180px;
+			}
+		}
+		#authorRight {
+			width: 740px;
+			float: right;
+
+			p {
+				color: $text-color-primary;
+			}
+		}
+	}
+}
