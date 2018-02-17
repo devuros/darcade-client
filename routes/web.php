@@ -11,11 +11,11 @@ Route::get('register', 'AuthController@register')->name('register');
 
 Route::get('games/{id}', 'GameController@show')->name('games.show');
 
-Route::get('genres/{id}', 'GenreController@showGenreGames')->name('genres.showGenreGames');
+Route::get('genres/{id}/games', 'GenreController@showGenreGames')->name('genres.showGenreGames');
 
-Route::get('developers/{id}', 'DevController@index')->name('developers.index');
+Route::get('developers/{id}/games', 'DevController@showDeveloperGames')->name('developers.showDeveloperGames');
 
-Route::get('publishers/{id}', 'PubController@index')->name('publishers.index');
+Route::get('publishers/{id}/games', 'PubController@showPublisherGames')->name('publishers.showPublisherGames');
 
 Route::get('search/top-sellers', 'SearchController@topSellers')->name('search.top');
 Route::get('search/new-releases', 'SearchController@newReleases')->name('search.new');

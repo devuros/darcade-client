@@ -12,10 +12,33 @@ class DevController extends ClientController
 		//
 	}
 
-	public function index($id)
+	public function index()
+	{
+		//
+	}
+
+	public function showDeveloperGames($id)
 	{
 
-		//
+		try {
+
+            $games_response = $this->getApiRequest('developers/'.$id.'/games');
+
+            $games = $this->decodeApiResponse($games_response);
+
+        }
+        catch (\GuzzleHttp\Exception\ClientException $e) {
+
+            return view('errors.api_request_failed');
+
+        }
+        catch (\Throwable $e) {
+
+            return view('errors.api_not_available');
+
+        }
+
+        return view('games.show', compact('game'));
 
 	}
 

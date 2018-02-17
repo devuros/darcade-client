@@ -12,10 +12,14 @@ class PubController extends ClientController
 		//
 	}
 
-	public function index($id)
+	public function index()
 	{
-
 		//
-
 	}
+
+	public function showPublisherGames($id)
+	{
+		//
+	}
+
 }
