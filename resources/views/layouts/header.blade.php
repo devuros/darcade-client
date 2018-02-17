@@ -24,12 +24,12 @@
 		</li>
 		<li class="nav-item">
 
-			<a href="{{ route('about') }}">about</a>
+			<a href="{{ route('support') }}">support</a>
 
 		</li>
 		<li class="nav-item">
 
-			<a href="{{ route('support') }}">support</a>
+			<a href="{{ route('author') }}">author</a>
 
 		</li>
 	</ul>

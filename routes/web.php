@@ -2,8 +2,8 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('community', 'HomeController@community')->name('community');
-Route::get('about', 'HomeController@about')->name('about');
 Route::get('support', 'HomeController@support')->name('support');
+Route::post('contact', 'HomeController@contact')->name('contact');
 Route::get('author', 'HomeController@author')->name('author');
 
 Route::get('login', 'AuthController@login')->name('login');

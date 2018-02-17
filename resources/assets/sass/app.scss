@@ -1016,3 +1016,43 @@
 		}
 	}
 }
+#supportSection {
+	width: 700px;
+	height: 80vh;
+	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: 80px;
+
+	.support-top {
+		text-align: center;
+
+		h1 {
+			color: $text-color-hover;
+		}
+		p {
+			color: $text-color-primary;
+			font-size: 18px;
+		}
+	}
+	form {
+		margin-top: 50px;
+
+		.form-control {
+			width: 600px;
+			margin: 0 auto;
+			margin-bottom: 22px;
+		}
+		#question {
+			resize: vertical;
+		}
+		.submit-button-wrapper {
+			width: 600px;
+			margin: 0 auto;
+
+			button {
+				float: right;
+				padding: 7px 20px;
+			}
+		}
+	}
+}

@@ -36,11 +36,6 @@
 		</li>
 		<li class="nav-item">
 
-			<a href="{{ route('about') }}">about darcade</a>
-
-		</li>
-		<li class="nav-item">
-
 			<a href="{{ route('support') }}">support</a>
 
 		</li>

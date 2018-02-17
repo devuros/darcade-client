@@ -37,14 +37,14 @@ class HomeController extends ClientController
 
 	}
 
-	public function about()
+	public function support()
 	{
 
-		//
+		return view('support');
 
 	}
 
-	public function support()
+	public function contact()
 	{
 
 		//
@@ -54,7 +54,7 @@ class HomeController extends ClientController
 	public function author()
 	{
 
-		//
+		return view('author');
 
 	}
 
