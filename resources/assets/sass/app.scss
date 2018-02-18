@@ -1285,3 +1285,223 @@
 		}
 	}
 }
+#loginSectionWrapper {
+	width: 600px;
+	height: 80vh;
+	margin: 50px auto;
+
+	h2 {
+		color: $text-color-hover;
+	}
+	.form-group {
+
+		label {
+			color: $text-color-secondary;
+		}
+	}
+	.submit-button-wrapper {
+		width: 600px;
+		margin: 0 auto;
+
+		button {
+			float: right;
+			padding: 7px 20px;
+		}
+	}
+}
+#cartSection {
+	width: 940px;
+	height: 80vh;
+	float: left;
+	margin: 50px 0;
+
+	h2 {
+		color: $text-color-hover;
+		margin-bottom: 20px;
+	}
+	#cartSectionLeft {
+		width: 700px;
+		float: left;
+	}
+	#cartContentWrapper {
+		width: 700px;
+
+		.game-wrapper {
+			width: 700px;
+			height: 70px;
+			margin: 7px 0;
+			background-color: $price-bg-color;
+
+			.game-image-wrapper {
+				width: 185px;
+				float: left;
+
+				img {
+					width: 185px;
+					height: 70px;
+				}
+			}
+			.game-content-wrapper {
+				width: 515px;
+				height: 70px;
+				float: left;
+				padding-left: 10px;
+
+				.game-content-first-col {
+					width: 255px;
+					height: 100%;
+					float: left;
+
+					h4 {
+						color: $text-color-hover;
+					}
+					h6 {
+						color: $text-color-primary;
+						margin: 0;
+					}
+				}
+				.game-content-second-col {
+					width: 75px;
+					height: 100%;
+					float: left;
+					color: $discount-text-color-green;
+
+					div {
+						padding: 0 5px;
+						display: inline-block;
+						margin-top: 23px;
+						margin-left: 18px;
+						background-color: $discount-bg-color;
+					}
+				}
+				.game-content-third-col {
+					width: 75px;
+					height: 100%;
+					float: left;
+					padding-right: 10px;
+
+					.special-offer-price-both {
+						height: 35px;
+						float: left;
+						padding: 0 7px;
+						margin-top: 18px;
+
+						.special-offer-price-base {
+							height: 17px;
+							color: $text-color-secondary;
+							font-size: 12px;
+
+							del {
+								display: block;
+								text-align: right;
+							}
+						}
+						.special-offer-price-sale {
+							height: 18px;
+							color: $text-color-hover;
+							font-size: 14px;
+						}
+					}
+				}
+				.game-content-forth-col {
+					width: 80px;
+					height: 100%;
+					line-height: 70px;
+					padding: 0 5px;
+					float: right;
+
+					a {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+	.cart-buy-wrapper {
+		width: 700px;
+		height: 150px;
+		background-color: $price-bg-color;
+
+		.cart-buy-top {
+			width: 700px;
+			height: 50px;
+			padding: 0 10px;
+
+			.top-left {
+				width: 100px;
+				height: 50px;
+				float: left;
+				line-height: 50px;
+				color: $text-color-hover;
+				font-weight: bold;
+			}
+			.top-right {
+				width: 300px;
+				height: 50px;
+				float: right;
+				text-align: right;
+				line-height: 50px;
+				padding-right: 10px;
+				color: $text-color-hover;
+			}
+		}
+		.cart-buy-bottom {
+			width: 700px;
+			height: 100px;
+			padding: 0 10px;
+
+			.bottom-left {
+				width: 300px;
+				height: 100px;
+				float: left;
+				color: $text-color-hover;
+				padding-top: 30px;
+
+				.link-button {
+					border-radius: 4px;
+					border: 1px solid $footer-bg-color;
+					padding: 5px 15px;
+					display: inline-block;
+					text-decoration: none;
+					color: $text-color-primary;
+					background-color: #cc0000;
+				}
+			}
+			.bottom-right {
+				width: 300px;
+				height: 100px;
+				float: right;
+				text-align: right;
+				padding-right: 10px;
+				color: $text-color-hover;
+				padding-top: 30px;
+
+				.link-button {
+					border-radius: 4px;
+					border: 1px solid $footer-bg-color;
+					padding: 5px 15px;
+					display: inline-block;
+					text-decoration: none;
+					color: $text-color-hover;
+					background-color: $discount-bg-color;
+				}
+			}
+		}
+	}
+}
+#cartSectionRight {
+	width: 220px;
+	height: 70px;
+	float: right;
+	margin-left: 20px;
+	margin-top: 75px;
+	line-height: 70px;
+	background-color: $price-bg-color;
+	border-radius: 5px;
+	text-align: center;
+
+	a {
+		text-decoration: none;
+		color: $text-color-primary;
+	}
+}

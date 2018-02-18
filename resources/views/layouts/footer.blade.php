@@ -31,11 +31,6 @@
 		</li>
 		<li class="nav-item">
 
-			<a href="{{ route('community') }}">community</a>
-
-		</li>
-		<li class="nav-item">
-
 			<a href="{{ route('support') }}">support</a>
 
 		</li>

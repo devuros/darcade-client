@@ -1,7 +1,6 @@
 <?php
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('community', 'HomeController@community')->name('community');
 Route::get('support', 'HomeController@support')->name('support');
 Route::post('contact', 'HomeController@contact')->name('contact');
 Route::get('author', 'HomeController@author')->name('author');
@@ -24,6 +23,12 @@ Route::get('search/new-releases', 'SearchController@newReleases')->name('search.
 Route::get('search/specials', 'SearchController@specials')->name('search.specials');
 Route::get('search/under/10', 'SearchController@underTen')->name('search.under.10');
 Route::get('search/under/25', 'SearchController@underTwentyFive')->name('search.under.25');
+
+Route::get('cart', 'CartController@index')->name('cart.index');
+Route::get('cart/{id}', 'CartController@remove')->name('cart.remove');
+Route::get('cart/empty', 'CartController@empty')->name('cart.empty');
+Route::get('cart/checkout', 'CartController@purchase')->name('cart.checkout');
+Route::get('cart/history', 'CartController@history')->name('cart.history');
 
 Route::get('/time-is-the-enemy', function () {
 

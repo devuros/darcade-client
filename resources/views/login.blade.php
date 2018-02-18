@@ -4,16 +4,22 @@
 
 @section('content')
 
-	<div id=''>
-
+	<div id='loginSectionWrapper'>
+		<h2>Login to Darcade</h2>
 		<form method='POST' action='/login'>
 
-			<input type='text' class='' name='email' placeholder="email">
-			<br/><br/>
-			<input type='password' class='' name='password'>
-			<br/><br/>
-
-			<button type='submit' class=''>login</button>
+			<div class="form-group">
+				<label class=''>Email</label>
+				<input class="form-control" type='text' class='' name='email' required="required">
+			</div>
+			<div class="form-group">
+				<label class=''>Password</label>
+				<input class="form-control" type='password' class='' name='password' required="required">
+			</div>
+			<div class="submit-button-wrapper">
+				<button type='submit' class='btn btn-primary'>login</button>
+				<div class="clear"></div>
+			</div>
 
 		</form>
 

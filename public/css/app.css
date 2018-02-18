@@ -12790,3 +12790,237 @@ button.close {
   background-color: #171a21;
 }
 
+#loginSectionWrapper {
+  width: 600px;
+  height: 80vh;
+  margin: 50px auto;
+}
+
+#loginSectionWrapper h2 {
+  color: #fff;
+}
+
+#loginSectionWrapper .form-group label {
+  color: #b8b6b4;
+}
+
+#loginSectionWrapper .submit-button-wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+
+#loginSectionWrapper .submit-button-wrapper button {
+  float: right;
+  padding: 7px 20px;
+}
+
+#cartSection {
+  width: 940px;
+  height: 80vh;
+  float: left;
+  margin: 50px 0;
+}
+
+#cartSection h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#cartSection #cartSectionLeft {
+  width: 700px;
+  float: left;
+}
+
+#cartSection #cartContentWrapper {
+  width: 700px;
+}
+
+#cartSection #cartContentWrapper .game-wrapper {
+  width: 700px;
+  height: 70px;
+  margin: 7px 0;
+  background-color: #173041;
+}
+
+#cartSection #cartContentWrapper .game-wrapper .game-image-wrapper {
+  width: 185px;
+  float: left;
+}
+
+#cartSection #cartContentWrapper .game-wrapper .game-image-wrapper img {
+  width: 185px;
+  height: 70px;
+}
+
+#cartSection #cartContentWrapper .game-wrapper .game-content-wrapper {
+  width: 515px;
+  height: 70px;
+  float: left;
+  padding-left: 10px;
+}
+
+#cartSection #cartContentWrapper .game-wrapper .game-content-wrapper .game-content-first-col {
+  width: 255px;
+  height: 100%;
+  float: left;
+}
+
+#cartSection #cartContentWrapper .game-wrapper .game-content-wrapper .game-content-first-col h4 {
+  color: #fff;
+}
+
+#cartSection #cartContentWrapper .game-wrapper .game-content-wrapper .game-content-first-col h6 {
+  color: #c6d4df;
+  margin: 0;
+}
+
+#cartSection #cartContentWrapper .game-wrapper .game-content-wrapper .game-content-second-col {
+  width: 75px;
+  height: 100%;
+  float: left;
+  color: #a4d007;
+}
+
+#cartSection #cartContentWrapper .game-wrapper .game-content-wrapper .game-content-second-col div {
+  padding: 0 5px;
+  display: inline-block;
+  margin-top: 23px;
+  margin-left: 18px;
+  background-color: #4c6b22;
+}
+
+#cartSection #cartContentWrapper .game-wrapper .game-content-wrapper .game-content-third-col {
+  width: 75px;
+  height: 100%;
+  float: left;
+  padding-right: 10px;
+}
+
+#cartSection #cartContentWrapper .game-wrapper .game-content-wrapper .game-content-third-col .special-offer-price-both {
+  height: 35px;
+  float: left;
+  padding: 0 7px;
+  margin-top: 18px;
+}
+
+#cartSection #cartContentWrapper .game-wrapper .game-content-wrapper .game-content-third-col .special-offer-price-both .special-offer-price-base {
+  height: 17px;
+  color: #b8b6b4;
+  font-size: 12px;
+}
+
+#cartSection #cartContentWrapper .game-wrapper .game-content-wrapper .game-content-third-col .special-offer-price-both .special-offer-price-base del {
+  display: block;
+  text-align: right;
+}
+
+#cartSection #cartContentWrapper .game-wrapper .game-content-wrapper .game-content-third-col .special-offer-price-both .special-offer-price-sale {
+  height: 18px;
+  color: #fff;
+  font-size: 14px;
+}
+
+#cartSection #cartContentWrapper .game-wrapper .game-content-wrapper .game-content-forth-col {
+  width: 80px;
+  height: 100%;
+  line-height: 70px;
+  padding: 0 5px;
+  float: right;
+}
+
+#cartSection #cartContentWrapper .game-wrapper .game-content-wrapper .game-content-forth-col a {
+  text-decoration: underline;
+}
+
+#cartSection .cart-buy-wrapper {
+  width: 700px;
+  height: 150px;
+  background-color: #173041;
+}
+
+#cartSection .cart-buy-wrapper .cart-buy-top {
+  width: 700px;
+  height: 50px;
+  padding: 0 10px;
+}
+
+#cartSection .cart-buy-wrapper .cart-buy-top .top-left {
+  width: 100px;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+  color: #fff;
+  font-weight: bold;
+}
+
+#cartSection .cart-buy-wrapper .cart-buy-top .top-right {
+  width: 300px;
+  height: 50px;
+  float: right;
+  text-align: right;
+  line-height: 50px;
+  padding-right: 10px;
+  color: #fff;
+}
+
+#cartSection .cart-buy-wrapper .cart-buy-bottom {
+  width: 700px;
+  height: 100px;
+  padding: 0 10px;
+}
+
+#cartSection .cart-buy-wrapper .cart-buy-bottom .bottom-left {
+  width: 300px;
+  height: 100px;
+  float: left;
+  color: #fff;
+  padding-top: 30px;
+}
+
+#cartSection .cart-buy-wrapper .cart-buy-bottom .bottom-left .link-button {
+  border-radius: 4px;
+  border: 1px solid #171a21;
+  padding: 5px 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: #c6d4df;
+  background-color: #cc0000;
+}
+
+#cartSection .cart-buy-wrapper .cart-buy-bottom .bottom-right {
+  width: 300px;
+  height: 100px;
+  float: right;
+  text-align: right;
+  padding-right: 10px;
+  color: #fff;
+  padding-top: 30px;
+}
+
+#cartSection .cart-buy-wrapper .cart-buy-bottom .bottom-right .link-button {
+  border-radius: 4px;
+  border: 1px solid #171a21;
+  padding: 5px 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4c6b22;
+}
+
+#cartSectionRight {
+  width: 220px;
+  height: 70px;
+  float: right;
+  margin-left: 20px;
+  margin-top: 75px;
+  line-height: 70px;
+  background-color: #173041;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#cartSectionRight a {
+  text-decoration: none;
+  color: #c6d4df;
+}
+
