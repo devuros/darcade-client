@@ -6,7 +6,9 @@ Route::get('support', 'HomeController@support')->name('support');
 Route::post('contact', 'HomeController@contact')->name('contact');
 Route::get('author', 'HomeController@author')->name('author');
 
-Route::get('login', 'AuthController@login')->name('login');
+Route::get('login', 'AuthController@showLoginForm')->name('login');
+Route::post('login', 'AuthController@login');
+
 Route::get('register', 'AuthController@register')->name('register');
 
 Route::get('games/{id}', 'GameController@show')->name('games.show');
