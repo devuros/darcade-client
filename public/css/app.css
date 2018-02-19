@@ -12611,12 +12611,12 @@ button.close {
 }
 
 #showGenreGamesSection .genre-games-wrapper {
-  width: 600px;
+  width: 700px;
   margin-bottom: 80px;
 }
 
 #showGenreGamesSection .genre-games-wrapper .game-wrapper {
-  width: 600px;
+  width: 700px;
   height: 70px;
   margin: 7px 0;
   background-color: #173041;
@@ -12633,14 +12633,14 @@ button.close {
 }
 
 #showGenreGamesSection .genre-games-wrapper .game-wrapper .game-content-wrapper {
-  width: 415px;
+  width: 515px;
   height: 70px;
   float: left;
   padding-left: 10px;
 }
 
 #showGenreGamesSection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-first-col {
-  width: 255px;
+  width: 355px;
   height: 100%;
   float: left;
 }
@@ -12744,7 +12744,7 @@ button.close {
 }
 
 #showDeveloperGamesSection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-first-col {
-  width: 255px;
+  width: 335px;
   height: 100%;
   float: left;
 }
@@ -12759,7 +12759,7 @@ button.close {
 }
 
 #showDeveloperGamesSection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-forth-col {
-  width: 200px;
+  width: 120px;
   height: 100%;
   line-height: 70px;
   float: left;
