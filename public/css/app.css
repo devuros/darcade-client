@@ -11581,10 +11581,12 @@ button.close {
   display: inline-block;
   text-decoration: none;
   color: #c6d4df;
-  background-color: #4c6b22;
+  background: -webkit-gradient(linear, right top, left top, from(#7cbb00), to(#61882b));
+  background: linear-gradient(to left, #7cbb00 0%, #61882b 100%);
 }
 
 #loginSection .container #loginSectionWrapper #loginSectionBottom .link-buttton:hover {
+  background: none #7CBB00;
   color: #fff;
 }
 
@@ -12790,26 +12792,26 @@ button.close {
   background-color: #171a21;
 }
 
-#loginSectionWrapper {
+.app-global-container #loginSectionWrapper {
   width: 600px;
   height: 80vh;
   margin: 50px auto;
 }
 
-#loginSectionWrapper h2 {
+.app-global-container #loginSectionWrapper h2 {
   color: #fff;
 }
 
-#loginSectionWrapper .form-group label {
+.app-global-container #loginSectionWrapper .form-group label {
   color: #b8b6b4;
 }
 
-#loginSectionWrapper .submit-button-wrapper {
+.app-global-container #loginSectionWrapper .submit-button-wrapper {
   width: 600px;
   margin: 0 auto;
 }
 
-#loginSectionWrapper .submit-button-wrapper button {
+.app-global-container #loginSectionWrapper .submit-button-wrapper button {
   float: right;
   padding: 7px 20px;
 }
@@ -13004,7 +13006,9 @@ button.close {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  background-color: #4c6b22;
+  background: -webkit-gradient(linear, right top, left top, from(#7cbb00), to(#61882b));
+  background: linear-gradient(to left, #7cbb00 0%, #61882b 100%);
+  font-weight: bold;
 }
 
 #cartSectionRight {

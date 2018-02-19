@@ -172,9 +172,10 @@
 					display: inline-block;
 					text-decoration: none;
 					color: $text-color-primary;
-					background-color: $discount-bg-color;
+					background: linear-gradient(to left, #7cbb00 0%, #61882b 100%);
 				}
 				.link-buttton:hover {
+					background: none #7CBB00;
 					color: $text-color-hover;
 				}
 				p:last-child {
@@ -1285,27 +1286,30 @@
 		}
 	}
 }
-#loginSectionWrapper {
-	width: 600px;
-	height: 80vh;
-	margin: 50px auto;
+.app-global-container {
 
-	h2 {
-		color: $text-color-hover;
-	}
-	.form-group {
-
-		label {
-			color: $text-color-secondary;
-		}
-	}
-	.submit-button-wrapper {
+	#loginSectionWrapper {
 		width: 600px;
-		margin: 0 auto;
+		height: 80vh;
+		margin: 50px auto;
 
-		button {
-			float: right;
-			padding: 7px 20px;
+		h2 {
+			color: $text-color-hover;
+		}
+		.form-group {
+
+			label {
+				color: $text-color-secondary;
+			}
+		}
+		.submit-button-wrapper {
+			width: 600px;
+			margin: 0 auto;
+
+			button {
+				float: right;
+				padding: 7px 20px;
+			}
 		}
 	}
 }
@@ -1483,7 +1487,8 @@
 					display: inline-block;
 					text-decoration: none;
 					color: $text-color-hover;
-					background-color: $discount-bg-color;
+					background: linear-gradient(to left, #7cbb00 0%, #61882b 100%);
+					font-weight: bold;
 				}
 			}
 		}
