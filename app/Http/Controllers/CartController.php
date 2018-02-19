@@ -15,14 +15,64 @@ class CartController extends ClientController
 	public function index()
 	{
 
-		return view('cart.index');
+		try {
+
+			$cart_response = $this->getApiRequest('cart', [
+
+				'headers'=> [
+					'Accept'=> 'application/json',
+					'Authorization'=> 'Bearer '.$this->getTokenMilos(),
+					'X-Requested-With'=> 'XMLHttpRequest'
+				]
+
+			]);
+
+			$cart_content = $this->decodeApiResponse($cart_response);
+
+		}
+		catch (\GuzzleHttp\Exception\ClientException $e) {
+
+			return view('errors.api_request_failed');
+
+		}
+		catch (\Throwable $e) {
+
+			return view('errors.api_not_available');
+
+		}
+
+		return view('cart.index', compact('cart_content'));
 
 	}
 
 	public function remove($id)
 	{
 
-		//
+		try {
+
+			$cart_request = $this->deleteApiRequest('cart/'.$id, [
+
+				'headers'=> [
+					'Accept'=> 'application/json',
+					'Authorization'=> 'Bearer '.$this->getTokenMilos(),
+					'X-Requested-With'=> 'XMLHttpRequest'
+				]
+
+			]);
+
+		}
+		catch (\GuzzleHttp\Exception\ClientException $e) {
+
+			return view('errors.api_request_failed');
+
+		}
+		catch (\Throwable $e) {
+
+			return view('errors.api_not_available');
+
+		}
+
+		return redirect()->route('cart.index');
 
 	}
 
