@@ -12,11 +12,6 @@ class AuthController extends ClientController
 		//
 	}
 
-	public function index()
-	{
-		//
-	}
-
 	public function showLoginForm()
 	{
 
@@ -32,7 +27,12 @@ class AuthController extends ClientController
 
 	}
 
-	public function register()
+	public function showRegisterForm()
+	{
+		//
+	}
+
+	public function register(Request $request)
 	{
 		//
 	}

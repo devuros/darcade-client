@@ -29,18 +29,18 @@
 				</div>
 				<div class='game-right-details'>
 					<div class="game-details-row margin-bottom-10">
-						<span class='gray uppercase'>all reviews:</span>
+						<span class='gray uppercase inline-block'>all reviews:</span>
 						<span class='white'>23% positive</span>
 						<span class='gray'>(17 total)</span>
 					</div>
 					<div class="game-details-row margin-bottom-10">
-						<span class='gray uppercase'>release date:</span>
+						<span class='gray uppercase inline-block'>release date:</span>
 						<span class='white'>
 							{{ Carbon\Carbon::parse($game->release_date)->format('d M Y') }}
 						</span>
 					</div>
 					<div class="game-details-row">
-						<span class='gray uppercase'>developer:</span>
+						<span class='gray uppercase inline-block'>developer:</span>
 						<span class='white'>
 							<a href="{{ route('developers.showDeveloperGames', ['id'=> $game->developer->id]) }}">
 								{{ $game->developer->developer }}
@@ -48,7 +48,7 @@
 						</span>
 					</div>
 					<div class="game-details-row margin-bottom-10">
-						<span class='gray uppercase'>publisher:</span>
+						<span class='gray uppercase inline-block'>publisher:</span>
 						<span class='white'>
 							<a href="{{ route('publishers.showPublisherGames', ['id'=> $game->publisher->id]) }}">
 								{{ $game->publisher->publisher }}
@@ -56,7 +56,7 @@
 						</span>
 					</div>
 					<div class='game-right-genre'>
-						<span class='gray uppercase'>genres:</span>
+						<span class='gray uppercase inline-block'>genres:</span>
 						<span class='white'>
 
 							@foreach($game->genres as $genre)

@@ -12281,7 +12281,12 @@ button.close {
 
 #gameShow .game-info-wrapper .game-info-right .game-right-details {
   width: 325px;
-  padding-right: 15px;
+}
+
+#gameShow .game-info-wrapper .game-info-right .game-right-details .inline-block {
+  width: 105px;
+  display: inline-block;
+  font-size: 12px;
 }
 
 #gameShow .game-info-wrapper .game-info-right .game-right-details span.gray {
@@ -12290,7 +12295,26 @@ button.close {
 
 #gameShow .game-info-wrapper .game-info-right .game-right-details span.white {
   color: #fff;
-  padding-left: 20px;
+}
+
+#gameShow .game-info-wrapper .game-info-right .game-right-details a {
+  color: #40b1f2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#gameShow .game-info-wrapper .game-info-right .game-right-details a:hover {
+  color: #fff;
+}
+
+#gameShow .game-info-wrapper .game-info-right .game-right-genre span a {
+  color: #40b1f2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#gameShow .game-info-wrapper .game-info-right .game-right-genre span a:hover {
+  color: #fff;
 }
 
 #gameShow .game-action-wrapper {
@@ -12370,16 +12394,17 @@ button.close {
 }
 
 #gameShow .game-bottom-section .game-buy-wrapper .game-buy-price-wrapper .add-to-cart .link-buttton {
-  padding: 0px 10px;
+  padding: 0px 20px;
   display: inline-block;
   text-decoration: none;
-  color: #c6d4df;
-  background-color: #4c6b22;
+  color: #fff;
+  font-weight: bold;
+  background: -webkit-gradient(linear, right top, left top, from(#7cbb00), to(#61882b));
+  background: linear-gradient(to left, #7cbb00 0%, #61882b 100%);
 }
 
 #gameShow .game-bottom-section .game-buy-wrapper .game-buy-price-wrapper .add-to-cart .link-buttton:hover {
-  background-color: #6f9b31;
-  color: #fff;
+  background: none #7CBB00;
 }
 
 #gameShow .game-bottom-section .game-about-wrapper {

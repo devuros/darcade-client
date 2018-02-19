@@ -815,18 +815,38 @@
 			}
 			.game-right-details {
 				width: 325px;
-				padding-right: 15px;
 
+				.inline-block {
+					width: 105px;
+					display: inline-block;
+					font-size: 12px;
+				}
 				span.gray {
 					color: $text-color-secondary;
 				}
 				span.white {
 					color: $text-color-hover;
-					padding-left: 20px;
+				}
+				a {
+					color: $above-header-bg-color;
+					text-decoration: none;
+					font-weight: bold;
+				}
+				a:hover {
+					color: $text-color-hover;
 				}
 			}
 			.game-right-genre {
-
+				span {
+					a {
+						color: $above-header-bg-color;
+						text-decoration: none;
+						font-weight: bold;
+					}
+					a:hover {
+						color: $text-color-hover;
+					}
+				}
 			}
 		}
 	}
@@ -897,15 +917,15 @@
 					float: left;
 
 					.link-buttton {
-						padding: 0px 10px;
+						padding: 0px 20px;
 						display: inline-block;
 						text-decoration: none;
-						color: $text-color-primary;
-						background-color: $discount-bg-color;
+						color: $text-color-hover;
+						font-weight: bold;
+						background: linear-gradient(to left, #7cbb00 0%, #61882b 100%);
 					}
 					.link-buttton:hover {
-						background-color: #6f9b31;
-						color: $text-color-hover;
+						background: none #7CBB00;
 					}
 				}
 			}
