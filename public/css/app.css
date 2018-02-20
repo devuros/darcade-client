@@ -12206,6 +12206,10 @@ button.close {
   line-height: 35px;
 }
 
+#gameShow {
+  margin-bottom: 120px;
+}
+
 #gameShow h2 {
   text-transform: capitalize;
   color: #fff;

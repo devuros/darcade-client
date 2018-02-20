@@ -28,6 +28,11 @@ class GameController extends ClientController
 
             $game = $this->decodeApiResponse($game_response);
 
+
+            $screenshots_response = $this->getApiRequest('games/'.$id.'/screenshots');
+
+            $screenshots = $this->decodeApiResponse($screenshots_response);
+
         }
         catch (\GuzzleHttp\Exception\ClientException $e) {
 
@@ -40,7 +45,7 @@ class GameController extends ClientController
 
         }
 
-        return view('games.show', compact('game'));
+        return view('games.show', compact(['game', 'screenshots']));
 
     }
 

@@ -27,7 +27,7 @@
 						<div class="game-wrapper">
 							<div class="game-image-wrapper">
 								<a href="{{ route('games.show', ['id'=> $game->id]) }}">
-									<img src="{{ asset('images/first.svg') }}">
+									<img src="{{ $game->image }}">
 								</a>
 							</div>
 							<div class="game-content-wrapper">

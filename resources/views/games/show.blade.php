@@ -11,27 +11,35 @@
 		<div class='game-info-wrapper'>
 			<div class='game-info-left'>
 				<div class='game-left-top'>
-					<img src="{{ asset('images/first.svg') }}">
+					<img src="{{ $screenshots[0]->source }}">
 				</div>
 				<div class='game-left-bottom'>
-					<img src="{{ asset('images/first.svg') }}">
+					{{-- <img src="{{ asset('images/first.svg') }}">
 					<img src="{{ asset('images/second.svg') }}">
 					<img src="{{ asset('images/third.svg') }}">
-					<img src="{{ asset('images/first.svg') }}">
+					<img src="{{ asset('images/first.svg') }}"> --}}
+
+					@foreach($screenshots as $ss)
+
+						<img src="{{ $ss->source }}">
+
+					@endforeach
+
 				</div>
 			</div>
 			<div class='game-info-right'>
 				<div class='game-right-image'>
-					<img src="{{ asset('images/third.svg') }}">
+					{{-- <img src="{{ asset('images/third.svg') }}"> --}}
+					<img src="{{ $game->image }}">
 				</div>
 				<div class='game-right-desc'>
 					<p>{{ $game->description }}</p>
 				</div>
 				<div class='game-right-details'>
 					<div class="game-details-row margin-bottom-10">
-						<span class='gray uppercase inline-block'>all reviews:</span>
+						{{-- <span class='gray uppercase inline-block'>all reviews:</span>
 						<span class='white'>23% positive</span>
-						<span class='gray'>(17 total)</span>
+						<span class='gray'>(17 total)</span> --}}
 					</div>
 					<div class="game-details-row margin-bottom-10">
 						<span class='gray uppercase inline-block'>release date:</span>
@@ -120,7 +128,9 @@
 				<h2>about this game</h2>
 				<p>{{ $game->about }}</p>
 			</div>
-			<div class="game-reviews-wrapper">
+
+
+			{{-- <div class="game-reviews-wrapper">
 				<h2>customer reviews</h2>
 
 				<div class="review-wrapper">
@@ -169,10 +179,10 @@
 					</div>
 					<div class="clear"></div>
 				</div>
+			</div> --}}
 
-			</div>
+
 		</div>
-
 	</div>
 
 @endsection

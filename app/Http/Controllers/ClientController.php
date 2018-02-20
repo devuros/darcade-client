@@ -100,6 +100,14 @@ class ClientController extends Controller
 
 	}
 
+    public function getImages($uri)
+    {
+
+        $client = new Client;
+        return $client->request(self::METHOD_GET, 'http://localhost:8000/'.$uri, $options);
+
+    }
+
     //
 
     protected $token_milos = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjhkOTY3Njk2ODk5ZGNlOTk1OTExOGUxMDRmZjEyY2M4ODhiN2NmNDIyMTcyMGNiOTZkMzEzNTM5YzU0NzhkNWQzMGRmMjg1OTRiNzg0NTc5In0.eyJhdWQiOiIzIiwianRpIjoiOGQ5Njc2OTY4OTlkY2U5OTU5MTE4ZTEwNGZmMTJjYzg4OGI3Y2Y0MjIxNzIwY2I5NmQzMTM1MzljNTQ3OGQ1ZDMwZGYyODU5NGI3ODQ1NzkiLCJpYXQiOjE1MTg5NDU2MTcsIm5iZiI6MTUxODk0NTYxNywiZXhwIjoxNTUwNDgxNjE2LCJzdWIiOiI0MSIsInNjb3BlcyI6W119.dRMtFr7wvHDLxAszG1e3pVlhFLba5UrFqP8SnH1b8qgEBQYM_PAb6TqXXs4qaFcMJI32WqDJw7A9B3m0WLjFX8mo2xzScElBfOPotFhqYbJpbUWSeh-a_vrJJG8bNpkCdTBZkEm7pYudQYCxxti_Yix30CNGFO2A9I6-sj0VD0dBXQa3XM9EUk2dw8Nis3-o8rLvNjdngjNaI7N02WCKZruxLtDrj7fAsn_1VoiOhwGXeeRFNZ3V_PKsC7qfCXPGGRnK4ki4TjTiOq7J2FkwNQIjabEzUUF4SSiiDrV4aLgKoiiQ8G7qq7kutFgmEIONawdbrtLzR5as2jZYULPHUZ8BuDqBX55H25uCYUCdGWp4RelehVhbFg_EzwUOa3t8S00ugf4DA89tDLu5eJkB981KiPMjdz3qIN1CNHf3iqEOJZ-9JfjlpgSHjH8RMg3BJ1mmur_NtIU2mV4e8ftgn2gl3jfihh71MekQz8nXblyAwj1Gfz_L2lMhg8ovdXAwabVexkftWOwQJxIj2Trr4Bap7r5kfA6hm1E4VP3Q3sDa_SQyXqOYWoRu4n8VXCMgvlnbv6f4x5qGUfge_aUxBVctlwvv4EaIoPND-HhoafSO2EgU1UNE8hTZSJPAkmOK-vZB3_u0IP1LEp-o3yZ7gbrz1fOSyiehU5j6U1hnfFU';
