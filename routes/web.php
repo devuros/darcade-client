@@ -25,10 +25,10 @@ Route::get('search/under/10', 'SearchController@underTen')->name('search.under.1
 Route::get('search/under/25', 'SearchController@underTwentyFive')->name('search.under.25');
 
 Route::get('cart', 'CartController@index')->name('cart.index');
-Route::get('cart/{id}', 'CartController@remove')->name('cart.remove');
+Route::get('cart/{id}/remove', 'CartController@remove')->name('cart.remove');
 Route::get('cart/empty', 'CartController@empty')->name('cart.empty');
-Route::get('cart/checkout', 'CartController@purchase')->name('cart.checkout');
-Route::get('cart/history', 'CartController@history')->name('cart.history');
+Route::get('cart/checkout', 'CartController@checkout')->name('cart.checkout');
+Route::get('cart/purchase-history', 'CartController@history')->name('cart.history');
 
 Route::get('/time-is-the-enemy', function () {
 
