@@ -6,6 +6,7 @@ Route::post('contact', 'HomeController@contact')->name('contact');
 Route::get('author', 'HomeController@author')->name('author');
 
 Route::get('login', 'AuthController@showLoginForm')->name('login');
+Route::get('logout', 'AuthController@logout')->name('logout');
 Route::post('login', 'AuthController@login');
 
 Route::get('register', 'AuthController@register')->name('register');
@@ -25,6 +26,7 @@ Route::get('search/under/10', 'SearchController@underTen')->name('search.under.1
 Route::get('search/under/25', 'SearchController@underTwentyFive')->name('search.under.25');
 
 Route::get('cart', 'CartController@index')->name('cart.index');
+Route::get('cart/{id}/add', 'CartController@store')->name('cart.store');
 Route::get('cart/{id}/remove', 'CartController@remove')->name('cart.remove');
 Route::get('cart/empty', 'CartController@empty')->name('cart.empty');
 Route::get('cart/checkout', 'CartController@checkout')->name('cart.checkout');

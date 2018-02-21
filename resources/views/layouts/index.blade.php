@@ -44,7 +44,7 @@
                         <div id='loginSectionBottom'>
                             <p>Sign in to view personalized recommendations</p>
                             <a class='link-buttton' href="{{ route('login') }}">Sign in</a>
-                            <p>Or <a href="{{ route('register') }}">sign up</a> and join Darcade for free</p>
+                            {{-- <p>Or <a href="{{ route('register') }}">sign up</a> and join Darcade for free</p> --}}
                         </div>
                     </div>
 

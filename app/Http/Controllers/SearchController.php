@@ -6,17 +6,6 @@ use Illuminate\Http\Request;
 
 class SearchController extends ClientController
 {
-
-    public function __construct()
-    {
-    	//
-    }
-
-    public function index()
-    {
-    	//
-    }
-
     public function topSellers()
     {
     	//

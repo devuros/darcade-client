@@ -6,14 +6,13 @@ use Illuminate\Http\Request;
 
 class CartController extends ClientController
 {
-
-	public function __construct()
+	public function index(Request $request)
 	{
-		//
-	}
 
-	public function index()
-	{
+		if (!$request->session()->has('user_id'))
+		{
+			return redirect()->route('home');
+		}
 
 		try {
 
@@ -21,7 +20,7 @@ class CartController extends ClientController
 
 				'headers'=> [
 					'Accept'=> 'application/json',
-					'Authorization'=> 'Bearer '.$this->getTokenMilos(),
+					'Authorization'=> 'Bearer '.session('user_token'),
 					'X-Requested-With'=> 'XMLHttpRequest'
 				]
 
@@ -30,18 +29,54 @@ class CartController extends ClientController
 			$cart_content = $this->decodeApiResponse($cart_response);
 
 		}
-		catch (\GuzzleHttp\Exception\ClientException $e) {
-
+		catch (\GuzzleHttp\Exception\ClientException $e)
+		{
 			return view('errors.api_request_failed');
-
 		}
-		catch (\Throwable $e) {
-
+		catch (\Throwable $e)
+		{
 			return view('errors.api_not_available');
-
 		}
 
 		return view('cart.index', compact('cart_content'));
+
+	}
+
+	public function store(Request $request, $id)
+	{
+		if (!$request->session()->has('user_id'))
+		{
+			return redirect()->route('home');
+		}
+
+		try {
+
+			$cart_request = $this->postApiRequest('cart', [
+
+				'headers'=> [
+					'Accept'=> 'application/json',
+					'Authorization'=> 'Bearer '.session('user_token'),
+					'X-Requested-With'=> 'XMLHttpRequest'
+				],
+				'form_params' => [
+			        'game'=> $id
+			    ]
+
+			]);
+
+			$cart_response = $this->decodeApiResponse($cart_request);
+
+		}
+		catch (\GuzzleHttp\Exception\ClientException $e)
+		{
+			return view('errors.api_request_failed');
+		}
+		catch (\Throwable $e)
+		{
+			return view('errors.api_not_available');
+		}
+
+		return redirect()->route('cart.index');
 
 	}
 
@@ -54,22 +89,20 @@ class CartController extends ClientController
 
 				'headers'=> [
 					'Accept'=> 'application/json',
-					'Authorization'=> 'Bearer '.$this->getTokenMilos(),
+					'Authorization'=> 'Bearer '.session('user_token'),
 					'X-Requested-With'=> 'XMLHttpRequest'
 				]
 
 			]);
 
 		}
-		catch (\GuzzleHttp\Exception\ClientException $e) {
-
+		catch (\GuzzleHttp\Exception\ClientException $e)
+		{
 			return view('errors.api_request_failed');
-
 		}
-		catch (\Throwable $e) {
-
+		catch (\Throwable $e)
+		{
 			return view('errors.api_not_available');
-
 		}
 
 		return redirect()->route('cart.index');
@@ -85,22 +118,20 @@ class CartController extends ClientController
 
 				'headers'=> [
 					'Accept'=> 'application/json',
-					'Authorization'=> 'Bearer '.$this->getTokenMilos(),
+					'Authorization'=> 'Bearer '.session('user_token'),
 					'X-Requested-With'=> 'XMLHttpRequest'
 				]
 
 			]);
 
 		}
-		catch (\GuzzleHttp\Exception\ClientException $e) {
-
+		catch (\GuzzleHttp\Exception\ClientException $e)
+		{
 			return view('errors.api_request_failed');
-
 		}
-		catch (\Throwable $e) {
-
+		catch (\Throwable $e)
+		{
 			return view('errors.api_not_available');
-
 		}
 
 		return redirect()->route('cart.index');
@@ -116,22 +147,20 @@ class CartController extends ClientController
 
 				'headers'=> [
 					'Accept'=> 'application/json',
-					'Authorization'=> 'Bearer '.$this->getTokenMilos(),
+					'Authorization'=> 'Bearer '.session('user_token'),
 					'X-Requested-With'=> 'XMLHttpRequest'
 				]
 
 			]);
 
 		}
-		catch (\GuzzleHttp\Exception\ClientException $e) {
-
+		catch (\GuzzleHttp\Exception\ClientException $e)
+		{
 			return view('errors.api_request_failed');
-
 		}
-		catch (\Throwable $e) {
-
+		catch (\Throwable $e)
+		{
 			return view('errors.api_not_available');
-
 		}
 
 		return redirect()
@@ -149,7 +178,7 @@ class CartController extends ClientController
 
 				'headers'=> [
 					'Accept'=> 'application/json',
-					'Authorization'=> 'Bearer '.$this->getTokenMilos(),
+					'Authorization'=> 'Bearer '.session('user_token'),
 					'X-Requested-With'=> 'XMLHttpRequest'
 				]
 
@@ -158,15 +187,13 @@ class CartController extends ClientController
 			$purchase_history = $this->decodeApiResponse($purchase_history_request);
 
 		}
-		catch (\GuzzleHttp\Exception\ClientException $e) {
-
+		catch (\GuzzleHttp\Exception\ClientException $e)
+		{
 			return view('errors.api_request_failed');
-
 		}
-		catch (\Throwable $e) {
-
+		catch (\Throwable $e)
+		{
 			return view('errors.api_not_available');
-
 		}
 
 		return view('cart.history', compact('purchase_history'));

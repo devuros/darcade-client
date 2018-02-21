@@ -5,19 +5,13 @@
 @section('content')
 
 	<div id="gameShow">
-
 		<h2>{{ $game->title }}</h2>
-
 		<div class='game-info-wrapper'>
 			<div class='game-info-left'>
 				<div class='game-left-top'>
 					<img src="{{ $screenshots[0]->source }}">
 				</div>
 				<div class='game-left-bottom'>
-					{{-- <img src="{{ asset('images/first.svg') }}">
-					<img src="{{ asset('images/second.svg') }}">
-					<img src="{{ asset('images/third.svg') }}">
-					<img src="{{ asset('images/first.svg') }}"> --}}
 
 					@foreach($screenshots as $ss)
 
@@ -29,7 +23,6 @@
 			</div>
 			<div class='game-info-right'>
 				<div class='game-right-image'>
-					{{-- <img src="{{ asset('images/third.svg') }}"> --}}
 					<img src="{{ $game->image }}">
 				</div>
 				<div class='game-right-desc'>
@@ -37,9 +30,6 @@
 				</div>
 				<div class='game-right-details'>
 					<div class="game-details-row margin-bottom-10">
-						{{-- <span class='gray uppercase inline-block'>all reviews:</span>
-						<span class='white'>23% positive</span>
-						<span class='gray'>(17 total)</span> --}}
 					</div>
 					<div class="game-details-row margin-bottom-10">
 						<span class='gray uppercase inline-block'>release date:</span>
@@ -80,14 +70,13 @@
 				</div>
 			</div>
 		</div>
-
-
 		<div class="game-action-wrapper">
-			@guest
+			@if (session()->has('user_id'))
+				<p>Add to wishlist</p>
+			@else
 				<p>Sign in to add this item to your wishlist</p>
-			@endguest
+			@endif
 		</div>
-
 		<div class="game-bottom-section">
 			<div class="game-buy-wrapper">
 				<h3>Buy {{ $game->title }}</h3>
@@ -111,14 +100,11 @@
 
 					<div class='add-to-cart'>
 
-						@auth
-							<a class="link-buttton" href="{{ route('home') }}">Add to Cart</a>
-							{{-- <a class="link-buttton" href="{{ route('login') }}">Sign in</a> --}}
-						@endauth
-						@guest
-							{{-- <a class="link-buttton" href="{{ route('home') }}">Add to Cart</a> --}}
+						@if (session()->has('user_id'))
+							<a class="link-buttton" href="{{ route('cart.store', ['id'=> $game->id]) }}">Add to Cart</a>
+						@else
 							<a class="link-buttton" href="{{ route('login') }}">Sign in</a>
-						@endguest
+						@endif
 
 					</div>
 
@@ -128,7 +114,6 @@
 				<h2>about this game</h2>
 				<p>{{ $game->about }}</p>
 			</div>
-
 
 			{{-- <div class="game-reviews-wrapper">
 				<h2>customer reviews</h2>
@@ -180,7 +165,6 @@
 					<div class="clear"></div>
 				</div>
 			</div> --}}
-
 
 		</div>
 	</div>

@@ -4,16 +4,44 @@
 		"selected_items":
 		[
 			[
+				"lo",
+				"login_failed"
+			],
+			[
+				"login",
+				"login_response"
+			],
+			[
+				"s",
+				"screenshots"
+			],
+			[
+				"MET",
+				"METHOD_GET"
+			],
+			[
+				"purch",
+				"purchase_history"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"text-color",
+				"text-color-primary"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
 				"cart",
 				"cart_content"
 			],
 			[
 				"font-",
 				"font-size"
-			],
-			[
-				"text-color",
-				"text-color-hover"
 			],
 			[
 				"above-header",
@@ -26,10 +54,6 @@
 			[
 				"margin",
 				"margin-top"
-			],
-			[
-				"padd",
-				"padding-top"
 			],
 			[
 				"text",
@@ -276,10 +300,6 @@
 				"datalist\tTag"
 			],
 			[
-				"s",
-				"setlocale"
-			],
-			[
 				"d",
 				"date"
 			],
@@ -310,10 +330,6 @@
 			[
 				"te",
 				"textarea\tTag"
-			],
-			[
-				"border",
-				"border-radius"
 			],
 			[
 				"mar",
@@ -363,36 +379,18 @@
 			"file": "routes/web.php",
 			"settings":
 			{
-				"buffer_size": 1783,
+				"buffer_size": 1935,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/Http/Controllers/ClientController.php",
+			"file": "app/Http/Controllers/AuthController.php",
 			"settings":
 			{
-				"buffer_size": 4352,
+				"buffer_size": 1875,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/CartController.php",
-			"settings":
-			{
-				"buffer_size": 1349,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/cart/index.blade.php",
-			"settings":
-			{
-				"buffer_size": 2481,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -554,39 +552,44 @@
 	"expanded_folders":
 	[
 		"/C/Users/Uki/darcade-client",
-		"/C/Users/Uki/darcade-client/resources"
+		"/C/Users/Uki/darcade-client/resources",
+		"/C/Users/Uki/darcade-client/resources/views"
 	],
 	"file_history":
 	[
-		"/C/Users/Uki/darcade-client/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
-		"/C/Users/Uki/darcade-client/resources/assets/sass/_variables.scss",
-		"/C/Users/Uki/darcade-client/resources/assets/sass/app.scss",
+		"/C/Users/Uki/darcade-client/resources/views/support.blade.php",
+		"/C/Users/Uki/darcade-client/app/Http/Controllers/CartController.php",
 		"/C/Users/Uki/darcade-client/resources/views/games/show.blade.php",
+		"/C/Users/Uki/darcade-client/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
+		"/C/Users/Uki/darcade-client/resources/views/layouts/header.blade.php",
+		"/C/Users/Uki/darcade-client/app/Http/Controllers/GameController.php",
+		"/C/Users/Uki/darcade-client/app/Http/Controllers/ClientController.php",
+		"/C/Users/Uki/darcade-client/app/Http/Controllers/DevController.php",
+		"/C/Users/Uki/darcade-client/app/Http/Controllers/SearchController.php",
+		"/C/Users/Uki/darcade-client/app/Http/Controllers/PubController.php",
+		"/C/Users/Uki/darcade-client/app/Http/Controllers/HomeController.php",
 		"/C/Users/Uki/darcade-client/app/Http/Controllers/GenreController.php",
+		"/C/Users/Uki/darcade-client/resources/assets/sass/app.scss",
+		"/C/Users/Uki/darcade-client/resources/views/login.blade.php",
+		"/C/Users/Uki/darcade-client/resources/views/cart/index.blade.php",
+		"/C/Users/Uki/darcade-client/resources/views/welcome.blade.php",
+		"/C/Users/Uki/darcade-client/resources/views/layouts/index.blade.php",
+		"/C/Users/Uki/darcade-client/resources/views/home.blade.php",
+		"/C/Users/Uki/darcade-client/resources/views/genres/showGenreGames.blade.php",
+		"/C/Users/Uki/darcade-client/resources/views/developers/showDeveloperGames.blade.php",
+		"/C/Users/Uki/darcade-client/resources/views/publishers/showPublisherGames.blade.php",
+		"/C/Users/Uki/darcade-client/resources/views/cart/history.blade.php",
+		"/C/Users/Uki/darcade-client/public/css/app.css",
+		"/C/Users/Uki/darcade-client/resources/assets/sass/_variables.scss",
 		"/C/Users/Uki/darcade-client/app/Http/Controllers/AuthController.php",
 		"/C/Users/Uki/darcade-client/resources/views/author.blade.php",
 		"/C/Users/Uki/darcade-client/vendor/guzzlehttp/guzzle/src/Client.php",
 		"/C/Users/Uki/darcade-client/vendor/guzzlehttp/guzzle/src/RequestOptions.php",
-		"/C/Users/Uki/darcade-client/resources/views/cart/index.blade.php",
-		"/C/Users/Uki/darcade-client/app/Http/Controllers/ClientController.php",
-		"/C/Users/Uki/darcade-client/app/Http/Controllers/CartController.php",
-		"/C/Users/Uki/darcade-client/resources/views/genres/showGenreGames.blade.php",
-		"/C/Users/Uki/darcade-client/app/Http/Controllers/GameController.php",
-		"/C/Users/Uki/darcade-client/resources/views/login.blade.php",
-		"/C/Users/Uki/darcade-client/resources/views/support.blade.php",
-		"/C/Users/Uki/darcade-client/resources/views/layouts/header.blade.php",
 		"/C/Users/Uki/darcade-client/resources/views/layouts/footer.blade.php",
 		"/C/Users/Uki/darcade-client/.env",
 		"/C/Users/Uki/darcade-client/app/Http/Middleware/EncryptCookies.php",
-		"/C/Users/Uki/darcade-client/resources/views/home.blade.php",
-		"/C/Users/Uki/darcade-client/app/Http/Controllers/HomeController.php",
-		"/C/Users/Uki/darcade-client/app/Http/Controllers/SearchController.php",
 		"/C/Users/Uki/darcade-client/resources/views/search/under_twenty_five.blade.php",
 		"/C/Users/Uki/darcade-client/resources/views/search/under_ten.blade.php",
-		"/C/Users/Uki/darcade-client/app/Http/Controllers/PubController.php",
-		"/C/Users/Uki/darcade-client/resources/views/publishers/showPublisherGames.blade.php",
-		"/C/Users/Uki/darcade-client/resources/views/developers/showDeveloperGames.blade.php",
-		"/C/Users/Uki/darcade-client/app/Http/Controllers/DevController.php",
 		"/C/Users/Uki/darcade-client/app/Http/Kernel.php",
 		"/C/Users/Uki/darcade-client/app/Http/Middleware/VerifyCsrfToken.php",
 		"/C/Users/Uki/darcade-client/resources/views/layouts/app.blade.php",
@@ -606,7 +609,6 @@
 		"/C/Users/Uki/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
 		"/C/Users/Uki/darcade-client/composer.lock",
 		"/C/Users/Uki/darcade-client/composer.json",
-		"/C/Users/Uki/darcade-client/resources/views/welcome.blade.php",
 		"/C/Users/Uki/darcade-client/webpack.mix.js",
 		"/C/Users/Uki/darcade-client/resources/views/layout/app.blade.php",
 		"/C/Users/Uki/darcade-client/vendor/league/flysystem/docs/logo/laravel.svg",
@@ -682,14 +684,11 @@
 		"/C/Users/Uki/darcade-api/vendor/laravel/framework/src/Illuminate/Database/Seeder.php",
 		"/C/Users/Uki/darcade-api/database/factories/GenreFactory.php",
 		"/C/Users/Uki/darcade-api/database/factories/UserFactory.php",
-		"/C/Users/Uki/darcade-api/database/factories/PublisherFactory.php",
-		"/C/Users/Uki/darcade-api/database/factories/DeveloperFactory.php",
-		"/C/Users/Uki/darcade-api/database/factories/RoleFactory.php",
-		"/C/Users/Uki/darcade-api/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php"
+		"/C/Users/Uki/darcade-api/database/factories/PublisherFactory.php"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -703,6 +702,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"email",
+			"index",
+			"cart",
+			"logout",
+			"showLoginForm",
+			"login",
+			"success",
+			"user_token",
+			"center",
+			"Total",
+			"Item",
+			"Data",
+			"purchaseHistoryContentWrapper",
+			"get",
 			"getApiRequest",
 			"profile",
 			"getTokenMilos",
@@ -816,21 +829,7 @@
 			"prev",
 			"clear",
 			"left",
-			"bootstra",
-			"boot",
-			"first",
-			"active",
-			"em",
-			"title",
-			"rgb",
-			"top",
-			"method",
-			"Controller",
-			"top",
-			"genres",
-			"sellers",
-			"genres",
-			"client"
+			"bootstra"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -848,7 +847,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -857,15 +856,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1783,
+						"buffer_size": 1935,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1408,
-								1408
+								1785,
+								1785
 							]
 						],
 						"settings":
@@ -876,54 +875,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/Http/Controllers/ClientController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4352,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								849,
-								849
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 486.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/Http/Controllers/CartController.php",
+					"buffer": 1,
+					"file": "app/Http/Controllers/AuthController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1349,
+						"buffer_size": 1875,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								755,
-								755
+								38,
+								38
 							]
 						],
 						"settings":
@@ -932,39 +901,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 432.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "resources/views/cart/index.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2481,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1725,
-								1725
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 54.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1019,12 +959,64 @@
 		"selected_items":
 		[
 			[
+				"cartc",
+				"app\\Http\\Controllers\\CartController.php"
+			],
+			[
 				"games/show",
 				"resources\\views\\games\\show.blade.php"
 			],
 			[
-				"cartc",
+				"gamecon",
+				"app\\Http\\Controllers\\GameController.php"
+			],
+			[
+				"header.blade",
+				"resources\\views\\layouts\\header.blade.php"
+			],
+			[
+				"homec",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"cartco",
 				"app\\Http\\Controllers\\CartController.php"
+			],
+			[
+				"clientc",
+				"app\\Http\\Controllers\\ClientController.php"
+			],
+			[
+				"homecon",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"authc",
+				"app\\Http\\Controllers\\AuthController.php"
+			],
+			[
+				"games/sh",
+				"resources\\views\\games\\show.blade.php"
+			],
+			[
+				"gamec",
+				"app\\Http\\Controllers\\GameController.php"
+			],
+			[
+				"cart/bl",
+				"resources\\views\\cart\\index.blade.php"
+			],
+			[
+				"app.css",
+				"public\\css\\app.css"
+			],
+			[
+				"publishers/",
+				"resources\\views\\publishers\\showPublisherGames.blade.php"
+			],
+			[
+				"genre.blade",
+				"resources\\views\\genres\\showGenreGames.blade.php"
 			],
 			[
 				"genrec",
@@ -1039,10 +1031,6 @@
 				"app\\Http\\Controllers\\ClientController.php"
 			],
 			[
-				"gamec",
-				"app\\Http\\Controllers\\GameController.php"
-			],
-			[
 				"support.blade",
 				"resources\\views\\support.blade.php"
 			],
@@ -1051,20 +1039,12 @@
 				"resources\\views\\layouts\\footer.blade.php"
 			],
 			[
-				"header.blade",
-				"resources\\views\\layouts\\header.blade.php"
-			],
-			[
 				".env",
 				".env"
 			],
 			[
 				"home.blade",
 				"resources\\views\\home.blade.php"
-			],
-			[
-				"homecon",
-				"app\\Http\\Controllers\\HomeController.php"
 			],
 			[
 				"search",
@@ -1089,10 +1069,6 @@
 			[
 				"pubcon",
 				"app\\Http\\Controllers\\PubController.php"
-			],
-			[
-				"homec",
-				"app\\Http\\Controllers\\HomeController.php"
 			],
 			[
 				"verifyc",
@@ -1435,10 +1411,6 @@
 				"app\\Http\\Controllers\\DeveloperController.php"
 			],
 			[
-				"cartco",
-				"app\\Http\\Controllers\\CartController.php"
-			],
-			[
 				"user.ph",
 				"app\\User.php"
 			],
@@ -1497,38 +1469,6 @@
 			[
 				"screnshotre",
 				"app\\Http\\Resources\\ScreenshotResource.php"
-			],
-			[
-				"apicon",
-				"app\\Http\\Controllers\\ApiController.php"
-			],
-			[
-				"deveoperc",
-				"app\\Http\\Controllers\\DeveloperController.php"
-			],
-			[
-				"storecar",
-				"app\\Http\\Requests\\StoreCart.php"
-			],
-			[
-				"cartpo",
-				"app\\Policies\\CartPolicy.php"
-			],
-			[
-				"roleco",
-				"app\\Http\\Controllers\\RoleController.php"
-			],
-			[
-				"rolepo",
-				"app\\Policies\\RolePolicy.php"
-			],
-			[
-				"screenshotres",
-				"app\\Http\\Resources\\ScreenshotResource.php"
-			],
-			[
-				"scree",
-				"app\\Screenshot.php"
 			]
 		],
 		"width": 0.0
@@ -1559,7 +1499,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 287.0,
+	"side_bar_width": 258.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

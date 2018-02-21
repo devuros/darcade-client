@@ -19,9 +19,6 @@
 			<div class="form-group">
 				<textarea class="form-control" id="question" rows="5" placeholder="Okey, what's your question?" required="required"></textarea>
 			</div>
-			<div class="form-group">
-				<input class="form-control" type="text" id="verification" name="verification" placeholder="What is 1 + 4?" required="required">
-			</div>
 			<div class="submit-button-wrapper">
 				<button type="submit" class="btn btn-primary">SEND</button>
 				<div class="clear"></div>
