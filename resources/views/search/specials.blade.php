@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
-@section('title', 'Browsing Under 10&euro;')
+@section('title', 'Browsing Special Offers')
 
 @section('content')
 
 	<div id="showGenreGamesSection">
-		<h1>Browsing Under 10&euro;</h1>
+		<h1>Browsing Special Offers</h1>
 		<div class="genre-games-wrapper">
 
-			@foreach($under10 as $game)
+			@foreach($specials as $game)
 
 				<div class="game-wrapper">
 					<a href="{{ route('games.show', ['id'=> $game->id]) }}">

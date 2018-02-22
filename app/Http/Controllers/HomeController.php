@@ -10,6 +10,7 @@ class HomeController extends ClientController
 	{
 
 		try {
+
 			$specials_limit = 3;
 
 			$genres_response = $this->getApiRequest('genres/');
@@ -24,6 +25,9 @@ class HomeController extends ClientController
 			$under25_request = $this->getApiRequest('games/under/25/'.$specials_limit);
 			$under25 = $this->decodeApiResponse($under25_request);
 
+			$featured_request = $this->getApiRequest('games/specials/featured');
+			$featured = $this->decodeApiResponse($featured_request);
+
 		}
 		catch (\GuzzleHttp\Exception\ClientException $e)
 		{
@@ -34,7 +38,7 @@ class HomeController extends ClientController
 			return view('errors.api_not_available');
 		}
 
-		return view('home', compact(['genres', 'specials', 'under10', 'under25']));
+		return view('home', compact(['genres', 'specials', 'under10', 'under25', 'featured']));
 
 	}
 

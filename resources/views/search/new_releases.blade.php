@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
-@section('title', 'Browsing Under 10&euro;')
+@section('title', 'Browsing New Releases')
 
 @section('content')
 
-	<div id="showGenreGamesSection">
-		<h1>Browsing Under 10&euro;</h1>
+	<div id="showDeveloperGamesSection">
+		<h1>Browsing New Releases</h1>
 		<div class="genre-games-wrapper">
 
-			@foreach($under10 as $game)
+			@foreach($specials as $game)
 
 				<div class="game-wrapper">
 					<a href="{{ route('games.show', ['id'=> $game->id]) }}">
@@ -23,6 +23,9 @@
 									<h6>{{ $genre->genre }}</h6>
 								@endforeach
 
+							</div>
+							<div class="game-content-forth-col">
+								{{ Carbon\Carbon::parse($game->release_date)->format('d M Y') }}
 							</div>
 
 							@if($game->is_on_sale)

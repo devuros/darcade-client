@@ -7,16 +7,13 @@
 	<div class='container home-page-content-wrapper'>
 		<div class='home-page-gutter'>
 			<div class='gutter-icon'>
-
 				<a href="{{ route('quantic.time') }}" target="_blank" title="Time is the enemy">
 					<i class='fa fa-crosshairs fa-4x'></i>
 				</a>
-
 			</div>
 			<div class="gutter-wrapper">
 				<div class='gutter-header'>browse categories</div>
 				<div class='gutter-items'>
-
 					<a class="gutter-item" href="{{ route('search.top') }}">
 						<div>
 							<i class='fa fa-line-chart'></i>
@@ -35,7 +32,6 @@
 						</div>
 						<b class="item-text">specials</b>
 					</a>
-
 				</div>
 				<div class='gutter-header gutter-genres'>browse by genre</div>
 				<div class='gutter-items'>
@@ -61,68 +57,61 @@
 					<h2>featured &amp; recommended</h2>
 				</div>
 				<div id='featuredSection' class='home-page-section-content'>
-
 					<div id='featuredCarousel' class='carousel slide' data-ride='carousel'>
-
 						<ol class="carousel-indicators">
-							<li data-target='#featuredCarousel' data-slide-to="0" class="active"></li>
-							<li data-target='#featuredCarousel' data-slide-to="1"></li>
-							<li data-target='#featuredCarousel' data-slide-to="2"></li>
+
+							@foreach($featured as $fg)
+
+								@if($loop->first)
+									<li data-target='#featuredCarousel' data-slide-to="0" class="active"></li>
+								@else
+									<li data-target='#featuredCarousel' data-slide-to="{{ $loop->index }}"></li>
+								@endif
+
+							@endforeach
+
 						</ol>
 						<div class='carousel-inner'>
 
-							<div class='carousel-item active'>
-								<a href='games/1'>
-									<img class='d-block w-100' src="{{ asset('images/first.svg') }}">
-									<div class='featured-info'>
-										<div class="info-title">
-											<h2>Divinity: Original Sin 2</h2>
-										</div>
-										<div class="info-price">
-											<div class='price-actual'>27,99&euro;</div>
-										</div>
-									</div>
-								</a>
-							</div>
+							@foreach($featured as $fg)
 
-							<div class='carousel-item'>
-								<a href='games/2'>
-									<img class='d-block w-100' src="{{ asset('images/second.svg') }}">
-									<div class='featured-info'>
-										<div class="info-title">
-											<h2>Human: Fall Flat</h2>
-										</div>
-										<div class="info-price">
-											<div class='price-discount'>-60%</div>
-											<div class='price-base'>
-												<del>19,99&euro;</del>
+								@if($loop->first)
+									<div class='carousel-item active'>
+								@else
+									<div class='carousel-item'>
+								@endif
+									<a href="{{ route('games.show', ['id'=> $fg->id]) }}">
+										<img class='d-block w-100' src="{{ $fg->image }}">
+										<div class='featured-info'>
+											<div class="info-title">
+												<h2>{{ $fg->title }}</h2>
 											</div>
-											<div class='price-actual'>7,99&euro;</div>
-										</div>
-									</div>
-								</a>
-							</div>
+											<div class="info-price">
 
-							<div class='carousel-item'>
-								<a href='games/3'>
-									<img class='d-block w-100' src="{{ asset('images/third.svg') }}">
-									<div class='featured-info'>
-										<div class="info-title">
-											<h2>Grand Theft Auto V</h2>
-										</div>
-										<div class="info-price">
-											<div class='price-discount'>-40%</div>
-											<div class='price-base'>
-												<del>59,99&euro;</del>
+												@if($fg->is_on_sale)
+
+													<div class='price-discount'>
+														-{{ round(100*($fg->base_price-$fg->sale_price)/$fg->base_price) }}%
+													</div>
+													<div class='price-base'>
+														<del>{{ $fg->base_price }}&euro;</del>
+													</div>
+													<div class='price-actual'>{{ $fg->sale_price }}&euro;</div>
+
+												@else
+
+													<div class='price-actual'>{{ $fg->base_price }}&euro;</div>
+
+												@endif
+
 											</div>
-											<div class='price-actual'>35,99&euro;</div>
 										</div>
-									</div>
-								</a>
-							</div>
+									</a>
+								</div>
+
+							@endforeach
 
 						</div>
-
 						<a class='carousel-control carousel-control-prev' href='#featuredCarousel' role='button' data-slide='prev'>
 							<span class="carousel-control-prev-icon" aria-hidden="true">
 								<i class="fa fa-chevron-left"></i>
@@ -135,7 +124,6 @@
 							</span>
 							<span class="sr-only">Next</span>
 						</a>
-
 					</div>
 					<div class="clear"></div>
 				</div>

@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
-@section('title', 'Browsing Under 10&euro;')
+@section('title', 'Browsing Top Sellers')
 
 @section('content')
 
-	<div id="showGenreGamesSection">
-		<h1>Browsing Under 10&euro;</h1>
+	<div id="showDeveloperGamesSection">
+		<h1>Browsing Top Sellers</h1>
 		<div class="genre-games-wrapper">
 
-			@foreach($under10 as $game)
+			@foreach($specials as $game)
 
 				<div class="game-wrapper">
 					<a href="{{ route('games.show', ['id'=> $game->id]) }}">
@@ -18,11 +18,9 @@
 						<div class="game-content-wrapper">
 							<div class="game-content-first-col">
 								<h4>{{ $game->title }}</h4>
-
-								@foreach($game->genres as $genre)
-									<h6>{{ $genre->genre }}</h6>
-								@endforeach
-
+							</div>
+							<div class="game-content-forth-col">
+								{{ $game->count }}x
 							</div>
 
 							@if($game->is_on_sale)
