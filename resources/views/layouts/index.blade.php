@@ -24,10 +24,10 @@
 
         </div>
 
-        @guest
+        @if (!session()->has('user_id'))
+
             <div class='container-fluid' id='loginSection'>
                 <div class='container home-page-content-wrapper'>
-
                     <div id='loginSectionGutter'></div>
                     <div id='loginSectionWrapper'>
                         <div id='loginSectionTop'>
@@ -47,10 +47,10 @@
                             {{-- <p>Or <a href="{{ route('register') }}">sign up</a> and join Darcade for free</p> --}}
                         </div>
                     </div>
-
                 </div>
             </div>
-        @endguest
+
+        @endif
 
         <div class='container-fluid global-footer-wrapper'>
             <div class='container global-footer'>
