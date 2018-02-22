@@ -147,65 +147,35 @@
 					<h2>special offers</h2>
 				</div>
 				<div id='specialOffers' class='home-page-section-content'>
-
 					<div class='special-offers-row'>
-						<div class='special-offer-item'>
-							<a href='games/1'>
-								<div class='special-offer-item-image'>
-									<img src="{{ asset('images/first.svg') }}">
-								</div>
-								<div class='special-offer-item-price'>
-									<div class='special-offer-item-price-wrapper'>
-										<div class='special-offer-price-discount'>-75%</div>
-										<div class='special-offer-price-both'>
-											<div class='special-offer-price-base'>
-												<del>39,99&euro;</del>
+
+						@foreach($specials as $special)
+
+							<div class='special-offer-item'>
+								<a href="{{ route('games.show', ['id'=> $special->id]) }}">
+									<div class='special-offer-item-image'>
+										<img src="{{ $special->image }}">
+									</div>
+									<div class='special-offer-item-price'>
+										<div class='special-offer-item-price-wrapper'>
+											<div class='special-offer-price-discount'>
+												-{{ round(100*($special->base_price-$special->sale_price)/$special->base_price) }}%
 											</div>
-											<div class='special-offer-price-sale'>9,99&euro;</div>
+											<div class='special-offer-price-both'>
+												<div class='special-offer-price-base'>
+													<del>{{ $special->base_price }}&euro;</del>
+												</div>
+												<div class='special-offer-price-sale'>{{ $special->sale_price }}&euro;</div>
+											</div>
 										</div>
 									</div>
-								</div>
-							</a>
-						</div>
-						<div class='special-offer-item'>
-							<a href='games/2'>
-								<div class='special-offer-item-image'>
-									<img src="{{ asset('images/second.svg') }}">
-								</div>
-								<div class='special-offer-item-price'>
-									<div class='special-offer-item-price-wrapper'>
-										<div class='special-offer-price-discount'>-33%</div>
-										<div class='special-offer-price-both'>
-											<div class='special-offer-price-base'>
-												<del>19,99&euro;</del>
-											</div>
-											<div class='special-offer-price-sale'>13,39&euro;</div>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class='special-offer-item'>
-							<a href='games/3'>
-								<div class='special-offer-item-image'>
-									<img src="{{ asset('images/third.svg') }}">
-								</div>
-								<div class='special-offer-item-price'>
-									<div class='special-offer-item-price-wrapper'>
-										<div class='special-offer-price-discount'>-75%</div>
-										<div class='special-offer-price-both'>
-											<div class='special-offer-price-base'>
-												<del>19,99&euro;</del>
-											</div>
-											<div class='special-offer-price-sale'>4,99&euro;</div>
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
+								</a>
+							</div>
+
+						@endforeach
+
 						<div class="clear"></div>
 					</div>
-
 				</div>
 			</div>
 
@@ -230,67 +200,6 @@
 				</div>
 			</div>
 
-			{{-- Under 25 section --}}
-			<div class='home-page-section'>
-				<div class='home-page-section-title'>
-					<h2>under 25&euro;
-						<span class='browse-all'>
-							<a href="{{ route('search.under.25') }}">browse all</a>
-						</span>
-					</h2>
-				</div>
-				<div id='under25' class='home-page-section-content'>
-
-					<div class='special-offer-item'>
-						<a href='games/1'>
-							<div class='special-offer-item-image'>
-								<img src="{{ asset('images/first.svg') }}">
-							</div>
-							<div class='special-offer-item-price'>
-								<div class='special-offer-item-price-wrapper'>
-									<div class='special-offer-price-discount'>-50%</div>
-									<div class='special-offer-price-base'>
-										<del>39,99&euro;</del>
-									</div>
-									<div class='special-offer-price-sale'>19,99&euro;</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class='special-offer-item'>
-						<a href='games/3'>
-							<div class='special-offer-item-image'>
-								<img src="{{ asset('images/third.svg') }}">
-							</div>
-							<div class='special-offer-item-price'>
-								<div class='special-offer-item-price-wrapper'>
-									<div class='special-offer-price-sale'>12,99&euro;</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class='special-offer-item'>
-						<a href='games/2'>
-							<div class='special-offer-item-image'>
-								<img src="{{ asset('images/second.svg') }}">
-							</div>
-							<div class='special-offer-item-price'>
-								<div class='special-offer-item-price-wrapper'>
-									<div class='special-offer-price-discount'>-35%</div>
-									<div class='special-offer-price-base'>
-										<del>29,99&euro;</del>
-									</div>
-									<div class='special-offer-price-sale'>19,49&euro;</div>
-								</div>
-							</div>
-						</a>
-					</div>
-
-					<div class="clear"></div>
-
-				</div>
-			</div>
-
 			{{-- Under 10 section --}}
 			<div class='home-page-section'>
 				<div class='home-page-section-title'>
@@ -302,51 +211,91 @@
 				</div>
 				<div id='under10' class='home-page-section-content'>
 
-					<div class='special-offer-item'>
-						<a href='games/3'>
-							<div class='special-offer-item-image'>
-								<img src="{{ asset('images/third.svg') }}">
-							</div>
-							<div class='special-offer-item-price'>
-								<div class='special-offer-item-price-wrapper'>
-									<div class='special-offer-price-sale'>8,99&euro;</div>
+					@foreach($under10 as $ut)
+
+						<div class='special-offer-item'>
+							<a href="{{ route('games.show', ['id'=> $ut->id]) }}">
+								<div class='special-offer-item-image'>
+									<img src="{{ $ut->image }}">
 								</div>
-							</div>
-						</a>
-					</div>
-					<div class='special-offer-item'>
-						<a href='games/2'>
-							<div class='special-offer-item-image'>
-								<img src="{{ asset('images/second.svg') }}">
-							</div>
-							<div class='special-offer-item-price'>
-								<div class='special-offer-item-price-wrapper'>
-									<div class='special-offer-price-discount'>-65%</div>
-									<div class='special-offer-price-base'>
-										<del>16,99&euro;</del>
+								<div class='special-offer-item-price'>
+									<div class='special-offer-item-price-wrapper'>
+
+										@if($ut->is_on_sale)
+
+											<div class='special-offer-price-discount'>
+												-{{ round(100*($ut->base_price-$ut->sale_price)/$ut->base_price) }}%
+											</div>
+											<div class='special-offer-price-base'>
+												<del>{{ $ut->base_price }}&euro;</del>
+											</div>
+											<div class='special-offer-price-sale'>{{ $ut->sale_price }}&euro;</div>
+
+										@else
+
+											<div class='special-offer-price-sale'>{{ $ut->base_price }}&euro;</div>
+
+										@endif
+
 									</div>
-									<div class='special-offer-price-sale'>5,99&euro;</div>
 								</div>
-							</div>
-						</a>
-					</div>
-					<div class='special-offer-item'>
-						<a href='games/1'>
-							<div class='special-offer-item-image'>
-								<img src="{{ asset('images/first.svg') }}">
-							</div>
-							<div class='special-offer-item-price'>
-								<div class='special-offer-item-price-wrapper'>
-									<div class='special-offer-price-sale'>4,99&euro;</div>
-								</div>
-							</div>
-						</a>
-					</div>
+							</a>
+						</div>
+
+					@endforeach
 
 					<div class="clear"></div>
-
 				</div>
 			</div>
+
+			{{-- Under 25 section --}}
+			<div class='home-page-section'>
+				<div class='home-page-section-title'>
+					<h2>under 25&euro;
+						<span class='browse-all'>
+							<a href="{{ route('search.under.25') }}">browse all</a>
+						</span>
+					</h2>
+				</div>
+				<div id='under25' class='home-page-section-content'>
+
+					@foreach($under25 as $utf)
+
+						<div class='special-offer-item'>
+							<a href="{{ route('games.show', ['id'=> $utf->id]) }}">
+								<div class='special-offer-item-image'>
+									<img src="{{ $utf->image }}">
+								</div>
+								<div class='special-offer-item-price'>
+									<div class='special-offer-item-price-wrapper'>
+
+										@if($utf->is_on_sale)
+
+											<div class='special-offer-price-discount'>
+												-{{ round(100*($utf->base_price-$utf->sale_price)/$utf->base_price) }}%
+											</div>
+											<div class='special-offer-price-base'>
+												<del>{{ $utf->base_price }}&euro;</del>
+											</div>
+											<div class='special-offer-price-sale'>{{ $utf->sale_price }}&euro;</div>
+
+										@else
+
+											<div class='special-offer-price-sale'>{{ $utf->base_price }}&euro;</div>
+
+										@endif
+
+									</div>
+								</div>
+							</a>
+						</div>
+
+					@endforeach
+
+					<div class="clear"></div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 
