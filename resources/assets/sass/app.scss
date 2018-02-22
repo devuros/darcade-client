@@ -105,6 +105,23 @@
 					background-color: $header-bg-color;
 				}
 			}
+			.cart-li {
+
+				a {
+					padding: 5px 15px;
+					margin: 5px 0px;
+					background-color: $discount-bg-color;
+					border-radius: 2px;
+					color: $text-color-primary;
+
+					i {
+						font-size: 18px;
+					}
+				}
+				a:hover {
+					background-color: #7dae37;
+				}
+			}
 		}
 	}
 }
