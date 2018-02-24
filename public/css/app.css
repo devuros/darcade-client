@@ -12262,6 +12262,7 @@ button.close {
   height: 80px;
   float: left;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 #gameShow .game-info-wrapper .game-info-left .game-left-bottom img:last-child {
