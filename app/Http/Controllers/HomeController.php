@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends ClientController
 {
@@ -44,9 +45,20 @@ class HomeController extends ClientController
 		return view('support');
 	}
 
-	public function contact()
+	public function contact(Request $request)
 	{
-		//
+		$name = $request->name;
+		$email = $request->email;
+		$question = $request->question;
+		$content = 'From: '.$name.'. Email:'.$email.'. Question: '.$question;
+
+		// Mail::send([], [], function ($content)
+		// {
+		// 	$content->to('uros.jovanovic.11.13@ict.edu.rs')
+		// 		->subject('Support');
+		// });
+
+		return view('support', ['message'=> 'Your message was successfully sent']);
 	}
 
 	public function author()
