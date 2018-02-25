@@ -881,6 +881,18 @@
 			color: $text-color-primary;
 			margin: 0;
 		}
+		.link-buttton {
+			border-radius: 4px;
+			border: 1px solid $footer-bg-color;
+			padding: 5px 15px;
+			display: inline-block;
+			text-decoration: none;
+			color: $text-color-hover;
+			background-color: #0d7ebf;
+		}
+		.link-buttton:hover {
+			background-color: $above-header-bg-color;
+		}
 	}
 	.game-bottom-section {
 		width: 600px;

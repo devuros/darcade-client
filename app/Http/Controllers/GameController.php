@@ -34,4 +34,9 @@ class GameController extends ClientController
         return view('games.show', compact(['game', 'screenshots', 'reviews', 'statistics']));
     }
 
+    public function wish($id)
+    {
+        //
+    }
+
 }

@@ -76,7 +76,7 @@
 		</div>
 		<div class="game-action-wrapper">
 			@if (session()->has('user_id'))
-				<p>Add to wishlist</p>
+				<a class="link-buttton" href="{{ route('games.wish', ['id'=> $game->id]) }}">Add to wishlist</a>
 			@else
 				<p>Sign in to add this item to your wishlist</p>
 			@endif
