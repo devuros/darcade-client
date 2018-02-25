@@ -1633,7 +1633,7 @@
 	}
 }
 #communitySection {
-	width: 700px;
+	width: 750px;
 	min-height: 80vh;
 
 	h1 {
@@ -1670,15 +1670,23 @@
 		margin-bottom: 20px;
 	}
 	.genre-games-wrapper {
-		width: 700px;
+		width: 750px;
 		margin-bottom: 80px;
 
 		.game-wrapper {
-			width: 700px;
+			width: 750px;
 			height: 70px;
 			margin: 7px 0;
 			background-color: $price-bg-color;
 
+			.game-wish-order {
+				width: 50px;
+				height: 70px;
+				float: left;
+				text-align: center;
+				line-height: 70px;
+				color: $text-color-primary;
+			}
 			.game-image-wrapper {
 				width: 185px;
 				float: left;
@@ -1705,6 +1713,49 @@
 					h6 {
 						color: $text-color-primary;
 						margin: 0;
+					}
+				}
+				.game-content-second-col {
+					width: 75px;
+					height: 100%;
+					float: left;
+					color: $discount-text-color-green;
+
+					div {
+						padding: 0 5px;
+						display: inline-block;
+						margin-top: 23px;
+						margin-left: 18px;
+						background-color: $discount-bg-color;
+					}
+				}
+				.game-content-third-col {
+					width: 75px;
+					height: 100%;
+					float: right;
+					padding-right: 10px;
+
+					.special-offer-price-both {
+						height: 35px;
+						float: right;
+						padding: 0 7px;
+						margin-top: 18px;
+
+						.special-offer-price-base {
+							height: 17px;
+							color: $text-color-secondary;
+							font-size: 12px;
+
+							del {
+								display: block;
+								text-align: right;
+							}
+						}
+						.special-offer-price-sale {
+							height: 18px;
+							color: $text-color-hover;
+							font-size: 14px;
+						}
 					}
 				}
 			}

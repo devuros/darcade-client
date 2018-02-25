@@ -13165,7 +13165,7 @@ button.close {
 }
 
 #communitySection {
-  width: 700px;
+  width: 750px;
   min-height: 80vh;
 }
 
@@ -13207,15 +13207,24 @@ button.close {
 }
 
 #communitySection .genre-games-wrapper {
-  width: 700px;
+  width: 750px;
   margin-bottom: 80px;
 }
 
 #communitySection .genre-games-wrapper .game-wrapper {
-  width: 700px;
+  width: 750px;
   height: 70px;
   margin: 7px 0;
   background-color: #173041;
+}
+
+#communitySection .genre-games-wrapper .game-wrapper .game-wish-order {
+  width: 50px;
+  height: 70px;
+  float: left;
+  text-align: center;
+  line-height: 70px;
+  color: #c6d4df;
 }
 
 #communitySection .genre-games-wrapper .game-wrapper .game-image-wrapper {
@@ -13248,6 +13257,52 @@ button.close {
 #communitySection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-first-col h6 {
   color: #c6d4df;
   margin: 0;
+}
+
+#communitySection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-second-col {
+  width: 75px;
+  height: 100%;
+  float: left;
+  color: #a4d007;
+}
+
+#communitySection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-second-col div {
+  padding: 0 5px;
+  display: inline-block;
+  margin-top: 23px;
+  margin-left: 18px;
+  background-color: #4c6b22;
+}
+
+#communitySection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-third-col {
+  width: 75px;
+  height: 100%;
+  float: right;
+  padding-right: 10px;
+}
+
+#communitySection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-third-col .special-offer-price-both {
+  height: 35px;
+  float: right;
+  padding: 0 7px;
+  margin-top: 18px;
+}
+
+#communitySection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-third-col .special-offer-price-both .special-offer-price-base {
+  height: 17px;
+  color: #b8b6b4;
+  font-size: 12px;
+}
+
+#communitySection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-third-col .special-offer-price-both .special-offer-price-base del {
+  display: block;
+  text-align: right;
+}
+
+#communitySection .genre-games-wrapper .game-wrapper .game-content-wrapper .game-content-third-col .special-offer-price-both .special-offer-price-sale {
+  height: 18px;
+  color: #fff;
+  font-size: 14px;
 }
 
 #communitySection .genre-games-wrapper .game-wrapper:hover {

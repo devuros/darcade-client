@@ -106,12 +106,29 @@ class AuthController extends ClientController
 		return view('users.profile', compact(['user', 'games']));
 	}
 
-	public function wishes()
+	public function wishes($id)
 	{
-		//
+		try
+		{
+			$user_request = $this->getApiRequest('users/'.$id);
+			$user = $this->decodeApiResponse($user_request);
+
+			$wishes_request = $this->getApiRequest('users/'.$id.'/wishes');
+			$games = $this->decodeApiResponse($wishes_request);
+		}
+		catch (\GuzzleHttp\Exception\ClientException $e)
+		{
+			return view('errors.api_request_failed');
+		}
+		catch (\Throwable $e)
+		{
+			return view('errors.api_not_available');
+		}
+
+		return view('users.wishes', compact(['user', 'games']));
 	}
 
-	public function reviews()
+	public function reviews($id)
 	{
 		//
 	}
