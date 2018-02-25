@@ -16,7 +16,11 @@ class GameController extends ClientController
             $screenshots_response = $this->getApiRequest('games/'.$id.'/screenshots');
             $screenshots = $this->decodeApiResponse($screenshots_response);
 
-            //
+            $reviews_request = $this->getApiRequest('games/'.$id.'/reviews');
+            $reviews = $this->decodeApiResponse($reviews_request);
+
+            $reviews_stats = $this->getApiRequest('games/'.$id.'/statistics');
+            $statistics = $this->decodeApiResponse($reviews_stats);
         }
         catch (\GuzzleHttp\Exception\ClientException $e)
         {
@@ -27,7 +31,7 @@ class GameController extends ClientController
             return view('errors.api_not_available');
         }
 
-        return view('games.show', compact(['game', 'screenshots']));
+        return view('games.show', compact(['game', 'screenshots', 'reviews', 'statistics']));
     }
 
 }

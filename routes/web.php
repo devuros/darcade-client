@@ -8,6 +8,7 @@ Route::get('author', 'HomeController@author')->name('author');
 Route::get('login', 'AuthController@showLoginForm')->name('login');
 Route::post('login', 'AuthController@login');
 Route::get('logout', 'AuthController@logout')->name('logout');
+Route::get('users/{id}/profile', 'AuthController@profile')->name('users.profile');
 
 Route::get('games/{id}', 'GameController@show')->name('games.show');
 

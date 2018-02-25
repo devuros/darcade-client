@@ -30,6 +30,10 @@
 				</div>
 				<div class='game-right-details'>
 					<div class="game-details-row margin-bottom-10">
+						<span class='gray uppercase inline-block'>all reviews:</span>
+						<span class='white'>
+							{{ $statistics->data->stats }}
+						</span>
 					</div>
 					<div class="game-details-row margin-bottom-10">
 						<span class='gray uppercase inline-block'>release date:</span>
@@ -107,7 +111,6 @@
 						@endif
 
 					</div>
-
 				</div>
 			</div>
 			<div class="game-about-wrapper">
@@ -117,52 +120,51 @@
 			<div class="game-reviews-wrapper">
 				<h2>Customer reviews</h2>
 
-				<div class="review-wrapper">
-					<div class="review-left">
-						<h4>Storm</h4>
-						<h5>2 reviews</h5>
-					</div>
-					<div class="review-right">
-						<div class="review-right-recommended">
-							<div class="review-right-icon rec">
-								<i class="fa fa-thumbs-up"></i>
+				@if(!isset($reviews->message))
+					@foreach($reviews as $review)
+
+						<div class="review-wrapper">
+							<div class="review-left">
+								<h4>
+									<a href="{{ route('users.profile', ['id'=> $review->user_id]) }}">{{ $review->name }}</a>
+								</h4>
 							</div>
-							<div class="review-right-title">Recommended</div>
-						</div>
-						<div class="review-right-time">
-							<span class="uppercase">posted: 15 february</span>
-						</div>
-						<div class="review-right-content">
-							<p>
-								Quo voluptatem quam illion aut recusandae est null.a Quia ut eum laboratem.
-							</p>
-						</div>
-					</div>
-					<div class="clear"></div>
-				</div>
-				<div class="review-wrapper">
-					<div class="review-left">
-						<h4>Vendetta</h4>
-						<h5>5 reviews</h5>
-					</div>
-					<div class="review-right">
-						<div class="review-right-recommended">
-							<div class="review-right-icon not-rec">
-								<i class="fa fa-thumbs-down"></i>
+							<div class="review-right">
+								<div class="review-right-recommended">
+
+									@if($review->recommended)
+										<div class="review-right-icon rec">
+											<i class="fa fa-thumbs-up"></i>
+										</div>
+										<div class="review-right-title">Recommended</div>
+									@else
+										<div class="review-right-icon not-rec">
+											<i class="fa fa-thumbs-down"></i>
+										</div>
+										<div class="review-right-title">Not Recommended</div>
+									@endif
+
+								</div>
+								<div class="review-right-time">
+									<span class="uppercase">
+										posted: {{ Carbon\Carbon::parse($review->created)->format('d M Y') }}
+									</span>
+								</div>
+								<div class="review-right-content">
+									<p>
+										{{ $review->body }}
+									</p>
+								</div>
 							</div>
-							<div class="review-right-title">Not Recommended</div>
+							<div class="clear"></div>
 						</div>
-						<div class="review-right-time">
-							<span class="uppercase">posted: 9 february</span>
-						</div>
-						<div class="review-right-content">
-							<p>
-								Illum ut et in iusto omnis ut. Aut fuga veritatis tempore officiis.
-							</p>
-						</div>
-					</div>
-					<div class="clear"></div>
-				</div>
+
+					@endforeach
+				@else
+
+					<h3>{{ $reviews->message }}</h3>
+
+				@endif
 
 			</div>
 		</div>
