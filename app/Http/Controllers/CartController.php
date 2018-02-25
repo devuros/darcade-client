@@ -16,13 +16,11 @@ class CartController extends ClientController
 		try
 		{
 			$cart_response = $this->getApiRequest('cart', [
-
 				'headers'=> [
 					'Accept'=> 'application/json',
 					'Authorization'=> 'Bearer '.session('user_token'),
 					'X-Requested-With'=> 'XMLHttpRequest'
 				]
-
 			]);
 
 			$cart_content = $this->decodeApiResponse($cart_response);
@@ -49,7 +47,6 @@ class CartController extends ClientController
 		try
 		{
 			$cart_request = $this->postApiRequest('cart', [
-
 				'headers'=> [
 					'Accept'=> 'application/json',
 					'Authorization'=> 'Bearer '.session('user_token'),
@@ -58,7 +55,6 @@ class CartController extends ClientController
 				'form_params' => [
 			        'game'=> $id
 			    ]
-
 			]);
 
 			$cart_response = $this->decodeApiResponse($cart_request);
@@ -80,13 +76,11 @@ class CartController extends ClientController
 		try
 		{
 			$cart_request = $this->deleteApiRequest('cart/'.$id, [
-
 				'headers'=> [
 					'Accept'=> 'application/json',
 					'Authorization'=> 'Bearer '.session('user_token'),
 					'X-Requested-With'=> 'XMLHttpRequest'
 				]
-
 			]);
 		}
 		catch (\GuzzleHttp\Exception\ClientException $e)
@@ -106,13 +100,11 @@ class CartController extends ClientController
 		try
 		{
 			$cart_request = $this->deleteApiRequest('cart', [
-
 				'headers'=> [
 					'Accept'=> 'application/json',
 					'Authorization'=> 'Bearer '.session('user_token'),
 					'X-Requested-With'=> 'XMLHttpRequest'
 				]
-
 			]);
 		}
 		catch (\GuzzleHttp\Exception\ClientException $e)
@@ -132,13 +124,11 @@ class CartController extends ClientController
 		try
 		{
 			$cart_request = $this->postApiRequest('cart/checkout', [
-
 				'headers'=> [
 					'Accept'=> 'application/json',
 					'Authorization'=> 'Bearer '.session('user_token'),
 					'X-Requested-With'=> 'XMLHttpRequest'
 				]
-
 			]);
 		}
 		catch (\GuzzleHttp\Exception\ClientException $e)
@@ -160,13 +150,11 @@ class CartController extends ClientController
 		try
 		{
 			$purchase_history_request = $this->getApiRequest('purchases', [
-
 				'headers'=> [
 					'Accept'=> 'application/json',
 					'Authorization'=> 'Bearer '.session('user_token'),
 					'X-Requested-With'=> 'XMLHttpRequest'
 				]
-
 			]);
 
 			$purchase_history = $this->decodeApiResponse($purchase_history_request);

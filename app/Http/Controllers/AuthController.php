@@ -68,7 +68,6 @@ class AuthController extends ClientController
 		{
 			return view('errors.api_not_available');
 		}
-
 	}
 
 	public function logout(Request $request)
