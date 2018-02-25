@@ -24,7 +24,7 @@
 				@foreach($games as $game)
 
 					<div class="game-wrapper">
-						<a href="{{ route('games.show', ['id'=> $game->id]) }}">
+						<a href="{{ route('games.show', ['id'=> $game->game]) }}">
 							<div class="game-wish-order">
 								{{ $loop->iteration }}
 							</div>

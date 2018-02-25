@@ -130,7 +130,27 @@ class AuthController extends ClientController
 
 	public function reviews($id)
 	{
-		//
+		try
+		{
+			$user_request = $this->getApiRequest('users/'.$id);
+			$user = $this->decodeApiResponse($user_request);
+
+			$reviews_request = $this->getApiRequest('users/'.$id.'/reviews');
+			$reviews = $this->decodeApiResponse($reviews_request);
+
+			$library_request = $this->getApiRequest('users/'.$id.'/library');
+			$library = $this->decodeApiResponse($library_request);
+		}
+		catch (\GuzzleHttp\Exception\ClientException $e)
+		{
+			return view('errors.api_request_failed');
+		}
+		catch (\Throwable $e)
+		{
+			return view('errors.api_not_available');
+		}
+
+		return view('users.reviews', compact(['user', 'reviews', 'library']));
 	}
 
 }
