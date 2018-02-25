@@ -8,14 +8,13 @@ class CartController extends ClientController
 {
 	public function index(Request $request)
 	{
-
 		if (!$request->session()->has('user_id'))
 		{
 			return redirect()->route('home');
 		}
 
-		try {
-
+		try
+		{
 			$cart_response = $this->getApiRequest('cart', [
 
 				'headers'=> [
@@ -27,7 +26,6 @@ class CartController extends ClientController
 			]);
 
 			$cart_content = $this->decodeApiResponse($cart_response);
-
 		}
 		catch (\GuzzleHttp\Exception\ClientException $e)
 		{
@@ -39,7 +37,6 @@ class CartController extends ClientController
 		}
 
 		return view('cart.index', compact('cart_content'));
-
 	}
 
 	public function store(Request $request, $id)
@@ -49,8 +46,8 @@ class CartController extends ClientController
 			return redirect()->route('home');
 		}
 
-		try {
-
+		try
+		{
 			$cart_request = $this->postApiRequest('cart', [
 
 				'headers'=> [
@@ -65,7 +62,6 @@ class CartController extends ClientController
 			]);
 
 			$cart_response = $this->decodeApiResponse($cart_request);
-
 		}
 		catch (\GuzzleHttp\Exception\ClientException $e)
 		{
@@ -77,14 +73,12 @@ class CartController extends ClientController
 		}
 
 		return redirect()->route('cart.index');
-
 	}
 
 	public function remove($id)
 	{
-
-		try {
-
+		try
+		{
 			$cart_request = $this->deleteApiRequest('cart/'.$id, [
 
 				'headers'=> [
@@ -94,7 +88,6 @@ class CartController extends ClientController
 				]
 
 			]);
-
 		}
 		catch (\GuzzleHttp\Exception\ClientException $e)
 		{
@@ -106,14 +99,12 @@ class CartController extends ClientController
 		}
 
 		return redirect()->route('cart.index');
-
 	}
 
 	public function empty()
 	{
-
-		try {
-
+		try
+		{
 			$cart_request = $this->deleteApiRequest('cart', [
 
 				'headers'=> [
@@ -123,7 +114,6 @@ class CartController extends ClientController
 				]
 
 			]);
-
 		}
 		catch (\GuzzleHttp\Exception\ClientException $e)
 		{
@@ -135,14 +125,12 @@ class CartController extends ClientController
 		}
 
 		return redirect()->route('cart.index');
-
 	}
 
 	public function checkout()
 	{
-
-		try {
-
+		try
+		{
 			$cart_request = $this->postApiRequest('cart/checkout', [
 
 				'headers'=> [
@@ -152,7 +140,6 @@ class CartController extends ClientController
 				]
 
 			]);
-
 		}
 		catch (\GuzzleHttp\Exception\ClientException $e)
 		{
@@ -166,14 +153,12 @@ class CartController extends ClientController
 		return redirect()
 			->route('cart.index')
 			->with('success', 'Your purchase was successful, enjoy!');
-
 	}
 
 	public function history()
 	{
-
-		try {
-
+		try
+		{
 			$purchase_history_request = $this->getApiRequest('purchases', [
 
 				'headers'=> [
@@ -185,7 +170,6 @@ class CartController extends ClientController
 			]);
 
 			$purchase_history = $this->decodeApiResponse($purchase_history_request);
-
 		}
 		catch (\GuzzleHttp\Exception\ClientException $e)
 		{
@@ -197,7 +181,6 @@ class CartController extends ClientController
 		}
 
 		return view('cart.history', compact('purchase_history'));
-
 	}
 
 }

@@ -8,9 +8,8 @@ class HomeController extends ClientController
 {
 	public function index()
 	{
-
-		try {
-
+		try
+		{
 			$specials_limit = 3;
 
 			$genres_response = $this->getApiRequest('genres/');
@@ -27,7 +26,6 @@ class HomeController extends ClientController
 
 			$featured_request = $this->getApiRequest('games/specials/featured');
 			$featured = $this->decodeApiResponse($featured_request);
-
 		}
 		catch (\GuzzleHttp\Exception\ClientException $e)
 		{
@@ -39,7 +37,6 @@ class HomeController extends ClientController
 		}
 
 		return view('home', compact(['genres', 'specials', 'under10', 'under25', 'featured']));
-
 	}
 
 	public function support()

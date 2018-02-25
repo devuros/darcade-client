@@ -8,12 +8,10 @@ class PubController extends ClientController
 {
 	public function showPublisherGames($id)
 	{
-
-		try {
-
+		try
+        {
             $games_response = $this->getApiRequest('publishers/'.$id.'/games');
             $games = $this->decodeApiResponse($games_response);
-
         }
         catch (\GuzzleHttp\Exception\ClientException $e)
         {
@@ -25,7 +23,6 @@ class PubController extends ClientController
         }
 
         return view('publishers.showPublisherGames', compact('games'));
-
 	}
 
 }

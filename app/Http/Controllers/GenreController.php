@@ -8,12 +8,10 @@ class GenreController extends ClientController
 {
 	public function showGenreGames($id)
 	{
-
-		try {
-
+		try
+		{
 			$games_response = $this->getApiRequest('genres/'.$id.'/games');
 			$games = $this->decodeApiResponse($games_response);
-
 		}
 		catch (\GuzzleHttp\Exception\ClientException $e)
 		{
@@ -25,7 +23,6 @@ class GenreController extends ClientController
 		}
 
 		return view('genres.showGenreGames', compact('games'));
-
 	}
 
 }

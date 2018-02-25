@@ -1,13 +1,9 @@
 @extends('layouts.app')
 
 @if(isset($games->developer))
-
 	@section('title', 'Developer - '.$games->developer)
-
 @else
-
 	@section('title', 'Developer - '.$games[0]->developer->developer)
-
 @endif
 
 @section('content')

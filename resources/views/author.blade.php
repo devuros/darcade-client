@@ -11,9 +11,7 @@
 				<img src="{{ asset('images/author.png') }}">
 			</div>
 			<div id="authorRight">
-				<p>
-					My name is Uroš Jovanović 11/13, student of ICT college in Belgrade.
-				</p>
+				<p>My name is Uroš Jovanović 11/13, student of ICT college in Belgrade.</p>
 			</div>
 			<div class="clear"></div>
 		</div>

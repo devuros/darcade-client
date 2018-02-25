@@ -6,10 +6,8 @@ Route::post('contact', 'HomeController@contact')->name('contact');
 Route::get('author', 'HomeController@author')->name('author');
 
 Route::get('login', 'AuthController@showLoginForm')->name('login');
-Route::get('logout', 'AuthController@logout')->name('logout');
 Route::post('login', 'AuthController@login');
-
-Route::get('register', 'AuthController@register')->name('register');
+Route::get('logout', 'AuthController@logout')->name('logout');
 
 Route::get('games/{id}', 'GameController@show')->name('games.show');
 
@@ -32,8 +30,7 @@ Route::get('cart/empty', 'CartController@empty')->name('cart.empty');
 Route::get('cart/checkout', 'CartController@checkout')->name('cart.checkout');
 Route::get('cart/purchase-history', 'CartController@history')->name('cart.history');
 
-Route::get('/time-is-the-enemy', function () {
-
+Route::get('/time-is-the-enemy', function ()
+{
 	return redirect()->away('https://www.youtube.com/watch?v=nvUeo5sagkA');
-
 })->name('quantic.time');

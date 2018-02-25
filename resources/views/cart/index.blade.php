@@ -5,7 +5,6 @@
 @section('content')
 
 	<div id="cartSection">
-
 		<div id='cartSectionLeft'>
 			<h2>Your Shopping cart</h2>
 
@@ -99,13 +98,10 @@
 				</div>
 
 			@else
-
 				<h4>{{ $cart_content->message }}</h4>
-
 			@endif
 
 		</div>
-
 		<div id='cartSectionRight'>
 			<a href="{{ route('cart.history') }}" title="View complete purchase history">Purchase history</a>
 		</div>

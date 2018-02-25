@@ -26,10 +26,9 @@ class AuthController extends ClientController
         $email = $request->input('email');
         $password = $request->input('password');
 
-        try {
-
+        try
+        {
 			$login_request = $this->postApiRequest('auth', [
-
 				'headers'=> [
 					'Accept'=> 'application/json',
 					'X-Requested-With'=> 'XMLHttpRequest'
@@ -38,13 +37,12 @@ class AuthController extends ClientController
 			        'email'=> $email,
 					'password'=> $password
 			    ]
-
 			]);
 
 			$login_response = $this->decodeApiResponse($login_request);
 
-			if (isset($login_response->data->token)) {
-
+			if (isset($login_response->data->token))
+			{
 				$user_token = $login_response->data->token;
 				$user_id = $login_response->data->user_id;
 				$user_name = $login_response->data->user_name;
@@ -56,14 +54,11 @@ class AuthController extends ClientController
 				]);
 
 				return redirect()->route('home');
-
 			}
-			else {
-
+			else
+			{
 				return view('login', ['login_failed'=> $login_response->data->login]);
-
 			}
-
 		}
 		catch (\GuzzleHttp\Exception\ClientException $e)
 		{
@@ -74,16 +69,6 @@ class AuthController extends ClientController
 			return view('errors.api_not_available');
 		}
 
-	}
-
-	public function showRegisterForm()
-	{
-		//
-	}
-
-	public function register(Request $request)
-	{
-		//
 	}
 
 	public function logout(Request $request)

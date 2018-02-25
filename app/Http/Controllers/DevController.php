@@ -8,12 +8,10 @@ class DevController extends ClientController
 {
 	public function showDeveloperGames($id)
 	{
-
-		try {
-
+		try
+        {
             $games_response = $this->getApiRequest('developers/'.$id.'/games');
             $games = $this->decodeApiResponse($games_response);
-
         }
         catch (\GuzzleHttp\Exception\ClientException $e)
         {
@@ -25,7 +23,6 @@ class DevController extends ClientController
         }
 
         return view('developers.showDeveloperGames', compact('games'));
-
 	}
 
 }

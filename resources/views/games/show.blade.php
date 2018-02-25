@@ -114,58 +114,6 @@
 				<h2>about this game</h2>
 				<p>{{ $game->about }}</p>
 			</div>
-
-			{{-- <div class="game-reviews-wrapper">
-				<h2>customer reviews</h2>
-
-				<div class="review-wrapper">
-					<div class="review-left">
-						<h4>Storm</h4>
-						<h5>2 reviews</h5>
-					</div>
-					<div class="review-right">
-						<div class="review-right-recommended">
-							<div class="review-right-icon rec">
-								<i class="fa fa-thumbs-up"></i>
-							</div>
-							<div class="review-right-title">Recommended</div>
-						</div>
-						<div class="review-right-time">
-							<span class='uppercase'>posted: 15 february</span>
-						</div>
-						<div class="review-right-content">
-							<p>
-								Quo voluptatem quae illo aut recusandae est nulla. Quia ut eum laborum. Earum cum quia exercitationem nemo alias eligendi velit. Eligendi possimus mollitia provident aliquam illo sit quaerat eum. Illum ut et in iusto omnis ut.
-							</p>
-						</div>
-					</div>
-					<div class="clear"></div>
-				</div>
-				<div class="review-wrapper">
-					<div class="review-left">
-						<h4>Vendetta</h4>
-						<h5>5 reviews</h5>
-					</div>
-					<div class="review-right">
-						<div class="review-right-recommended">
-							<div class="review-right-icon not-rec">
-								<i class="fa fa-thumbs-down"></i>
-							</div>
-							<div class="review-right-title">Not Recommended</div>
-						</div>
-						<div class="review-right-time">
-							<span class='uppercase'>posted: 9 february</span>
-						</div>
-						<div class="review-right-content">
-							<p>
-								Illum ut et in iusto omnis ut. Aut fuga veritatis tempore officiis qui voluptas dolor. Aspernatur commodi optio ipsam quae eaque rerum ut. Ipsa commodi officia ducimus est non.
-							</p>
-						</div>
-					</div>
-					<div class="clear"></div>
-				</div>
-			</div> --}}
-
 		</div>
 	</div>
 

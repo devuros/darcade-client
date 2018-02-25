@@ -5,7 +5,6 @@
 @section('content')
 
 	<div id="cartSection">
-
 		<div id='cartSectionLeft'>
 			<h2>Your Purchase History</h2>
 
