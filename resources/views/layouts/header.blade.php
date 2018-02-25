@@ -30,7 +30,7 @@
     			</a>
 			</li>
 			<li class="nav-item">
-				<a href="#">
+				<a href="{{ route('users.profile', ['id'=> session('user_id')]) }}">
 					{{ session('user_name') }}
 				</a>
 			</li>

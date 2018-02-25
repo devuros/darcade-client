@@ -84,4 +84,9 @@ class AuthController extends ClientController
 		return redirect()->route('home');
 	}
 
+	public function profile($id)
+	{
+		//
+	}
+
 }
