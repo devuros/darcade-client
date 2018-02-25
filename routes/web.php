@@ -9,6 +9,8 @@ Route::get('login', 'AuthController@showLoginForm')->name('login');
 Route::post('login', 'AuthController@login');
 Route::get('logout', 'AuthController@logout')->name('logout');
 Route::get('users/{id}/profile', 'AuthController@profile')->name('users.profile');
+Route::get('users/{id}/wishes', 'AuthController@wishes')->name('users.wishes');
+Route::get('users/{id}/reviews', 'AuthController@reviews')->name('users.reviews');
 
 Route::get('games/{id}', 'GameController@show')->name('games.show');
 

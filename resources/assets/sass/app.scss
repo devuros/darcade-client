@@ -1632,3 +1632,85 @@
 		}
 	}
 }
+#communitySection {
+	width: 700px;
+	min-height: 80vh;
+
+	h1 {
+		color: $text-color-hover;
+		margin-bottom: 20px;
+	}
+	.community-actions-wrapper {
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+
+		.community-action {
+			height: 40px;
+			float: left;
+			padding: 0px 20px;
+			margin-right: 5px;
+			text-align: center;
+			border-radius: 4px 4px 0px 0px;
+			background-color: $price-bg-color;
+
+			a {
+				color: $text-color-hover;
+				text-decoration: none;
+			}
+		}
+		.active-action {
+			background-color: $above-header-bg-color;
+		}
+	}
+	.community-baseline {
+		width: 100%;
+		height: 5px;
+		background-color: $above-header-bg-color;
+		margin-bottom: 20px;
+	}
+	.genre-games-wrapper {
+		width: 700px;
+		margin-bottom: 80px;
+
+		.game-wrapper {
+			width: 700px;
+			height: 70px;
+			margin: 7px 0;
+			background-color: $price-bg-color;
+
+			.game-image-wrapper {
+				width: 185px;
+				float: left;
+
+				img {
+					width: 185px;
+					height: 70px;
+				}
+			}
+			.game-content-wrapper {
+				width: 515px;
+				height: 70px;
+				float: left;
+				padding-left: 10px;
+
+				.game-content-first-col {
+					width: 355px;
+					height: 100%;
+					float: left;
+
+					h4 {
+						color: $text-color-hover;
+					}
+					h6 {
+						color: $text-color-primary;
+						margin: 0;
+					}
+				}
+			}
+		}
+		.game-wrapper:hover {
+			background-color: $footer-bg-color;
+		}
+	}
+}
