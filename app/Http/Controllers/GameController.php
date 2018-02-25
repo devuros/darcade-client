@@ -15,6 +15,8 @@ class GameController extends ClientController
 
             $screenshots_response = $this->getApiRequest('games/'.$id.'/screenshots');
             $screenshots = $this->decodeApiResponse($screenshots_response);
+
+            //
         }
         catch (\GuzzleHttp\Exception\ClientException $e)
         {

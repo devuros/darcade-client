@@ -81,7 +81,7 @@ class AuthController extends ClientController
 		$request->session()->forget('user_token');
 		$request->session()->forget('user_name');
 
-		return back();
+		return redirect()->route('home');
 	}
 
 }
