@@ -391,8 +391,16 @@
 			"file": "routes/web.php",
 			"settings":
 			{
-				"buffer_size": 2183,
+				"buffer_size": 2181,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/AuthController.php",
+			"settings":
+			{
+				"buffer_size": 3508,
 				"line_ending": "Unix"
 			}
 		},
@@ -400,18 +408,9 @@
 			"file": "app/Http/Controllers/GameController.php",
 			"settings":
 			{
-				"buffer_size": 1160,
+				"buffer_size": 2155,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/games/show.blade.php",
-			"settings":
-			{
-				"buffer_size": 4884,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -572,23 +571,24 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Uki/darcade-client",
-		"/C/Users/Uki/darcade-client/resources"
+		"/C/Users/Uki/darcade-client"
 	],
 	"file_history":
 	[
+		"/C/Users/Uki/darcade-client/resources/views/users/wishes.blade.php",
+		"/C/Users/Uki/darcade-client/app/Http/Controllers/CartController.php",
+		"/C/Users/Uki/darcade-client/resources/views/games/show.blade.php",
+		"/C/Users/Uki/darcade-client/resources/views/layouts/header.blade.php",
+		"/C/Users/Uki/darcade-client/vendor/laravel/framework/src/Illuminate/Contracts/Routing/UrlGenerator.php",
+		"/C/Users/Uki/darcade-client/public/js/custom.js",
 		"/C/Users/Uki/darcade-client/resources/assets/sass/_variables.scss",
 		"/C/Users/Uki/darcade-client/resources/assets/sass/app.scss",
 		"/C/Users/Uki/darcade-client/app/Http/Controllers/AuthController.php",
 		"/C/Users/Uki/darcade-client/resources/views/users/reviews.blade.php",
-		"/C/Users/Uki/darcade-client/resources/views/games/show.blade.php",
-		"/C/Users/Uki/darcade-client/resources/views/users/wishes.blade.php",
 		"/C/Users/Uki/darcade-client/resources/views/genres/showGenreGames.blade.php",
 		"/C/Users/Uki/darcade-client/resources/views/users/profile.blade.php",
-		"/C/Users/Uki/darcade-client/resources/views/layouts/header.blade.php",
 		"/C/Users/Uki/darcade-client/app/Http/Controllers/HomeController.php",
 		"/C/Users/Uki/darcade-client/app/Http/Controllers/GameController.php",
-		"/C/Users/Uki/darcade-client/app/Http/Controllers/CartController.php",
 		"/C/Users/Uki/darcade-client/app/Http/Controllers/SearchController.php",
 		"/C/Users/Uki/darcade-client/vendor/laravel/framework/src/Illuminate/Routing/Redirector.php",
 		"/C/Users/Uki/darcade-client/app/Http/Controllers/PubController.php",
@@ -619,10 +619,8 @@
 		"/C/Users/Uki/darcade-client/app/User.php",
 		"/C/Users/Uki/darcade-client/app/Http/Controllers/Controller.php",
 		"/C/Users/Uki/darcade-client/app/Http/Controllers/ClientController.php",
-		"/C/Users/Uki/darcade-client/public/js/custom.js",
 		"/C/Users/Uki/darcade-client/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php",
 		"/C/Users/Uki/darcade-client/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
-		"/C/Users/Uki/darcade-client/vendor/laravel/framework/src/Illuminate/Contracts/Routing/UrlGenerator.php",
 		"/C/Users/Uki/darcade-client/resources/assets/js/app.js",
 		"/C/Users/Uki/darcade-client/resources/views/welcome.blade.php",
 		"/C/Users/Uki/darcade-client/public/css/app.css",
@@ -722,6 +720,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"game_response",
+			"wish_request",
+			"id_art",
 			"wishlist",
 			"communitySectionRight",
 			"wishes",
@@ -846,10 +847,7 @@
 			"right",
 			"new",
 			"specialOffers",
-			"both",
-			"specialOffers",
-			"image",
-			"wrapper"
+			"both"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -876,15 +874,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2183,
+						"buffer_size": 2181,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								825,
-								825
+								598,
+								598
 							]
 						],
 						"settings":
@@ -900,26 +898,25 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/Http/Controllers/GameController.php",
+					"file": "app/Http/Controllers/AuthController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1160,
+						"buffer_size": 3508,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1150,
-								1150
+								115,
+								115
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -930,28 +927,29 @@
 				},
 				{
 					"buffer": 2,
-					"file": "resources/views/games/show.blade.php",
+					"file": "app/Http/Controllers/GameController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4884,
+						"buffer_size": 2155,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2150,
-								2150
+								147,
+								147
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 702.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1009,6 +1007,18 @@
 		"selected_items":
 		[
 			[
+				"cartc",
+				"app\\Http\\Controllers\\CartController.php"
+			],
+			[
+				"authc",
+				"app\\Http\\Controllers\\AuthController.php"
+			],
+			[
+				"header.blade",
+				"resources\\views\\layouts\\header.blade.php"
+			],
+			[
 				"_var",
 				"resources\\assets\\sass\\_variables.scss"
 			],
@@ -1021,10 +1031,6 @@
 				"resources\\views\\games\\show.blade.php"
 			],
 			[
-				"header.blade",
-				"resources\\views\\layouts\\header.blade.php"
-			],
-			[
 				"header.blade.",
 				"resources\\views\\layouts\\header.blade.php"
 			],
@@ -1033,16 +1039,8 @@
 				"app\\Http\\Controllers\\HomeController.php"
 			],
 			[
-				"authc",
-				"app\\Http\\Controllers\\AuthController.php"
-			],
-			[
 				"authcon",
 				"app\\Http\\Controllers\\AuthController.php"
-			],
-			[
-				"cartc",
-				"app\\Http\\Controllers\\CartController.php"
 			],
 			[
 				"search",

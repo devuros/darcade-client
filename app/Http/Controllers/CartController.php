@@ -154,7 +154,6 @@ class CartController extends ClientController
 					'X-Requested-With'=> 'XMLHttpRequest'
 				]
 			]);
-
 			$purchase_history = $this->decodeApiResponse($purchase_history_request);
 		}
 		catch (\GuzzleHttp\Exception\ClientException $e)

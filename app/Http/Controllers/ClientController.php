@@ -11,7 +11,6 @@ class ClientController extends Controller
     const METHOD_POST = 'POST';
     const METHOD_PUT = 'PUT';
     const METHOD_DELETE = 'DELETE';
-
     const API_URL_LOCALHOST = 'http://localhost:8000/api/';
     const API_URL_LIVE = 'http://www.example.com/api/';
 
