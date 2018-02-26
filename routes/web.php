@@ -13,7 +13,7 @@ Route::get('users/{id}/wishes', 'AuthController@wishes')->name('users.wishes');
 Route::get('users/{id}/reviews', 'AuthController@reviews')->name('users.reviews');
 
 Route::get('games/{id}', 'GameController@show')->name('games.show');
-Route::get('games/{id}/wish', 'GameController@wish')->name('games.wish');
+Route::get('wish/{id}/add', 'GameController@wish')->name('games.wish');
 
 Route::get('genres/{id}/games', 'GenreController@showGenreGames')->name('genres.showGenreGames');
 

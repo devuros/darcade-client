@@ -34,9 +34,39 @@ class GameController extends ClientController
         return view('games.show', compact(['game', 'screenshots', 'reviews', 'statistics']));
     }
 
-    public function wish($id)
+    public function wish(Request $request, $id)
     {
-        //
+        if (!$request->session()->has('user_id'))
+        {
+            return redirect()->route('home');
+        }
+
+        try
+        {
+            $store_wish_request = $this->postApiRequest('wishes', [
+                'headers'=> [
+                    'Accept'=> 'application/json',
+                    'Authorization'=> 'Bearer '.session('user_token'),
+                    'X-Requested-With'=> 'XMLHttpRequest'
+                ],
+                'form_params' => [
+                    'game'=> $id
+                ]
+            ]);
+            $wish = $this->decodeApiResponse($store_wish_request);
+        }
+        catch (\GuzzleHttp\Exception\ClientException $e)
+        {
+            return view('errors.api_request_failed');
+        }
+        catch (\Throwable $e)
+        {
+            return view('errors.api_not_available');
+        }
+
+        return redirect()
+            ->route('users.wishes', ['id'=> session('user_id')])
+            ->with('success', $wish->message);
     }
 
 }

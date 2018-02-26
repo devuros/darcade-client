@@ -18,6 +18,13 @@
 			</div>
 		</div>
 		<div class="community-baseline"></div>
+
+		@if (session('success'))
+			<div class="alert alert-success">
+    			{{ session('success') }}
+			</div>
+		@endif
+
 		<div class="genre-games-wrapper">
 
 			@if(!isset($games->message))

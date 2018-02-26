@@ -22,7 +22,6 @@ class CartController extends ClientController
 					'X-Requested-With'=> 'XMLHttpRequest'
 				]
 			]);
-
 			$cart_content = $this->decodeApiResponse($cart_response);
 		}
 		catch (\GuzzleHttp\Exception\ClientException $e)
@@ -56,7 +55,6 @@ class CartController extends ClientController
 			        'game'=> $id
 			    ]
 			]);
-
 			$cart_response = $this->decodeApiResponse($cart_request);
 		}
 		catch (\GuzzleHttp\Exception\ClientException $e)
