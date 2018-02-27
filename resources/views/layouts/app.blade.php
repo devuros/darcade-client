@@ -19,7 +19,6 @@
                 @yield('content')
             </div>
         </div>
-
         <div class='container-fluid global-footer-wrapper'>
             <div class='container global-footer app-global-container'>
                 @include('layouts.footer')
