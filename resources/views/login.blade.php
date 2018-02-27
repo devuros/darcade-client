@@ -3,16 +3,13 @@
 @section('title', 'Login to Darcade')
 
 @section('content')
-
 	<div id='loginSectionWrapper'>
 		<h2>Login to Darcade</h2>
-
 		@if (isset($login_failed))
 			<div class="alert alert-danger">
     			{{ $login_failed }}
 			</div>
 		@endif
-
 		<form method='POST' action='/login'>
 			<div class="form-group">
 				<label>Email</label>
@@ -28,5 +25,4 @@
 			</div>
 		</form>
 	</div>
-
 @endsection

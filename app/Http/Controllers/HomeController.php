@@ -52,11 +52,11 @@ class HomeController extends ClientController
 		$question = $request->question;
 		$content = 'From: '.$name.'. Email:'.$email.'. Question: '.$question;
 
-		// Mail::send([], [], function ($content)
-		// {
-		// 	$content->to('uros.jovanovic.11.13@ict.edu.rs')
-		// 		->subject('Support');
-		// });
+		Mail::send([], [], function ($content)
+		{
+			$content->to('uros.jovanovic.11.13@ict.edu.rs')
+				->subject('Support');
+		});
 
 		return view('support', ['message'=> 'Your message was successfully sent']);
 	}

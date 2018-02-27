@@ -21,9 +21,7 @@
 </div>
 <div class='header-actions'>
 	<ul class="nav">
-
 		@if (session()->has('user_id'))
-
 			<li class="nav-item cart-li">
     			<a href="{{ route('cart.index') }}">
     				<i class="fa fa-shopping-cart"></i>
@@ -37,14 +35,10 @@
 			<li class="nav-item">
     			<a href="{{ route('logout') }}">logout</a>
 			</li>
-
 		@else
-
 			<li class="nav-item">
     			<a href="{{ route('login') }}">login</a>
 			</li>
-
 		@endif
-
 	</ul>
 </div>

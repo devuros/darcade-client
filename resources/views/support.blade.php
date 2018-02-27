@@ -3,19 +3,16 @@
 @section('title', 'Darcade Support')
 
 @section('content')
-
 	<div id="supportSection">
 		<div class="support-top">
 			<h1>Have a Question?</h1>
 			<p>Write your question or concern, and we'll reply within 48 hours.</p>
 		</div>
-
 		@if (isset($message))
 			<div class="alert alert-success">
     			{{ $message }}
 			</div>
 		@endif
-
 		<form method='POST' action='/contact'>
 			<div class="form-group">
 				<input class="form-control" type="text" id="name" name="name" placeholder="What's your name?" required="required">
@@ -32,5 +29,4 @@
 			</div>
 		</form>
 	</div>
-
 @endsection

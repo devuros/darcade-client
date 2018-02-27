@@ -3,26 +3,20 @@
 @section('title', 'Your shopping cart')
 
 @section('content')
-
 	<div id="cartSection">
 		<div id='cartSectionLeft'>
 			<h2>Your Shopping cart</h2>
-
 			@if (session('success'))
     			<div class="alert alert-success">
         			{{ session('success') }}
     			</div>
 			@endif
-
 			@if(!isset($cart_content->message))
-
 				<div id="cartContentWrapper">
 					@php
 						$total = 0;
 					@endphp
-
 					@foreach($cart_content as $game)
-
 						<div class="game-wrapper">
 							<div class="game-image-wrapper">
 								<a href="{{ route('games.show', ['id'=> $game->id]) }}">
@@ -33,13 +27,10 @@
 								<div class="game-content-first-col">
 									<h4>{{ $game->title }}</h4>
 								</div>
-
 								@if($game->is_on_sale)
-
 									@php
 										$total += $game->sale_price;
 									@endphp
-
 									<div class="game-content-second-col">
 										<div>-{{ round(100*($game->base_price-$game->sale_price)/$game->base_price) }}%</div>
 									</div>
@@ -51,13 +42,10 @@
 											<div class="special-offer-price-sale">{{ $game->sale_price }}&euro;</div>
 										</div>
 									</div>
-
 								@else
-
 									@php
 										$total += $game->base_price;
 									@endphp
-
 									<div class="game-content-second-col">
 										<div></div>
 									</div>
@@ -66,19 +54,14 @@
 											<div class="special-offer-price-sale">{{ $game->base_price }}&euro;</div>
 										</div>
 									</div>
-
 								@endif
-
 								<div class="game-content-forth-col">
 									<a href="{{ route('cart.remove', ['id' => $game->cart_id]) }}">Remove</a>
 								</div>
-
 								<div class="clear"></div>
 							</div>
 						</div>
-
 					@endforeach
-
 				</div>
 				<div class="cart-buy-wrapper">
 					<div class="cart-buy-top">
@@ -96,15 +79,12 @@
 						</div>
 					</div>
 				</div>
-
 			@else
 				<h4>{{ $cart_content->message }}</h4>
 			@endif
-
 		</div>
 		<div id='cartSectionRight'>
 			<a href="{{ route('cart.history') }}" title="View complete purchase history">Purchase history</a>
 		</div>
 	</div>
-
 @endsection

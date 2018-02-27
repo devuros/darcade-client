@@ -3,7 +3,6 @@
 @section('title', 'Community :: '.$user->name)
 
 @section('content')
-
 	<div id="communitySection">
 		<h1>Community :: {{ $user->name }}</h1>
 		<div class="community-actions-wrapper">
@@ -19,10 +18,8 @@
 		</div>
 		<div class="community-baseline"></div>
 		<div class="genre-games-wrapper">
-
 			@if(!isset($games->message))
 				@foreach($games as $game)
-
 					<div class="game-wrapper">
 						<a href="{{ route('games.show', ['id'=> $game->id]) }}">
 							<div class="game-image-wrapper">
@@ -36,15 +33,10 @@
 							</div>
 						</a>
 					</div>
-
 				@endforeach
 			@else
-
 				<h3>{{ $games->message }}</h3>
-
 			@endif
-
 		</div>
 	</div>
-
 @endsection

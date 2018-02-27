@@ -4,28 +4,20 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>@yield('title')</title>
-
         <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
     </head>
     <body>
         <div class='container-fluid global-above-header-wrapper'></div>
         <div class='container-fluid global-header-wrapper'>
             <div class='container global-header'>
-
                 @include('layouts.header')
-
             </div>
         </div>
         <div class='container-fluid global-content-wrapper'>
-
                 @yield('content')
-
         </div>
-
         @if (!session()->has('user_id'))
-
             <div class='container-fluid' id='loginSection'>
                 <div class='container home-page-content-wrapper'>
                     <div id='loginSectionGutter'></div>
@@ -48,14 +40,10 @@
                     </div>
                 </div>
             </div>
-
         @endif
-
         <div class='container-fluid global-footer-wrapper'>
             <div class='container global-footer'>
-
                 @include('layouts.footer')
-
             </div>
         </div>
     </body>

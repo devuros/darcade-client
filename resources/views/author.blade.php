@@ -3,7 +3,6 @@
 @section('title', 'About me')
 
 @section('content')
-
 	<div id="authorSection">
 		<h1>About me</h1>
 		<div id="authorWrapper">
@@ -16,5 +15,4 @@
 			<div class="clear"></div>
 		</div>
 	</div>
-
 @endsection

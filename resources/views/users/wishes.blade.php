@@ -3,7 +3,6 @@
 @section('title', $user->name.'\'s wishlist')
 
 @section('content')
-
 	<div id="communitySection">
 		<h1>{{ $user->name }}'s wishlist</h1>
 		<div class="community-actions-wrapper">
@@ -18,18 +17,14 @@
 			</div>
 		</div>
 		<div class="community-baseline"></div>
-
 		@if (session('success'))
 			<div class="alert alert-success">
     			{{ session('success') }}
 			</div>
 		@endif
-
 		<div class="genre-games-wrapper">
-
 			@if(!isset($games->message))
 				@foreach($games as $game)
-
 					<div class="game-wrapper">
 						<a href="{{ route('games.show', ['id'=> $game->game]) }}">
 							<div class="game-wish-order">
@@ -43,9 +38,7 @@
 									<h4>{{ $game->title }}</h4>
 									<h6>Added on {{ Carbon\Carbon::parse($game->created)->format('d M Y') }}</h6>
 								</div>
-
 								@if($game->is_on_sale)
-
 									<div class="game-content-second-col">
 										<div>-{{ round(100*($game->base_price-$game->sale_price)/$game->base_price) }}%</div>
 									</div>
@@ -57,30 +50,21 @@
 											<div class="special-offer-price-sale">{{ $game->sale_price }}&euro;</div>
 										</div>
 									</div>
-
 								@else
-
 									<div class="game-content-third-col">
 										<div class="special-offer-price-both">
 											<div class="special-offer-price-sale">{{ $game->base_price }}&euro;</div>
 										</div>
 									</div>
-
 								@endif
-
 								<div class="clear"></div>
 							</div>
 						</a>
 					</div>
-
 				@endforeach
 			@else
-
 				<h3>{{ $games->message }}</h3>
-
 			@endif
-
 		</div>
 	</div>
-
 @endsection

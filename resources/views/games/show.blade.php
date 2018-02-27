@@ -3,7 +3,6 @@
 @section('title', $game->title)
 
 @section('content')
-
 	<div id="gameShow">
 		<h2>{{ $game->title }}</h2>
 		<div class='game-info-wrapper'>
@@ -12,13 +11,9 @@
 					<img src="{{ $screenshots[0]->source }}">
 				</div>
 				<div class='game-left-bottom'>
-
 					@foreach($screenshots as $ss)
-
 						<img src="{{ $ss->source }}">
-
 					@endforeach
-
 				</div>
 			</div>
 			<div class='game-info-right'>
@@ -60,15 +55,11 @@
 					<div class='game-right-genre'>
 						<span class='gray uppercase inline-block'>genres:</span>
 						<span class='white'>
-
 							@foreach($game->genres as $genre)
-
 								<a href="{{ route('genres.showGenreGames', ['id'=> $genre->id]) }}">
 									{{ $genre->genre }}
 								</a>
-
 							@endforeach
-
 						</span>
 					</div>
 				</div>
@@ -85,9 +76,7 @@
 			<div class="game-buy-wrapper">
 				<h3>Buy {{ $game->title }}</h3>
 				<div class="game-buy-price-wrapper">
-
 					@if($game->is_on_sale)
-
 						<div class='special-offer-price-discount'>
 							-{{ round(100*($game->base_price-$game->sale_price)/$game->base_price) }}%
 						</div>
@@ -95,21 +84,15 @@
 							<del>{{ $game->base_price }}&euro;</del>
 						</div>
 						<div class='special-offer-price-sale'>{{ $game->sale_price }}&euro;</div>
-
 					@else
-
 						<div class='special-offer-price-sale'>{{ $game->base_price }}&euro;</div>
-
 					@endif
-
 					<div class='add-to-cart'>
-
 						@if (session()->has('user_id'))
 							<a class="link-buttton" href="{{ route('cart.store', ['id'=> $game->id]) }}">Add to Cart</a>
 						@else
 							<a class="link-buttton" href="{{ route('login') }}">Sign in</a>
 						@endif
-
 					</div>
 				</div>
 			</div>
@@ -119,10 +102,8 @@
 			</div>
 			<div class="game-reviews-wrapper">
 				<h2>Customer reviews</h2>
-
 				@if(!isset($reviews->message))
 					@foreach($reviews as $review)
-
 						<div class="review-wrapper">
 							<div class="review-left">
 								<h4>
@@ -131,7 +112,6 @@
 							</div>
 							<div class="review-right">
 								<div class="review-right-recommended">
-
 									@if($review->recommended)
 										<div class="review-right-icon rec">
 											<i class="fa fa-thumbs-up"></i>
@@ -143,7 +123,6 @@
 										</div>
 										<div class="review-right-title">Not Recommended</div>
 									@endif
-
 								</div>
 								<div class="review-right-time">
 									<span class="uppercase">
@@ -158,19 +137,13 @@
 							</div>
 							<div class="clear"></div>
 						</div>
-
 					@endforeach
 				@else
-
 					<h3>{{ $reviews->message }}</h3>
-
 				@endif
-
 			</div>
 		</div>
 	</div>
-
 	<script type="text/javascript" src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('js/custom.js') }}"></script>
-
 @endsection

@@ -1,14 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
 @import "variables";
-
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
-
 @import "vendor/components/font-awesome/scss/font-awesome.scss";
 
-//
-// Definition
-//
 .global-above-header-wrapper {
 	background-color: $above-header-bg-color;
 	height: $above-header-height;
@@ -25,24 +19,20 @@
 .global-footer-wrapper {
 	background-color: $footer-bg-color;
 }
-
 .container {
 	padding-left: 0;
 	padding-right: 0;
 }
-
 .global-header {
 	width: $container-width;
 	height: $header-height;
 	right: $container-displacement;
 	position: relative;
 	color: $text-color-primary;
-
 	.header-logo {
 		height: 100%;
 		float: left;
 		line-height: 95px;
-
 		a {
 			color: $text-color-primary;
 		}
@@ -55,7 +45,6 @@
 		float: left;
 		line-height: 100px;
 		margin-right: 55px;
-
 		a {
 			color: $text-color-primary;
 			text-decoration: none;
@@ -69,13 +58,10 @@
 		width: auto;
 		height: 100%;
 		float: left;
-
 		ul {
 			padding-top: 30px;
-
 			li {
 				float: left;
-
 				a {
 					color: $text-color-secondary;
 					text-transform: uppercase;
@@ -92,11 +78,9 @@
 	.header-actions {
 		height: 100%;
 		float: right;
-
 		ul {
 			li {
 				float: left;
-
 				a {
 					color: $text-color-secondary;
 				}
@@ -106,7 +90,6 @@
 				}
 			}
 			.cart-li {
-
 				a {
 					padding: 5px 15px;
 					margin: 5px 0px;
@@ -129,13 +112,11 @@
 	width: $global-content-width;
 }
 #loginSection {
-
 	.container {
 		right: -25px;
 		padding-top: 25px;
 		padding-bottom: 25px;
 		position: relative;
-
 		#loginSectionGutter {
 			width: $home-page-gutter-width;
 			height: 150px;
@@ -144,15 +125,12 @@
 		#loginSectionWrapper {
 			width: $home-page-core-wrapper-width;
 			float: left;
-
 			#loginSectionTop {
 				height: 50px;
-
 				.dash-wrapper {
 					width: 290px;
 					height: 26px;
 					float: left;
-
 					hr {
 						margin-top: 13px;
 						margin-bottom: 0;
@@ -165,7 +143,6 @@
 					float: left;
 					text-align: center;
 					color: $above-header-bg-color;
-
 					h3 {
 						margin: 0;
 					}
@@ -173,10 +150,8 @@
 			}
 			#loginSectionBottom {
 				text-align: center;
-
 				p {
 					font-weight: bold;
-
 					a {
 						text-decoration: none;
 						color: $text-color-hover;
@@ -209,17 +184,14 @@
 	position: relative;
 	margin: 40px auto;
 	color: $text-color-primary;
-
 	.footer-content {
 		width: 100%;
 		height: $footer-content-height;
 		float: left;
-
 		.footer-logo {
 			height: 100%;
 			float: left;
 			margin-right: 15px;
-
 			a {
 				color: $text-color-primary;
 			}
@@ -231,7 +203,6 @@
 			height: 100%;
 			float: left;
 			margin-top: 5px;
-
 			p {
 				margin: 0;
 				color: $text-color-secondary;
@@ -241,7 +212,6 @@
 			height: 100%;
 			float: right;
 			line-height: 55px;
-
 			a {
 				color: $text-color-primary;
 				text-decoration: none;
@@ -255,11 +225,9 @@
 		width: 100%;
 		height: $footer-menu-height;
 		float: left;
-
 		ul {
 			li {
 				float: left;
-
 				a {
 					color: $text-color-primary;
 					text-transform: capitalize;
@@ -293,11 +261,7 @@
 .margin-bottom-10 {
 	margin-bottom: 10px;
 }
-
-//
 // Error
-//
-
 .error-full-height {
 	height: 80vh;
 }
@@ -317,37 +281,28 @@
 	padding: 20px;
 	color: $text-color-primary;
 }
-
-
-//
 // Custom
-//
-
 .home-page-content-wrapper {
 	width: $home-page-content-wrapper-width;
 	height: auto;
 	left: -25px;
 	position: relative;
-
 	.home-page-gutter {
 		width: $home-page-gutter-width;
 		float: left;
 		padding-bottom: 50px;
-
 		.gutter-icon {
 			width: 210px;
 			margin-right: 20px;
 			text-align: center;
 			color: $text-color-primary;
 			border-bottom: 1px solid #377096;
-
 			a {
 				text-decoration: none;
 				color: $text-color-primary;
 				display: inline-block;
 				padding-left: 80px;
 				padding-right: 80px;
-
 				i {
 					vertical-align: middle;
 					padding-top: 18px;
@@ -357,14 +312,12 @@
 		}
 		.gutter-wrapper {
 			padding-right: 40px;
-
 			.gutter-header {
 				color: $text-color-primary;
 				font-size: 12px;
 				text-transform: uppercase;
 				margin: 7px 0;
 			}
-			.gutter-items { }
 			.gutter-genres {
 				margin-top: 15px;
 			}
@@ -377,7 +330,6 @@
 			}
 			.gutter-item:hover {
 				text-decoration: none;
-
 				.item-text {
 					color: $text-color-hover;
 				}
@@ -391,7 +343,6 @@
 				line-height: 19px;
 				text-align: center;
 				margin-right: 7px;
-
 				i {
 					vertical-align: middle;
 				}
@@ -405,21 +356,17 @@
 		width: $home-page-core-wrapper-width;
 		padding-top: 35px;
 		float: right;
-
 		.home-page-section {
 			width: $home-page-section-width;
-
 			.home-page-section-title {
 				width: $home-page-section-title-width;
 				height: $home-page-section-title-height;
 				color: $text-color-hover;
 				text-transform: uppercase;
 				margin-bottom: 10px;
-
 				h2 {
 					margin: 0;
 					font-size: 1.3em;
-
 					.browse-all {
 					    float: right;
 					    text-transform: none;
@@ -429,7 +376,6 @@
 					    top: -3px;
 					    border: 1px solid $text-color-secondary;
 					    border-radius: 2px;
-
 					    a {
 					    	padding: 2px 15px;
 					    	display: inline-block;
@@ -444,25 +390,21 @@
 			}
 			.home-page-section-content {
 				width: $home-page-section-content-width;
-
 				#featuredCarousel {
 					width: 940px;
 					height: 415px;
 					margin-bottom: 10px;
 					position: relative;
 					float: left;
-
 					.carousel-inner {
 						width: 940px;
 						height: 355px;
 						position: relative;
 						overflow: hidden;
 						display: inline-block;
-
 						.carousel-item {
 							position: relative;
 							display: none;
-
 							img {
 								width: 620px;
 								height: 355px;
@@ -475,7 +417,6 @@
 								padding-left: 15px;
 								padding-right: 45px;
 								background: linear-gradient(to top right, #171a21 0%, #2a2f3c 100%);
-
 								.info-title {
 									margin-top: 130px;
 									height: auto;
@@ -485,7 +426,6 @@
 									position: absolute;
 									bottom: 10px;
 									color: #fff;
-
 									.price-discount {
 										background-color: $discount-bg-color;
 										display: inline-block;
@@ -533,12 +473,10 @@
 			#specialOffers {
 				width: 940px;
 				margin-bottom: 60px;
-
 				.special-offers-row {
 					width: 940px;
 					height: auto;
 					margin-bottom: 10px;
-
 					div.special-offer-item:first-child {
 						margin-right: 5px;
 					}
@@ -550,11 +488,9 @@
 						height: 190px;
 						float: left;
 						background: linear-gradient(to top right, #1d6589 0%, #40b1f2 100%);
-
 						.special-offer-item-image {
 							width: 310px;
 							height: 145px;
-
 							img {
 								width: 310px;
 								height: 145px;
@@ -564,11 +500,9 @@
 							width: 310px;
 							height: 45px;
 							padding: 5px;
-
 							.special-offer-item-price-wrapper {
 								display: inline-block;
 								float: right;
-
 								.special-offer-price-discount {
 									background-color: $discount-bg-color;
 									color: $discount-text-color-green;
@@ -583,7 +517,6 @@
 									background-color: $price-bg-color;
 									font-size: 12px;
 									padding: 0 7px;
-
 									.special-offer-price-base {
 										height: 17px;
 										color: $text-color-secondary;
@@ -601,7 +534,6 @@
 			#browseDarcade {
 				width: 940px;
 				margin-bottom: 80px;
-
 				div.browse-div:first-child {
 					margin-right: 5px;
 				}
@@ -616,7 +548,6 @@
 					line-height: 80px;
 					text-align: center;
 					border-radius: 5px;
-
 					a {
 						width: 310px;
 						color: $text-color-primary;
@@ -633,7 +564,6 @@
 			#under25 {
 				width: 940px;
 				margin-bottom: 60px;
-
 				div.special-offer-item:first-child {
 					margin-right: 5px;
 				}
@@ -645,11 +575,9 @@
 					height: 190px;
 					float: left;
 					background: linear-gradient(to top right, #1d6589 0%, #40b1f2 100%);
-
 					.special-offer-item-image {
 						width: 310px;
 						height: 145px;
-
 						img {
 							width: 310px;
 							height: 145px;
@@ -659,11 +587,9 @@
 						width: 310px;
 						height: 45px;
 						padding: 5px;
-
 						.special-offer-item-price-wrapper {
 							display: inline-block;
 							float: right;
-
 							.special-offer-price-discount {
 								background-color: $discount-bg-color;
 								color: $discount-text-color-green;
@@ -690,7 +616,6 @@
 								padding: 0 5px;
 								line-height: 35px;
 							}
-
 						}
 					}
 				}
@@ -698,7 +623,6 @@
 			#under10 {
 				width: 940px;
 				margin-bottom: 60px;
-
 				div.special-offer-item:first-child {
 					margin-right: 5px;
 				}
@@ -710,11 +634,9 @@
 					height: 190px;
 					float: left;
 					background: linear-gradient(to top right, #1d6589 0%, #40b1f2 100%);
-
 					.special-offer-item-image {
 						width: 310px;
 						height: 145px;
-
 						img {
 							width: 310px;
 							height: 145px;
@@ -724,11 +646,9 @@
 						width: 310px;
 						height: 45px;
 						padding: 5px;
-
 						.special-offer-item-price-wrapper {
 							display: inline-block;
 							float: right;
-
 							.special-offer-price-discount {
 								background-color: $discount-bg-color;
 								color: $discount-text-color-green;
@@ -755,7 +675,6 @@
 								padding: 0 5px;
 								line-height: 35px;
 							}
-
 						}
 					}
 				}
@@ -765,23 +684,19 @@
 }
 #gameShow {
 	margin-bottom: 120px;
-
 	h2 {
 		text-transform: capitalize;
 		color: #fff;
 	}
 	.game-info-wrapper {
 		height: 445px;
-
 		.game-info-left {
 			width: 600px;
 			height: 445px;
 			float: left;
-
 			.game-left-top {
 				width: 600px;
 				height: 335px;
-
 				img {
 					width: 600px;
 					height: 335px;
@@ -791,7 +706,6 @@
 				width: 600px;
 				height: 110px;
 				padding: 10px 2px;
-
 				img {
 					width: 145px;
 					height: 80px;
@@ -809,12 +723,10 @@
 			height: 445px;
 			padding-left: 15px;
 			float: right;
-
 			.game-right-image {
 				width: 325px;
 				height: 150px;
 				margin-bottom: 7px;
-
 				img {
 					width: 325px;
 					height: 150px;
@@ -826,7 +738,6 @@
 				padding-right: 15px;
 				overflow: hidden;
 				margin-bottom: 7px;
-
 				p {
 					margin: 0;
 					color: $text-color-primary;
@@ -834,7 +745,6 @@
 			}
 			.game-right-details {
 				width: 325px;
-
 				.inline-block {
 					width: 105px;
 					display: inline-block;
@@ -875,7 +785,6 @@
 		padding: 5px 15px;
 		margin-bottom: 30px;
 		background-color: $price-bg-color;
-
 		p {
 			line-height: 35px;
 			color: $text-color-primary;
@@ -897,7 +806,6 @@
 	.game-bottom-section {
 		width: 600px;
 		margin-bottom: 50px;
-
 		.game-buy-wrapper {
 			width: 600px;
 			height: 70px;
@@ -905,7 +813,6 @@
 			background: linear-gradient(to right, #323b47 0%, #556470 100%);
 			border: 1px solid #555;
 			position: relative;
-
 			h3 {
 				color: $text-color-hover;
 				margin: 0;
@@ -917,7 +824,6 @@
 				right: 16px;
 				bottom: -18px;
 				border: 1px solid #000;
-
 				.special-offer-price-discount {
 					background-color: $discount-bg-color;
 					color: $discount-text-color-green;
@@ -946,7 +852,6 @@
 					height: 35px;
 					line-height: 35px;
 					float: left;
-
 					.link-buttton {
 						padding: 0px 20px;
 						display: inline-block;
@@ -965,7 +870,6 @@
 			width: 600px;
 			margin-top: 50px;
 			margin-bottom: 10px;
-
 			h2 {
 				margin: 0;
 				font-size: 1.3em;
@@ -982,7 +886,6 @@
 			width: 600px;
 			margin-top: 50px;
 			margin-bottom: 10px;
-
 			h2 {
 				margin: 0;
 				font-size: 1.3em;
@@ -1001,7 +904,6 @@
 					float: left;
 					padding: 10px;
 					color: $text-color-primary;
-
 					h4 {
 						margin: 0;
 					}
@@ -1013,12 +915,10 @@
 				.review-right {
 					width: 400px;
 					float: right;
-
 					.review-right-recommended {
 						height: 40px;
 						margin-top: 8px;
 						margin-bottom: 13px;
-
 						.rec {
 							background-color: #26638c;
 							color: $above-header-bg-color;
@@ -1033,7 +933,6 @@
 							float: left;
 							text-align: center;
 							line-height: 40px;
-
 							i {
 								padding-top: 4px;
 								font-size: 32px;
@@ -1058,7 +957,6 @@
 						padding-right: 10px;
 						margin-top: 5px;
 						margin-bottom: 20px;
-
 						p {
 							color: $text-color-primary;
 						}
@@ -1074,10 +972,8 @@
 	margin: 0 auto;
 	margin-top: 80px;
 	margin-bottom: 80px;
-
 	.support-top {
 		text-align: center;
-
 		h1 {
 			color: $text-color-hover;
 		}
@@ -1088,7 +984,6 @@
 	}
 	form {
 		margin-top: 50px;
-
 		.form-control {
 			width: 600px;
 			margin: 0 auto;
@@ -1100,7 +995,6 @@
 		.submit-button-wrapper {
 			width: 600px;
 			margin: 0 auto;
-
 			button {
 				float: right;
 				padding: 7px 20px;
@@ -1111,18 +1005,15 @@
 #authorSection {
 	width: 940px;
 	height: 80vh;
-
 	h1 {
 		color: $text-color-hover;
 	}
 	#authorWrapper {
 		width: 940px;
-
 		#authorLeft {
 			width: 200px;
 			padding-right: 20px;
 			float: left;
-
 			img {
 				width: 180px;
 			}
@@ -1130,7 +1021,6 @@
 		#authorRight {
 			width: 740px;
 			float: right;
-
 			p {
 				color: $text-color-primary;
 			}
@@ -1140,7 +1030,6 @@
 #showGenreGamesSection {
 	width: 600px;
 	min-height: 80vh;
-
 	h1 {
 		color: $text-color-hover;
 		margin-bottom: 20px;
@@ -1148,17 +1037,14 @@
 	.genre-games-wrapper {
 		width: 700px;
 		margin-bottom: 80px;
-
 		.game-wrapper {
 			width: 700px;
 			height: 70px;
 			margin: 7px 0;
 			background-color: $price-bg-color;
-
 			.game-image-wrapper {
 				width: 185px;
 				float: left;
-
 				img {
 					width: 185px;
 					height: 70px;
@@ -1169,12 +1055,10 @@
 				height: 70px;
 				float: left;
 				padding-left: 10px;
-
 				.game-content-first-col {
 					width: 355px;
 					height: 100%;
 					float: left;
-
 					h4 {
 						color: $text-color-hover;
 					}
@@ -1188,7 +1072,6 @@
 					height: 100%;
 					float: left;
 					color: $discount-text-color-green;
-
 					div {
 						padding: 0 5px;
 						display: inline-block;
@@ -1202,18 +1085,15 @@
 					height: 100%;
 					float: right;
 					padding-right: 10px;
-
 					.special-offer-price-both {
 						height: 35px;
 						float: right;
 						padding: 0 7px;
 						margin-top: 18px;
-
 						.special-offer-price-base {
 							height: 17px;
 							color: $text-color-secondary;
 							font-size: 12px;
-
 							del {
 								display: block;
 								text-align: right;
@@ -1236,7 +1116,6 @@
 #showDeveloperGamesSection {
 	width: 940px;
 	min-height: 80vh;
-
 	h1 {
 		color: $text-color-hover;
 		margin-bottom: 20px;
@@ -1244,17 +1123,14 @@
 	.genre-games-wrapper {
 		width: 800px;
 		margin-bottom: 80px;
-
 		.game-wrapper {
 			width: 800px;
 			height: 70px;
 			margin: 7px 0;
 			background-color: $price-bg-color;
-
 			.game-image-wrapper {
 				width: 185px;
 				float: left;
-
 				img {
 					width: 185px;
 					height: 70px;
@@ -1265,12 +1141,10 @@
 				height: 70px;
 				float: left;
 				padding-left: 10px;
-
 				.game-content-first-col {
 					width: 335px;
 					height: 100%;
 					float: left;
-
 					h4 {
 						color: $text-color-hover;
 					}
@@ -1292,7 +1166,6 @@
 					height: 100%;
 					float: left;
 					color: $discount-text-color-green;
-
 					div {
 						padding: 0 5px;
 						display: inline-block;
@@ -1306,18 +1179,15 @@
 					height: 100%;
 					float: right;
 					padding-right: 10px;
-
 					.special-offer-price-both {
 						height: 35px;
 						float: right;
 						padding: 0 7px;
 						margin-top: 18px;
-
 						.special-offer-price-base {
 							height: 17px;
 							color: $text-color-secondary;
 							font-size: 12px;
-
 							del {
 								display: block;
 								text-align: right;
@@ -1338,17 +1208,14 @@
 	}
 }
 .app-global-container {
-
 	#loginSectionWrapper {
 		width: 600px;
 		height: 80vh;
 		margin: 50px auto;
-
 		h2 {
 			color: $text-color-hover;
 		}
 		.form-group {
-
 			label {
 				color: $text-color-secondary;
 			}
@@ -1356,7 +1223,6 @@
 		.submit-button-wrapper {
 			width: 600px;
 			margin: 0 auto;
-
 			button {
 				float: right;
 				padding: 7px 20px;
@@ -1369,7 +1235,6 @@
 	height: 80vh;
 	float: left;
 	margin: 50px 0;
-
 	h2 {
 		color: $text-color-hover;
 		margin-bottom: 20px;
@@ -1380,17 +1245,14 @@
 	}
 	#cartContentWrapper {
 		width: 700px;
-
 		.game-wrapper {
 			width: 700px;
 			height: 70px;
 			margin: 7px 0;
 			background-color: $price-bg-color;
-
 			.game-image-wrapper {
 				width: 185px;
 				float: left;
-
 				img {
 					width: 185px;
 					height: 70px;
@@ -1401,12 +1263,10 @@
 				height: 70px;
 				float: left;
 				padding-left: 10px;
-
 				.game-content-first-col {
 					width: 255px;
 					height: 100%;
 					float: left;
-
 					h4 {
 						color: $text-color-hover;
 					}
@@ -1420,7 +1280,6 @@
 					height: 100%;
 					float: left;
 					color: $discount-text-color-green;
-
 					div {
 						padding: 0 5px;
 						display: inline-block;
@@ -1434,18 +1293,15 @@
 					height: 100%;
 					float: left;
 					padding-right: 10px;
-
 					.special-offer-price-both {
 						height: 35px;
 						float: left;
 						padding: 0 7px;
 						margin-top: 18px;
-
 						.special-offer-price-base {
 							height: 17px;
 							color: $text-color-secondary;
 							font-size: 12px;
-
 							del {
 								display: block;
 								text-align: right;
@@ -1464,7 +1320,6 @@
 					line-height: 70px;
 					padding: 0 5px;
 					float: right;
-
 					a {
 						text-decoration: underline;
 					}
@@ -1476,12 +1331,10 @@
 		width: 700px;
 		height: 150px;
 		background-color: $price-bg-color;
-
 		.cart-buy-top {
 			width: 700px;
 			height: 50px;
 			padding: 0 10px;
-
 			.top-left {
 				width: 100px;
 				height: 50px;
@@ -1504,14 +1357,12 @@
 			width: 700px;
 			height: 100px;
 			padding: 0 10px;
-
 			.bottom-left {
 				width: 300px;
 				height: 100px;
 				float: left;
 				color: $text-color-hover;
 				padding-top: 30px;
-
 				.link-button {
 					border-radius: 4px;
 					border: 1px solid $footer-bg-color;
@@ -1530,7 +1381,6 @@
 				padding-right: 10px;
 				color: $text-color-hover;
 				padding-top: 30px;
-
 				.link-button {
 					border-radius: 4px;
 					border: 1px solid $footer-bg-color;
@@ -1555,7 +1405,6 @@
 	background-color: $price-bg-color;
 	border-radius: 5px;
 	text-align: center;
-
 	a {
 		text-decoration: none;
 		color: $text-color-primary;
@@ -1563,19 +1412,16 @@
 }
 #purchaseHistoryContentWrapper {
 	width: 700px;
-
 	#purchaseHeader {
 		width: 700px;
 		height: 40px;
 		border: 1px solid #4d4d4d;
 		border-bottom: 0;
-
 		.purchase-row {
 			width: 698px;
 			height: 40px;
 			background-color: $above-header-bg-color;
 			color: #fff;
-
 			.col-1 {
 				width: 148px;
 				height: 40px;
@@ -1604,11 +1450,9 @@
 		width: 700px;
 		border: 1px solid #4d4d4d;
 		border-top: 0;
-
 		.purchase-row {
 			width: 698px;
 			height: 60px;
-
 			.col-1 {
 				width: 148px;
 				height: 60px;
@@ -1624,7 +1468,6 @@
 				float: left;
 				text-align: left;
 				padding-left: 40px;
-
 				a {
 					color: $text-color-hover;
 					text-decoration: none;
@@ -1648,7 +1491,6 @@
 	width: 750px;
 	min-height: 80vh;
 	float: left;
-
 	h1 {
 		color: $text-color-hover;
 		margin-bottom: 20px;
@@ -1657,7 +1499,6 @@
 		width: 100%;
 		height: 40px;
 		line-height: 40px;
-
 		.community-action {
 			height: 40px;
 			float: left;
@@ -1666,7 +1507,6 @@
 			text-align: center;
 			border-radius: 4px 4px 0px 0px;
 			background-color: $price-bg-color;
-
 			a {
 				color: $text-color-hover;
 				text-decoration: none;
@@ -1685,13 +1525,11 @@
 	.genre-games-wrapper {
 		width: 750px;
 		margin-bottom: 80px;
-
 		.game-wrapper {
 			width: 750px;
 			height: 70px;
 			margin: 7px 0;
 			background-color: $price-bg-color;
-
 			.game-wish-order {
 				width: 50px;
 				height: 70px;
@@ -1703,7 +1541,6 @@
 			.game-image-wrapper {
 				width: 185px;
 				float: left;
-
 				img {
 					width: 185px;
 					height: 70px;
@@ -1714,12 +1551,10 @@
 				height: 70px;
 				float: left;
 				padding-left: 10px;
-
 				.game-content-first-col {
 					width: 355px;
 					height: 100%;
 					float: left;
-
 					h4 {
 						color: $text-color-hover;
 					}
@@ -1733,7 +1568,6 @@
 					height: 100%;
 					float: left;
 					color: $discount-text-color-green;
-
 					div {
 						padding: 0 5px;
 						display: inline-block;
@@ -1747,18 +1581,15 @@
 					height: 100%;
 					float: right;
 					padding-right: 10px;
-
 					.special-offer-price-both {
 						height: 35px;
 						float: right;
 						padding: 0 7px;
 						margin-top: 18px;
-
 						.special-offer-price-base {
 							height: 17px;
 							color: $text-color-secondary;
 							font-size: 12px;
-
 							del {
 								display: block;
 								text-align: right;
@@ -1780,12 +1611,10 @@
 }
 .community-reviews-wrapper {
 	margin-bottom: 50px;
-
 	.game-reviews-wrapper {
 		width: 600px;
 		margin-top: 50px;
 		margin-bottom: 10px;
-
 		h2 {
 			margin: 0;
 			font-size: 1.3em;
@@ -1798,13 +1627,11 @@
 			background-color: $price-bg-color;
 			margin-top: 10px;
 			margin-bottom: 20px;
-
 			.review-left {
 				width: 200px;
 				float: left;
 				padding: 10px;
 				color: $text-color-primary;
-
 				img {
 					width: 180px;
 					height: 70px;
@@ -1813,12 +1640,10 @@
 			.review-right {
 				width: 400px;
 				float: right;
-
 				.review-right-recommended {
 					height: 40px;
 					margin-top: 8px;
 					margin-bottom: 13px;
-
 					.rec {
 						background-color: #26638c;
 						color: $above-header-bg-color;
@@ -1833,7 +1658,6 @@
 						float: left;
 						text-align: center;
 						line-height: 40px;
-
 						i {
 							padding-top: 4px;
 							font-size: 32px;
@@ -1858,7 +1682,6 @@
 					padding-right: 10px;
 					margin-top: 5px;
 					margin-bottom: 20px;
-
 					p {
 						color: $text-color-primary;
 					}
@@ -1876,11 +1699,9 @@
 	border: 1px solid #000;
 	border-radius: 4px;
 	padding: 10px;
-
 	.review_stat {
 		width: 100%;
 		height: 50px;
-
 		.giant_number {
 			width: 30%;
 			height: 100%;

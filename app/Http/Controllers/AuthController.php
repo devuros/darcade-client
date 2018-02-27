@@ -38,7 +38,6 @@ class AuthController extends ClientController
 					'password'=> $password
 			    ]
 			]);
-
 			$login_response = $this->decodeApiResponse($login_request);
 
 			if (isset($login_response->data->token))
