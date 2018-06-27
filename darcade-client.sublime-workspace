@@ -397,10 +397,11 @@
 			}
 		},
 		{
-			"file": "resources/assets/sass/app.scss",
+			"file": "app/Http/Controllers/HomeController.php",
 			"settings":
 			{
-				"buffer_size": 34095,
+				"buffer_size": 1717,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -562,10 +563,14 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Uki/darcade-client"
+		"/C/Users/Uki/darcade-client",
+		"/C/Users/Uki/darcade-client/app",
+		"/C/Users/Uki/darcade-client/app/Http",
+		"/C/Users/Uki/darcade-client/app/Http/Controllers"
 	],
 	"file_history":
 	[
+		"/C/Users/Uki/darcade-client/resources/assets/sass/app.scss",
 		"/C/Users/Uki/darcade-client/public/css/app.css",
 		"/C/Users/Uki/darcade-client/public/js/custom.js",
 		"/C/Users/Uki/darcade-client/resources/views/welcome.blade.php",
@@ -603,7 +608,6 @@
 		"/C/Users/Uki/darcade-client/app/Http/Controllers/ClientController.php",
 		"/C/Users/Uki/darcade-client/app/Http/Controllers/CartController.php",
 		"/C/Users/Uki/darcade-client/app/Http/Controllers/AuthController.php",
-		"/C/Users/Uki/darcade-client/resources/assets/sass/app.scss",
 		"/C/Users/Uki/darcade-client/public/js/app.js",
 		"/C/Users/Uki/darcade-client/public/js/bootstrap.min.js",
 		"/C/Users/Uki/darcade-client/public/js/jquery-3.3.1.min.js",
@@ -889,28 +893,28 @@
 				},
 				{
 					"buffer": 1,
-					"file": "resources/assets/sass/app.scss",
+					"file": "app/Http/Controllers/HomeController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 34095,
+						"buffer_size": 1717,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								292,
-								292
+								1573,
+								1573
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 756.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1508,7 +1512,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 330.0,
+	"side_bar_width": 249.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
